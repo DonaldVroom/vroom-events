@@ -1,6 +1,71 @@
 {% extends "base.html" %}
 
-
 {% block content %}
-<img src="{{ url_for('static', filename='images/logo.svg') }}" class="logo">
+<div class="section-content">
+    <span>{{ _('Deze wedstrijd wordt u aangeboden door VROOM, in samenwerking met Q-Team') }}</span>
+    <h1>{{ _('Rij de zomer fris en veilig te gemoed!') }}</h1>
+    <p>{{ _('Upgrade je wagen en rijcomfort door het winnen van een van de vier gloednieuwe bandensets van Continental, Pirelli of Michelin. Montage in een Q-Team center inclusief!') }}</p>
+    <p>{{ _('Meedoen kan door het beantwoorden van drie eenvoudige vragen. Mis het niet - binnnekort ben je weg met een nieuwe set banden!') }}</p>
+    <h1>{{ _('Dankzij Q-Team, sterk in banden en onderhoud') }}</h1>
+    <p>{{ _('Wist u dat Q-Team bijna 100 servicecenters heeft verspreid over België, waar u terecht kunt voor banden, velgen en onderhoud - voor zowel particuliere als professionele voertuigen en tegen scherpe prijzen? Of u nu een personenauto, bestelwagen of vrachtwagen heeft, Q-Team is de onbetwiste marktleider in alle drie deze categorieën. Dit voor zowel persoonlijke wagens, bedrijfswagens als leasewagens.') }}</p>
+    
+    <form method="post" action="" enctype="multipart/form-data">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.how_many_centers.label }}<br>
+            {{ form.how_many_centers() }}
+            {% for error in form.how_many_centers.errors %}
+            <span class="error-text">{{ error }}</span>
+            {% endfor %}
+        </div>
+        <div>
+            {{ form.which_type_car.label }}<br>
+            {{ form.which_type_car() }}
+            {% for error in form.which_type_car.errors %}
+            <span class="error-text">{{ error }}</span>
+            {% endfor %}
+        </div>
+        <div>
+            {{ form.when_summer_tires.label }}<br>
+            {{ form.when_summer_tires() }}
+            {% for error in form.when_summer_tires.errors %}
+            <span class="error-text">{{ error }}</span>
+            {% endfor %}
+        </div>
+        <div>
+            {{ form.how_many_people.label }}<br>
+            {{ form.how_many_people() }}
+            {% for error in form.how_many_people.errors %}
+            <span class="error-text">{{ error }}</span>
+            {% endfor %}
+        </div>
+        <div>
+            {{ form.email.label }}<br>
+            {{ form.email() }}
+            {% for error in form.email.errors %}
+            <span class="error-text">{{ error }}</span>
+            {% endfor %}
+        </div>
+        <div>
+            {{ form.first_name.label }}<br>
+            {{ form.first_name() }}
+            {% for error in form.first_name.errors %}
+            <span class="error-text">{{ error }}</span>
+            {% endfor %}
+        </div>
+        <div>
+            {{ form.last_name.label }}<br>
+            {{ form.last_name() }}
+            {% for error in form.last_name.errors %}
+            <span class="error-text">{{ error }}</span>
+            {% endfor %}
+        </div>
+        <button id="submit" name="submit" type="submit">
+            {{ _('Indienen') }}
+        </button>
+    </form>
+
+    <a href="https://www.qteam.be/" target="_blank"><img src="{{ url_for('static', filename='images/q-team-logo.png') }}" class="logo"></a>
+</div>
+
 {% endblock %}

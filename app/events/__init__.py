@@ -1,5 +1,5 @@
 from flask import Blueprint
 
-bp = Blueprint('errors', __name__)
+bp = Blueprint('events', __name__)
 
 from app.events import routes

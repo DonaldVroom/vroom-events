@@ -1,0 +1,185 @@
+# French translations for PROJECT.
+# Copyright (C) 2023 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2023-05-03 16:21+0100\n"
+"PO-Revision-Date: 2023-05-03 16:22+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: app/events/forms.py:8
+msgid "Bijna 50"
+msgstr "Presque 50"
+
+#: app/events/forms.py:9
+msgid "Bijna 70"
+msgstr "Presque 70"
+
+#: app/events/forms.py:10
+msgid "Bijna 100"
+msgstr "Presque 100"
+
+#: app/events/forms.py:13
+msgid "Particuliere wagen"
+msgstr "Voiture particulière"
+
+#: app/events/forms.py:14
+msgid "Particuliere wagen en bedrijfswagen"
+msgstr "Voiture particulière et véhicule d'entreprise"
+
+#: app/events/forms.py:15
+msgid "Particuliere wagen, bedrijfswagen en leasewagen"
+msgstr "Voiture particulière, véhicule d'entreprise et voiture de leasing"
+
+#: app/events/forms.py:18
+msgid "2 graden celsius"
+msgstr "2 degrés Celsius"
+
+#: app/events/forms.py:19
+msgid "7 graden celsius"
+msgstr "7 degrés Celsius"
+
+#: app/events/forms.py:20
+msgid "15 graden celcius"
+msgstr "15 degrés Celsius"
+
+#: app/events/forms.py:25
+msgid "Hoeveel Q-Team service centers zijn er in België aanwezig"
+msgstr "Combien de centres de service Q-Team sont présents en Belgique"
+
+#: app/events/forms.py:29
+msgid "Met welk type wagen kan je bij een QTeam service center terecht"
+msgstr "Quel type de véhicule peut être entretenu dans un centre de service Q-Team"
+
+#: app/events/forms.py:33
+msgid "Vanaf wanneer is het aangeraden om op zomerbanden om te schakelen"
+msgstr "À partir de quand est-il recommandé de passer aux pneus d'été"
+
+#: app/events/forms.py:37
+msgid "Hoeveel personen zullen aan deze competitie deelnemen"
+msgstr "Combien de personnes participeront à cette compétition"
+
+#: app/events/forms.py:39
+msgid "Email"
+msgstr "E-mail"
+
+#: app/events/forms.py:40
+msgid "Voornaam"
+msgstr "Prénom"
+
+#: app/events/forms.py:41
+msgid "Familienaam"
+msgstr "Nom de famille"
+
+#: app/events/forms.py:42 app/templates/events/index.html:64
+msgid "Indienen"
+msgstr "Soumettre"
+
+#: app/events/routes.py:34
+msgid "Welcome"
+msgstr "Bienvenue"
+
+#: app/events/routes.py:38
+msgid "Success"
+msgstr "Succès"
+
+#: app/events/routes.py:42
+msgid "Ended"
+msgstr "Terminé"
+
+#: app/templates/base.html:20
+msgid "VROOM"
+msgstr "VROOM"
+
+#: app/templates/base.html:42
+msgid "All rights reserved."
+msgstr "Tous droits réservés."
+
+#: app/templates/base.html:46
+msgid "Privacybeleid"
+msgstr "Politique de confidentialité"
+
+#: app/templates/base.html:49
+msgid "Verkoopsvoorwaarden"
+msgstr "Conditions de vente"
+
+#: app/templates/base.html:52
+msgid "Cookiebeleid"
+msgstr "Politique de cookies"
+
+#: app/templates/base.html:55
+msgid "Gebruiksvoorwaarden"
+msgstr "Conditions d'utilisation"
+
+#: app/templates/base.html:58
+msgid "Gegegevensgebruik"
+msgstr "Utilisation des données"
+
+#: app/templates/events/ended.html:6
+msgid "Helaas!"
+msgstr "Malheureusement !"
+
+#: app/templates/events/ended.html:7
+msgid ""
+"Deze wedstrijd is afgelopen. Maar maak je geen zorgen, we zullen "
+"binnenkort gelijkaardige wedstrijden organiseren. We kijken er naar uit "
+"om je daar opnieuw te zien!"
+msgstr ""
+"Ce concours est terminé. Mais ne vous inquiétez pas, nous organiserons bientôt des concours similaires. Nous avons hâte de vous y voir de nouveau !"
+
+#: app/templates/events/index.html:5 app/templates/events/thank-you.html:9
+msgid "Deze wedstrijd wordt u aangeboden door VROOM, in samenwerking met Q-Team"
+msgstr "Ce concours est proposé par VROOM, en collaboration avec Q-Team"
+
+#: app/templates/events/index.html:6
+msgid "Rij de zomer fris en veilig te gemoed!"
+msgstr "Conduisez frais et en toute sécurité cet été !"
+
+#: app/templates/events/index.html:7
+msgid ""
+"Upgrade je wagen en rijcomfort door het winnen van een van de vier "
+"gloednieuwe bandensets van Continental, Pirelli of Michelin. Montage in "
+"een Q-Team center inclusief!"
+msgstr ""
+"Améliorez votre voiture et votre confort de conduite en remportant l'un des quatre ensembles de pneus neufs de Continental, Pirelli ou Michelin. Montage inclus dans un centre Q-Team !"
+
+#: app/templates/events/index.html:8
+msgid ""
+"Meedoen kan door het beantwoorden van drie eenvoudige vragen. Mis het "
+"niet - binnnekort ben je weg met een nieuwe set banden!"
+msgstr ""
+"Vous pouvez participer en répondant à trois questions simples. Ne le manquez pas - bientôt vous serez parti avec un nouvel ensemble de pneus !"
+
+#: app/templates/events/index.html:9
+msgid "Dankzij Q-Team, sterk in banden en onderhoud"
+msgstr "Grâce à Q-Team, expert en pneus et entretien"
+
+#: app/templates/events/index.html:10
+msgid ""
+"Wist u dat Q-Team bijna 100 servicecenters heeft verspreid over België, "
+"waar u terecht kunt voor banden, velgen en onderhoud - voor zowel "
+"particuliere als professionele voertuigen en tegen scherpe prijzen? Of u "
+"nu een personenauto, bestelwagen of vrachtwagen heeft, Q-Team is de "
+"onbetwiste marktleider in alle drie deze categorieën. Dit voor zowel "
+"persoonlijke wagens, bedrijfswagens als leasewagens."
+msgstr ""
+"Saviez-vous que Q-Team possède près de 100 centres de service répartis en Belgique, où vous pouvez vous rendre pour des pneus, des jantes et de l'entretien - pour les véhicules privés et professionnels et à des prix compétitifs ? Que vous ayez une voiture particulière, un fourgon ou un camion, Q-Team est le leader incontesté dans ces trois catégories. Cela pour les voitures personnelles, les véhicules utilitaires et les voitures de leasing."
+
+#: app/templates/events/thank-you.html:6
+msgid "Bedankt voor je deelname!"
+msgstr "Merci pour votre participation !"
+
+#: app/templates/events/thank-you.html:7
+msgid "Zodra een winnaar bekend is nemen we contact op via je mail."
+msgstr "Dès qu'un gagnant est connu, nous vous contacterons par e-mail."

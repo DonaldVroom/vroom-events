@@ -17,12 +17,48 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
   <script src="https://kit.fontawesome.com/7502031267.js" crossorigin="anonymous"></script>
-  <title>{% if title %}{{ title }} · VROOM{% else %}{{ 'VROOM' }}{% endif %}</title>
+  <title>{% if title %}{{ title }} · VROOM{% else %}{{ _('VROOM') }}{% endif %}</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
-  {% block content %}
-  {% endblock %}
+    <div class="event">
+    <nav>
+        <div>
+            <a href="/"><img src="{{ url_for('static', filename='images/logo-white.svg') }}"></a>
+        </div>
+    </nav>
+    <header>
+        <div>
+            <img src="{{ url_for('static', filename='images/q-team-logo-white.png') }}">
+        </div>
+    </header>
+    <section>
+        {% block content %}
+        {% endblock %}
+    </section>
+    <footer>
+        <div>
+            <p>© 2023 <img src="{{ url_for('static', filename='images/logo-white.svg') }}">. {{ _('All rights reserved.') }}</p>
+        </div>
+        <ul>
+            <li>
+                <a href="https://www.vroom.be/nl/privacybeleid/" target="_blank">{{ _('Privacybeleid') }}</a>
+            </li>
+            <li>
+                <a href="https://www.vroom.be/nl/verkoopsvoorwaarden/" target="_blank">{{ _('Verkoopsvoorwaarden') }}</a>
+            </li>
+            <li>
+                <a href="https://www.vroom.be/nl/cookiebeleid/" target="_blank">{{ _('Cookiebeleid') }}</a>
+            </li>
+            <li>
+                <a href="https://www.vroom.be/nl/gebruiksvoorwaarden/" target="_blank">{{ _('Gebruiksvoorwaarden') }}</a>
+            </li>
+            <li>
+                <a href="https://www.vroom.be/nl/overeenkomst-gegevensgebruik/" target="_blank">{{ _('Gegegevensgebruik') }}</a>
+            </li>
+        </ul>
+    </footer>
+    </div>
 </body>
 </html>

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="section-content">
+    
+    <h1>{{ _('Bedankt voor je deelname!') }}</h1>
+    <p>{{ _('Zodra een winnaar bekend is nemen we contact op via je mail.') }}</p>
+    <br>
+    <span>{{ _('Deze wedstrijd wordt u aangeboden door VROOM, in samenwerking met Q-Team') }}</span>
+    <a href="https://www.qteam.be/" target="_blank"><img src="{{ url_for('static', filename='images/q-team-logo.png') }}" class="logo"></a>
+</div>
+
+{% endblock %}
