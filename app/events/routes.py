@@ -15,13 +15,12 @@ def before_request():
 def index():
     form = QteamForm()
     if form.validate_on_submit():
-        email=email=form.email.data
         entry = QteamEvent(
             how_many_centers=form.how_many_centers.data,
             which_type_car=form.which_type_car.data,
             when_summer_tires=form.when_summer_tires.data,
             how_many_people=form.how_many_people.data,
-            email=email,
+            email=form.email.data,
             first_name=form.first_name.data,
             last_name=form.last_name.data,
             created=datetime.utcnow()

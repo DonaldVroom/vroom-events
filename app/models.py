@@ -2,7 +2,7 @@ from app import db
 from datetime import datetime
 
 class QteamEvent(db.Model):
-    __tablename__ = 'users'
+    __tablename__ = 'qteamevent'
 
     id = db.Column(db.Integer, primary_key=True)
     how_many_centers = db.Column(db.String(), nullable=False)
