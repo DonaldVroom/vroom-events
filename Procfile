@@ -1,1 +1,1 @@
-web: flask db upgrade; flask translate compile; gunicorn vroom-api:app
+web: flask db upgrade; flask translate compile; gunicorn vroom-events:app
