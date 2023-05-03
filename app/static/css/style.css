@@ -1,13 +1,17 @@
 @import "reset.css";
 @import "design-system.css";
 
+
+body {
+    background-color: #010B10;
+}
+
 .event {
     display: grid;
     min-height: 100vh;
     height: 100%;
     width: 100%;
     grid-template-rows: 100px 400px 1fr 100px;
-    background-color: #010B10;
 }
 
 nav {
@@ -77,4 +81,40 @@ footer ul {
 footer ul li a {
     margin: 0 5px 0 5px;
     text-decoration: none;
+}
+
+/*  Small devices (Phones, less than 576px) */
+
+@media (max-width: 575.98px) {
+    .event {
+        grid-template-rows: 100px 400px 1fr 200px;
+    }
+
+    .section-content {
+        width: 360px;
+    }
+
+    footer ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/*  Small devices (landscape phones, less than 768px) */
+
+@media (min-width: 575.99px) and (max-width: 767.98px) {
+    .event {
+        grid-template-rows: 100px 400px 1fr 200px;
+    }
+
+    .section-content {
+        width: 575px;
+    }
+
+    footer ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
 }
