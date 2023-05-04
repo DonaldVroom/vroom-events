@@ -36,7 +36,7 @@ def success():
 def ended():
     return render_template('events/ended.html', title=(_('Ended')))
 
-@bp.route('/results', methods=['GET', 'POST'])
+@bp.route('/q-team/results', methods=['GET', 'POST'])
 def validate_password():
     if request.method == 'POST':
         password = request.form['password']
