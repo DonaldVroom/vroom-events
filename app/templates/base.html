@@ -25,7 +25,7 @@
     <div class="event">
     <nav>
         <div>
-            <a href="/"><img src="{{ url_for('static', filename='images/logo-white.svg') }}"></a>
+            <a href="/"><img src="{{ url_for('static', filename='images/logo.svg') }}"></a>
         </div>
     </nav>
     <header>
@@ -38,10 +38,8 @@
         {% endblock %}
     </section>
     <footer>
-        <div>
-            <p>© 2023 <img src="{{ url_for('static', filename='images/logo-white.svg') }}">. {{ _('All rights reserved.') }}</p>
-        </div>
         <ul>
+            <li><p>© 2023 VROOM. {{ _('All rights reserved.') }}</p></li>
             <li>
                 <a href="https://www.vroom.be/nl/privacybeleid/" target="_blank">{{ _('Privacybeleid') }}</a>
             </li>

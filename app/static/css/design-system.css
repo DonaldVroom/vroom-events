@@ -1,52 +1,87 @@
 @import "fonts/satoshi/satoshi.css";
 
-a, p, span, label, input[type=text], input[type=number], select, button {
+a,
+p,
+label,
+button {
+    font-size: 24px;
+    line-height: 32px;
+    font-family: 'Satoshi-Regular';
+    font-weight: 400;
+}
+
+input[type=text],
+input[type=number],
+select {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 22px;
     font-family: 'Satoshi-Regular';
 }
 
-footer a, footer p {
+footer a,
+footer p {
+    font-size: 14px;
+    line-height: 150%;
     color: #ffffff;
 }
 
 h1 {
     font-family: 'Satoshi-Bold';
-    font-size: 22px;
-    line-height: 26px;
+    font-size: 40px;
+    line-height: 54px;
     font-weight: 700;
     margin: 10px 0 10px 0;
 }
 
 span {
     display: block;
-    color: #666666;
+    color: #888888;
     margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 27px;
+    font-family: 'Satoshi-Regular';
 }
 
 label {
     display: block;
-    margin-bottom: 5px;
-}
-
-
-input[type=text], input[type=number], select {
-	width: 290px;
-	padding: 7px;
-    border: 1px solid #666666;
     margin-bottom: 10px;
 }
 
+
+input[type=text],
+input[type=number],
 select {
-	width: 305px;
+    background: none;
+    border: 1px solid #000000;
+    padding: 7px 0 7px 15px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    height: 23px;
+}
+
+input[type=text] {
+    width: 100%;
+}
+
+select {
+    width: 305px;
 
 }
 
 button {
-    background: #ed1c24;
-    margin: 15px 0;
+    background: #1C2E2E;
+    border-radius: 20px;
+    margin-bottom: 45px;
     border: none;
-	color: #ffffff;
-	height: 40px;
-	width: 305px;
+    color: #ffffff;
+    height: 37px;
+    width: 159px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+hr {
+    border: 1px dashed rgba(0, 0, 0, 0.5);
+    height: 0px;
+    margin-bottom: 32px;
 }
