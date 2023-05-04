@@ -35,3 +35,21 @@ def success():
 @bp.route('/q-team/ended', methods=['GET'])
 def ended():
     return render_template('events/ended.html', title=(_('Ended')))
+
+@bp.route('/results', methods=['GET', 'POST'])
+def validate_password():
+    if request.method == 'POST':
+        password = request.form['password']
+        if password == 'QteamVroom2023':
+            events = QteamEvent.query.all()
+            data = '<table>'
+            data += '<tr><th>ID</th><th>How Many Centers</th><th>Which Type Car</th><th>When Summer Tires</th><th>How Many People</th><th>Email</th><th>First Name</th><th>Last Name</th><th>Created</th></tr>'
+            for event in events:
+                created_date = datetime.strftime(event.created, '%d-%m-%Y')
+                data += f'<tr><td>{event.id}</td><td>{event.how_many_centers}</td><td>{event.which_type_car}</td><td>{event.when_summer_tires}</td><td>{event.how_many_people}</td><td>{event.email}</td><td>{event.first_name}</td><td>{event.last_name}</td><td>{created_date}</td></tr>'
+            data += '</table>'
+            return data
+        else:
+            return 'Invalid password'
+    elif request.method == 'GET': 
+        return render_template('events/results.html', title=(_('Resultaten')))

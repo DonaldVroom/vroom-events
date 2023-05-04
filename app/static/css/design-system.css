@@ -50,6 +50,7 @@ label {
 
 input[type=text],
 input[type=number],
+input[type=password],
 select {
     background: none;
     border: 1px solid #000000;
@@ -98,4 +99,21 @@ input[type='number']::-webkit-inner-spin-button,
 input[type='number']::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+th {
+    text-align: right;
+    border: 1px solid #000000;
+    padding: 5px;
+}
+
+td {
+    padding: 5px;
+}
+
+th, td{
+    font-size: 13px;
+    line-height: 14px;
+    font-family: 'Satoshi-Regular';
+    font-weight: 400;
 }

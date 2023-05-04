@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-05-04 15:56+0100\n"
-"PO-Revision-Date: 2023-05-04 15:57+0100\n"
+"POT-Creation-Date: 2023-05-04 18:01+0100\n"
+"PO-Revision-Date: 2023-05-04 18:01+0100\n"
 "Last-Translator: \n"
 "Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
@@ -20,18 +20,18 @@ msgstr ""
 "X-Generator: Poedit 3.2.2\n"
 
 #: app/events/qteam/forms.py:8
-msgid "Hoeveel Q-Team service centers zijn er in België aanwezig?"
-msgstr "Combien y a-t-il de centres de service Q-Team en Belgique ?"
+msgid "Hoeveel Q Team service centers zijn er in België aanwezig?"
+msgstr "Combien y a-t-il de centres de service Q Team en Belgique ?"
 
 #: app/events/qteam/forms.py:9
-msgid "Met welk type wagen kan je bij een QTeam service center terecht?"
+msgid "Met welk type wagen kan je bij een Q Team service center terecht?"
 msgstr ""
-"Avec quel type de voiture pouvez-vous vous rendre dans un centre de service "
-"QTeam ?"
+"Avec quel type de voiture pouvez-vous vous rendre dans un centre de service Q "
+"Team ?"
 
 #: app/events/qteam/forms.py:10
 msgid "Vanaf wanneer is het aangeraden om op zomerbanden om te schakelen?"
-msgstr "A partir de quand est-il recommandé de passer aux pneus été ?"
+msgstr "A partir de quelle température est-il recommandé de passer aux pneus été ?"
 
 #: app/events/qteam/forms.py:12
 msgid "Hoeveel personen zullen aan deze competitie deelnemen?"
@@ -39,7 +39,7 @@ msgstr "Combien de personnes participeront à ce concours?"
 
 #: app/events/qteam/forms.py:14
 msgid "Email"
-msgstr "Émail"
+msgstr "Email"
 
 #: app/events/qteam/forms.py:15
 msgid "Voornaam"
@@ -64,6 +64,10 @@ msgstr "Réussi"
 #: app/events/qteam/routes.py:37
 msgid "Ended"
 msgstr "Terminé"
+
+#: app/events/qteam/routes.py:55 app/templates/events/results.html:6
+msgid "Resultaten"
+msgstr "Résultats"
 
 #: app/templates/base.html:20
 msgid "VROOM"
@@ -100,63 +104,60 @@ msgstr "Malheureusement!"
 #: app/templates/events/ended.html:7
 msgid ""
 "Deze wedstrijd is afgelopen. Maar maak je geen zorgen, we zullen binnenkort "
-"gelijkaardige wedstrijden organiseren. We kijken er naar uit om je daar "
-"opnieuw te zien!"
+"gelijkaardige wedstrijden organiseren. We kijken er naar uit om je daar opnieuw "
+"te zien!"
 msgstr ""
-"Ce concours est terminé. Mais ne vous inquiétez pas, nous organiserons "
-"bientôt des compétitions similaires. Nous avons hâte de vous y revoir!"
+"Ce concours est terminé. Mais ne vous inquiétez pas, nous organiserons bientôt "
+"des compétitions similaires. Nous avons hâte de vous y revoir!"
 
 #: app/templates/events/index.html:5
-msgid "Deze wedstrijd wordt u aangeboden door VROOM, in samenwerking met Q-Team"
-msgstr "Ce concours vous est proposé par VROOM, en collaboration avec Q-Team"
+msgid "Deze wedstrijd wordt u aangeboden door VROOM, in samenwerking met Q Team."
+msgstr "Ce concours vous est proposé par VROOM en collaboration avec Q Team."
 
 #: app/templates/events/index.html:6
 msgid "Rij de zomer fris en veilig te gemoed!"
-msgstr "L'été s'annonce sous les meilleurs auspices !"
+msgstr "L’été s’annonce sous les meilleurs auspices !"
 
 #: app/templates/events/index.html:7
 msgid ""
-"Upgrade je wagen en rijcomfort door het winnen van een van de vier "
-"gloednieuwe bandensets van Continental,\n"
-"        Pirelli of Michelin. Montage in een Q-Team center inclusief!\n"
+"Upgrade je wagen en rijcomfort door het winnen van een van de vier gloednieuwe "
+"bandensets van Continental,\n"
+"        Pirelli of Michelin. Montage in een Q Team center inclusief!\n"
 "        Meedoen kan door het beantwoorden van drie eenvoudige vragen. Mis het "
 "niet - binnnekort ben je weg met een\n"
 "        nieuwe set banden!"
 msgstr ""
-"Améliorez votre voiture et votre confort de conduite en remportant l’un des "
-"quatre nouveaux jeux de pneus de Continental,\n"
-"        Pirelli ou Michelin. Installation dans un centre Q-Team incluse!"
-"<br>Vous pouvez participer en répondant à trois questions simples. Ne manquez "
-"pas cette occasion - bientôt vous serez parti avec un\n"
-"        Nouveau jeu de pneus!"
+"Améliorez votre confort de conduite et celui de votre voiture en remportant l’un "
+"des quatre nouveaux jeux de pneus de Continental, Pirelli ou Michelin. "
+"L’installation est incluse dans l’un des centres Q Team !\n"
+"Vous pouvez participer en répondant à trois questions simples. Ne manquez pas "
+"cette occasion - bientôt, vous roulerez avec un nouveau jeu de pneus !"
 
 #: app/templates/events/index.html:11
-msgid "Dankzij Q-Team, sterk in banden en onderhoud"
-msgstr "Grâce à Q-Team, solide en pneus et en entretien"
+msgid "Dankzij Q Team, sterk in banden en onderhoud."
+msgstr "Q Team, solide en pneus et en entretien."
 
 #: app/templates/events/index.html:12
 msgid ""
-"Wist u dat Q-Team bijna 100 servicecenters heeft verspreid over België, waar "
-"u terecht kunt voor banden,\n"
+"Wist u dat Q Team bijna 100 servicecenters heeft verspreid over België, waar u "
+"terecht kunt voor banden,\n"
 "        velgen en onderhoud - voor zowel particuliere als professionele "
 "voertuigen en tegen scherpe prijzen? Of u nu een\n"
-"        personenauto, bestelwagen of vrachtwagen heeft, Q-Team is de "
-"onbetwiste marktleider in alle drie deze\n"
+"        personenauto, bestelwagen of vrachtwagen heeft, Q Team is de onbetwiste "
+"marktleider in alle drie deze\n"
 "        categorieën. Dit voor zowel persoonlijke wagens, bedrijfswagens als "
 "leasewagens."
 msgstr ""
-"Saviez-vous que Q-Team dispose de près de 100 centres de service répartis "
-"dans toute la Belgique, où vous pouvez aller chercher des pneus,\n"
-"        Jantes et entretien - pour les véhicules privés et professionnels et "
-"à des prix compétitifs? Si vous avez un\n"
-"        voiture particulière, fourgonnette ou camion, Q-Team est le leader "
-"incontesté du marché dans ces trois domaines.\n"
-"        Catégories. Cela s’applique aux voitures personnelles, aux voitures "
-"de société et aux voitures de leasing."
+"Saviez-vous que Q Team possède près de 100 centres de service répartis dans "
+"toute la Belgique où vous pouvez acheter des pneus, des jantes et effectuer "
+"l’entretien de votre véhicule privé ou professionnel à des prix compétitifs ? "
+"Que vous ayez une voiture, une camionnette ou un camion, Q Team est le leader "
+"incontesté du marché dans ces trois catégories. Cela s’applique aux voitures "
+"personnelles, aux voitures de société et aux voitures de leasing."
 
 #: app/templates/events/index.html:18
-msgid "Gelieve 1 van de antwoorden aan te duiden"
-msgstr "Veuillez indiquer 1 des réponses"
+msgid "Gelieve 1 van de antwoorden aan te duiden."
+msgstr "Veuillez indiquer 1 des réponses."
 
 #: app/templates/events/index.html:27
 msgid "Bijna 50"
@@ -205,6 +206,18 @@ msgstr "Votre prénom"
 #: app/templates/events/index.html:88
 msgid "Je familienaam"
 msgstr "Votre nom de famille"
+
+#: app/templates/events/results.html:8
+msgid "Password:"
+msgstr "Mot de passe:"
+
+#: app/templates/events/results.html:9
+msgid "Password"
+msgstr "Mot de passe"
+
+#: app/templates/events/results.html:10
+msgid "Submit"
+msgstr "Envoyer"
 
 #: app/templates/events/thank-you.html:6
 msgid "Bedankt voor je deelname!"

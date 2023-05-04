@@ -9,6 +9,7 @@ body {
 .event {
     display: grid;
     width: 100%;
+    min-height: 100vh;
     grid-template-rows: 80px 500px 1fr 100px;
 }
 
