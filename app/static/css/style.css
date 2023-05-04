@@ -117,11 +117,12 @@ footer ul li a {
     header {
         background: url('../images/header-mobile.png');
         background-size: cover;
+        margin: 0 30px;
     }
 
     header img {
-        margin-left: 50px;
-        width: 255px;
+        margin-left: 30px;
+        width: 200px;
     }
 
     .event {
@@ -130,7 +131,7 @@ footer ul li a {
 
     .section-content {
         width: 100%;
-        margin: 0 30px;
+        padding: 0 30px;
     }
 
     .options-list {
@@ -138,13 +139,15 @@ footer ul li a {
     }
 
     .options-list li {
-        width: 360px;
+        width: 96%;
         margin-bottom: 15px;
+        padding: 7px;
+        text-align: center;
     }
 
     input[type=text],
     input[type=number] {
-        width: 410px;
+        width: 96%;
     }
 
     footer ul {
