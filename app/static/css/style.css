@@ -8,8 +8,6 @@ body {
 
 .event {
     display: grid;
-    min-height: 100vh;
-    height: 100%;
     width: 100%;
     grid-template-rows: 80px 500px 1fr 100px;
 }
@@ -25,7 +23,9 @@ nav img {
 }
 
 header {
-    background: url('../images/header.png');
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../images/header.png');
     background-position: center;
     border-radius: 20px;
     margin: 0 75px;
