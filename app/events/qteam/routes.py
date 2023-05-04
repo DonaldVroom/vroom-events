@@ -1,7 +1,6 @@
-from flask_babel import _, get_locale
-from langdetect import detect, LangDetectException
+from flask_babel import _
 from datetime import datetime
-from flask import render_template, url_for, redirect, request, current_app, g
+from flask import render_template, url_for, redirect, request
 from app.events import bp
 from app.events.forms import QteamForm
 from app.models import QteamEvent

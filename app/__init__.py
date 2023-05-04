@@ -13,6 +13,7 @@ migrate = Migrate()
 mail = Mail()
 babel = Babel()
 
+
 def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(config_class)
@@ -44,5 +45,6 @@ def create_app(config_class=Config):
 
     return app
 
+@babel.localeselector
 def get_locale():
     return request.accept_languages.best_match(current_app.config['LANGUAGES'])

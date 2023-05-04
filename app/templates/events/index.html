@@ -5,7 +5,7 @@
     <span>{{ _('Deze wedstrijd wordt u aangeboden door VROOM, in samenwerking met Q-Team') }}</span>
     <h1>{{ _('Rij de zomer fris en veilig te gemoed!') }}</h1>
     <p>{{ _('Upgrade je wagen en rijcomfort door het winnen van een van de vier gloednieuwe bandensets van Continental,
-        Pirelli of Michelin. Montage in een Q-Team center inclusief!<br>
+        Pirelli of Michelin. Montage in een Q-Team center inclusief!
         Meedoen kan door het beantwoorden van drie eenvoudige vragen. Mis het niet - binnnekort ben je weg met een
         nieuwe set banden!') }}</p>
     <h1>{{ _('Dankzij Q-Team, sterk in banden en onderhoud') }}</h1>
@@ -15,7 +15,7 @@
         categorieën. Dit voor zowel persoonlijke wagens, bedrijfswagens als leasewagens.') }}</p>
     <hr>
     <div class="error-text" style="display: none; color: red;">
-        Please click on the boxes and choose your answer.
+        {{ _('Gelieve 1 van de antwoorden aan te duiden') }}
     </div>
     <form method="post" action="" enctype="multipart/form-data">
         {{ form.hidden_tag() }}
@@ -24,9 +24,9 @@
             <div class="custom-select" data-name="how_many_centers">
                 {{ form.how_many_centers(type='hidden') }}
                 <ul class="options-list">
-                    <li class="option" data-value="0">Bijna 50</li>
-                    <li class="option" data-value="1">Bijna 70</li>
-                    <li class="option" data-value="2">Bijna 100</li>
+                    <li class="option" data-value="0">{{ _('Bijna 50') }}</li>
+                    <li class="option" data-value="1">{{ _('Bijna 70') }}</li>
+                    <li class="option" data-value="2">{{ _('Bijna 100') }}</li>
                 </ul>
             </div>
             {% for error in form.how_many_centers.errors %}
@@ -38,9 +38,9 @@
             <div class="custom-select" data-name="which_type_car">
                 {{ form.which_type_car(type='hidden') }}
                 <ul class="options-list">
-                    <li class="option" data-value="0">Particuliere wagen</li>
-                    <li class="option" data-value="1">Particuliere wagen en bedrijfswagen</li>
-                    <li class="option" data-value="2">Particuliere wagen, bedrijfswagen en leasewagen</li>
+                    <li class="option" data-value="0">{{ _('Particuliere wagen') }}</li>
+                    <li class="option" data-value="1">{{ _('Particuliere wagen en bedrijfswagen') }}</li>
+                    <li class="option" data-value="2">{{ _('Particuliere wagen, bedrijfswagen en leasewagen') }}</li>
                 </ul>
             </div>
             {% for error in form.which_type_car.errors %}
@@ -52,9 +52,9 @@
             <div class="custom-select" data-name="when_summer_tires">
                 {{ form.when_summer_tires(type='hidden') }}
                 <ul class="options-list">
-                    <li class="option" data-value="0">2 graden celsius</li>
-                    <li class="option" data-value="1">7 graden celsius</li>
-                    <li class="option" data-value="2">15 graden celcius</li>
+                    <li class="option" data-value="0">{{ _('2 graden celsius') }}</li>
+                    <li class="option" data-value="1">{{ _('7 graden celsius') }}</li>
+                    <li class="option" data-value="2">{{ _('15 graden celcius') }}</li>
                 </ul>
             </div>
             {% for error in form.when_summer_tires.errors %}
@@ -71,21 +71,21 @@
         <hr>
         <div>
             {{ form.email.label }}
-            {{ form.email(placeholder='Je email') }}
+            {{ form.email(placeholder=_('Je email')) }}
             {% for error in form.email.errors %}
             <span class="error-text">{{ error }}</span>
             {% endfor %}
         </div>
         <div>
             {{ form.first_name.label }}
-            {{ form.first_name(placeholder='Je voornaam') }}
+            {{ form.first_name(placeholder=_('Je voornaam')) }}
             {% for error in form.first_name.errors %}
             <span class="error-text">{{ error }}</span>
             {% endfor %}
         </div>
         <div>
             {{ form.last_name.label }}
-            {{ form.last_name(placeholder='Je familienaam') }}
+            {{ form.last_name(placeholder=_('Je familienaam')) }}
             {% for error in form.last_name.errors %}
             <span class="error-text">{{ error }}</span>
             {% endfor %}
