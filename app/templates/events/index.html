@@ -14,6 +14,9 @@
         personenauto, bestelwagen of vrachtwagen heeft, Q-Team is de onbetwiste marktleider in alle drie deze
         categorieën. Dit voor zowel persoonlijke wagens, bedrijfswagens als leasewagens.') }}</p>
     <hr>
+    <div class="error-text" style="display: none; color: red;">
+        Please click on the boxes and choose your answer.
+    </div>
     <form method="post" action="" enctype="multipart/form-data">
         {{ form.hidden_tag() }}
         <div>
@@ -68,21 +71,21 @@
         <hr>
         <div>
             {{ form.email.label }}
-            {{ form.email() }}
+            {{ form.email(placeholder='Je email') }}
             {% for error in form.email.errors %}
             <span class="error-text">{{ error }}</span>
             {% endfor %}
         </div>
         <div>
             {{ form.first_name.label }}
-            {{ form.first_name() }}
+            {{ form.first_name(placeholder='Je voornaam') }}
             {% for error in form.first_name.errors %}
             <span class="error-text">{{ error }}</span>
             {% endfor %}
         </div>
         <div>
             {{ form.last_name.label }}
-            {{ form.last_name() }}
+            {{ form.last_name(placeholder='Je familienaam') }}
             {% for error in form.last_name.errors %}
             <span class="error-text">{{ error }}</span>
             {% endfor %}
@@ -93,7 +96,11 @@
     </form>
 </div>
 <script>
+document.addEventListener('DOMContentLoaded', function () {
     const options = document.querySelectorAll('.option');
+    const form = document.querySelector('form');
+    const formError = document.querySelector('.error-text');
+
     options.forEach(option => {
         option.addEventListener('click', function () {
             const customSelect = option.closest('.custom-select');
@@ -104,12 +111,40 @@
             option.classList.add('selected');
             const selectedValue = option.getAttribute('data-value');
             const hiddenInput = document.querySelector(`input[name="${inputName}"]`);
-            hiddenInput.value = selectedValue;
 
-            // Trigger the change event on the hidden input field
-            hiddenInput.dispatchEvent(new Event('change'));
+            if (hiddenInput) {
+                hiddenInput.value = selectedValue;
+                // Trigger the change event on the hidden input field
+                hiddenInput.dispatchEvent(new Event('change'));
+            } else {
+                console.error(`Hidden input not found for inputName: ${inputName}`);
+            }
         });
     });
+
+    form.addEventListener('submit', function (event) {
+        const customSelects = document.querySelectorAll('.custom-select');
+        let emptyCustomSelectFound = false;
+
+        customSelects.forEach(customSelect => {
+            const inputName = customSelect.getAttribute('data-name');
+            const hiddenInput = document.querySelector(`input[name="${inputName}"]`);
+
+            if (hiddenInput && hiddenInput.value === "") {
+                emptyCustomSelectFound = true;
+            }
+        });
+
+        if (emptyCustomSelectFound) {
+            event.preventDefault();
+            formError.style.display = 'block';
+        } else {
+            formError.style.display = 'none';
+        }
+    });
+});
+
+
 </script>
 
 {% endblock %}
