@@ -34,7 +34,6 @@ section {
 .grid-qteam {
     display: grid;
     width: 100%;
-    min-height: 100vh;
     grid-template-rows: 500px 1fr;
 }
 
@@ -95,7 +94,7 @@ input[type=number] {
 
 .header-suzuki img {
     display: block;
-    width: 178px;
+    width: 120px;
 }
 
 .section-suzuki {
