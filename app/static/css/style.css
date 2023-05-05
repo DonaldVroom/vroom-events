@@ -136,6 +136,7 @@ input[type=number] {
     font-size: 20px;
     line-height: 28px;
     color: #0C1D17;
+    font-family: 'Satoshi-Bold';
 }
 
 .suzuki-box .main-img {
@@ -245,8 +246,6 @@ input[type=number] {
     justify-content: space-between;
 }
 
-
-
 /* Suzuki specific end */
 
 footer {
@@ -315,4 +314,48 @@ footer ul li a {
     }
 
     /* Q team specific end */
+
+    /* Suzuki specific start */
+
+    .grid-suzuki {
+        justify-content: center;
+    }
+
+    .header-suzuki {
+        margin: 0 30px;
+        width: 300px;
+    }
+
+    .suzuki-box {
+        width: 300px;
+    }
+
+    .suzuki-box .main-img {
+        width: 300px;
+        height: 162px;
+    }
+
+    .suzuki-brand-text p {
+        width: 100px;
+        margin-left: 10px;
+        line-height: 18px;
+    }
+
+    .section-suzuki {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section-suzuki h1 {
+        margin: 30px;
+        width: 300px;
+    }
+
+    .suzuki-two-box {
+        flex-direction: column;
+    }
+
+    /* Suzuki specific end */
 }
