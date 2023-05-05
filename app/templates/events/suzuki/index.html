@@ -5,34 +5,47 @@
     {% include "events/suzuki/_header.html" %}
     <section>
         <div class="section-suzuki">
-            <p>{{ _('Selecteer het model waarin u geïnteresseerd bent en vul het offerteaanvraagformulier in. Er wordt
-                dan contact met u opgenomen om de details van de offerte overeen te komen.') }}</p>
+            <h1>{{ _('Selecteer het model waarin u geïnteresseerd bent en vul het offerteaanvraagformulier in. Er wordt
+                dan contact met u opgenomen om de details van de offerte overeen te komen.') }}</h1>
             <div class="suzuki-two-box">
                 <div class="suzuki-box">
                     <img class="main-img" src="{{ url_for('static', filename='images/suzuki/main-s-cross.png') }}">
                     <div class="suzuki-box-header">
-                        <img class="suzuki-small-img" src="{{ url_for('static', filename='images/suzuki/logo-suzuki-small.png') }}">
+                        <img class="suzuki-small-img"
+                            src="{{ url_for('static', filename='images/suzuki/logo-suzuki-small.png') }}">
                         <div class="suzuki-brand-text">
                             <p>Suzuki<br>
-                            <span class="suzuki-span">S Cross</span></p>
+                                <span class="suzuki-span">S Cross</span>
+                            </p>
                         </div>
                         <p>Vanaf €19.999</p>
                     </div>
-                    <p class="suzuki-box-description">Zijn krachtige SUV-karakter, de vele rijhulpmiddelen, het royale interieur en de opvallende grille aan de voorzijde maken uw leven gemakkelijker en helpen u uw grenzen te verleggen.</p>
-                    <button>Een offerte aanvragen</button>
+                    <div class="suzuki-box-description">
+                        <p>Zijn krachtige SUV-karakter, de vele rijhulpmiddelen, het royale
+                            interieur en de opvallende grille aan de voorzijde maken uw leven gemakkelijker en helpen u
+                            uw
+                            grenzen te verleggen.</p>
+                        <a href="#" class="button">Een offerte aanvragen</a>
+                    </div>
                 </div>
                 <div class="suzuki-box">
                     <img class="main-img" src="{{ url_for('static', filename='images/suzuki/main-vitara.png') }}">
                     <div class="suzuki-box-header">
-                        <img class="suzuki-small-img" src="{{ url_for('static', filename='images/suzuki/logo-suzuki-small.png') }}">
+                        <img class="suzuki-small-img"
+                            src="{{ url_for('static', filename='images/suzuki/logo-suzuki-small.png') }}">
                         <div class="suzuki-brand-text">
                             <p>Suzuki
-                            <span class="suzuki-span">Vitara</span></p>
+                                <span class="suzuki-span">Vitara</span>
+                            </p>
                         </div>
                         <p>Vanaf €19.999</p>
                     </div>
-                    <p class="suzuki-box-description">Een echte avonturier, gemaakt voor al uw avonturen. De Suzuki Vitara bevestigt zijn karakter en veelzijdigheid met zijn exclusieve AllGrip technologie en hybride motor voor authentieke sensaties van plezier.</p>
-                    <button>Een offerte aanvragen</button>
+                    <div class="suzuki-box-description">
+                        <p>Een echte avonturier, gemaakt voor al uw avonturen. De Suzuki Vitara bevestigt zijn karakter
+                            en veelzijdigheid met zijn exclusieve AllGrip technologie en hybride motor voor authentieke
+                            sensaties van plezier.</p>
+                        <a href="#" class="button">Een offerte aanvragen</a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -86,9 +86,9 @@ select {
 
 }
 
-button {
+button, .button {
     background: #1C2E2E;
-    border-radius: 20px;
+    border-radius: 8px;
     margin-bottom: 45px;
     border: none;
     color: #ffffff;

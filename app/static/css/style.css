@@ -100,9 +100,18 @@ section {
     text-align: left;
 }
 
+.section-suzuki h1 {
+    font-family: 'Satoshi-Regular';
+    font-size: 36px;
+    line-height: 49px;
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+
 .suzuki-two-box {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 85px;
 }
 
 .suzuki-box {
@@ -149,6 +158,15 @@ section {
 
 .suzuki-box-description {
     margin: 0 20px;
+}
+
+.suzuki-box .button {
+    display: block;
+    margin: 28.5px 0;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 10px;
 }
 
 
