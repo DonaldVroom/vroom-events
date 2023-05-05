@@ -104,8 +104,8 @@ input[type=number] {
 
 .section-suzuki h1 {
     font-family: 'Satoshi-Regular';
-    font-size: 36px;
-    line-height: 49px;
+    font-size: 32px;
+    line-height: 43.2px;
     font-weight: 400;
     margin-bottom: 80px;
 }
@@ -114,6 +114,7 @@ input[type=number] {
     display: flex;
     justify-content: space-around;
     margin-bottom: 85px;
+    gap: 50px;
 }
 
 .suzuki-box {
@@ -140,7 +141,7 @@ input[type=number] {
 .suzuki-box .main-img {
     width: 464px;
     height: 250px;
-    border-top: 8px;
+    border-top: 5px;
 }
 
 .suzuki-box-header {
@@ -154,8 +155,9 @@ input[type=number] {
     height: 40px;
 }
 
-.suzuki-brand-text {
+.suzuki-brand-text p {
     width: 223px;
+    line-height: 18px;
 }
 
 .suzuki-box-description {
@@ -209,6 +211,14 @@ input[type=number] {
     display: flex;
     flex-direction: column;
 }
+
+.suzuki-detail-right h1 {
+    padding-top: 75px;
+    font-size: 48px;
+    line-height: 64.8px;
+    font-weight: 700;
+}
+
 .suzuki-detail-right form {
     margin-top: 50px;
 }
@@ -253,9 +263,9 @@ footer img {
 }
 
 footer ul {
-    width: 962px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -266,7 +276,7 @@ footer ul li a {
 
 @media (max-width: 1000px) {
     .event {
-        grid-template-rows: 80px 1fr 200px;
+        grid-template-rows: 80px 1fr 300px;
     }
 
     footer ul {

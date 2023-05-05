@@ -21,7 +21,6 @@ class SuzukiLead(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     auto = db.Column(db.String(255), nullable=False)
     email = db.Column(db.String(255), nullable=False)
-    salutation = db.Column(db.String(10), nullable=False)
     first_name = db.Column(db.String(255), nullable=False)
     last_name = db.Column(db.String(255), nullable=False)
     postal_code = db.Column(db.String(255), nullable=False)

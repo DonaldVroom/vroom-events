@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2023-05-05 14:12+0100\n"
-"PO-Revision-Date: 2023-05-05 14:12+0100\n"
+"PO-Revision-Date: 2023-05-05 16:38+0100\n"
 "Last-Translator: \n"
 "Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
@@ -138,15 +138,15 @@ msgstr "Politique de confidentialité"
 
 #: app/templates/base.html:45
 msgid "Verkoopsvoorwaarden"
-msgstr "Conditions"
+msgstr "Conditions générales de vente"
 
 #: app/templates/base.html:49
 msgid "Cookiebeleid"
-msgstr "Politique en matière de cookies"
+msgstr "Cookies"
 
 #: app/templates/base.html:52
 msgid "Gebruiksvoorwaarden"
-msgstr "Conditions"
+msgstr "Conditions d’utilisation"
 
 #: app/templates/base.html:57
 msgid "Gegegevensgebruik"
@@ -815,12 +815,12 @@ msgid ""
 "het\n"
 "                offerteaanvraagformulier in om van dit aanbod te kunnen genieten."
 msgstr ""
-"Jusqu’à 6.000 € de remise! Offre limitée… Sélectionnez le modèle qui vous "
+"Jusqu’à € 6.000  de remise! Offre limitée… Sélectionnez le modèle qui vous "
 "intéresse, et remplissez le formulaire de demande d’offre."
 
 #: app/templates/events/suzuki/index.html:21
 msgid "Vanaf €21.449"
-msgstr "A partir de €21.449"
+msgstr "A partir de € 21.449"
 
 #: app/templates/events/suzuki/index.html:24
 msgid ""
@@ -841,7 +841,7 @@ msgstr "Demandez une offre"
 
 #: app/templates/events/suzuki/index.html:41
 msgid "Vanaf €19.999"
-msgstr "A partir de €19.999"
+msgstr "A partir de € 19.999"
 
 #: app/templates/events/suzuki/index.html:44
 msgid ""
@@ -859,6 +859,7 @@ msgstr ""
 msgid "Suzuki S-Cross<br>Vraag een offerte aan."
 msgstr ""
 "Suzuki S-Cross \n"
+"<br>\n"
 "Demander une offre."
 
 #: app/templates/events/suzuki/s-cross.html:25
@@ -866,8 +867,8 @@ msgid ""
 "Vanaf € 21.449<br>\n"
 "                    Met tot €6.000 korting, beperkt in de tijd!"
 msgstr ""
-"A partir de € 21.449 \n"
-"Avec jusqu’à 6.000 € de remise! Offre limitée!"
+"A partir de € 21.449<br> \n"
+"Avec jusqu’à € 6.000  de remise! Offre limitée."
 
 #: app/templates/events/suzuki/s-cross.html:40
 #: app/templates/events/suzuki/vitara.html:40
@@ -915,7 +916,7 @@ msgid ""
 "                    Met tot €6.000 korting, beperkt in de tijd!"
 msgstr ""
 "A partir de € 19.999 \n"
-"Avec jusqu’à 6.000 € de remise! Offre limitée!"
+"Avec jusqu’à € 6.000 de remise! Offre limitée!"
 
 #~ msgid "Wedstrijdreglement"
 #~ msgstr "Règlement du concours"

@@ -23,15 +23,14 @@
             <div class="suzuki-detail-right">
                 <h1>{{ _('Suzuki Vitara<br>Vraag een offerte aan.') }}</h1>
                 <p>{{ _('Vanaf € 19.999<br>
-                    Met tot €6.000 korting, beperkt in de tijd!') }}</p>
+                    Met tot € 6.000 korting, beperkt in de tijd!') }}</p>
                 <form method="post">
                     {{ form.hidden_tag() }}
                     <div class="form-block">
-                        {{ form.email(placeholder=_('Je email')) }}</div>
+                        {{ form.email(placeholder=_('Email')) }}</div>
                     <div class="form-block">
-                        {{ form.salutation(placeholder=_('Aanspreking')) }}
-                        {{ form.first_name(placeholder=_('Je voornaam')) }}
-                        {{ form.last_name(placeholder=_('Je familienaam')) }}
+                        {{ form.first_name(placeholder=_('Voornaam')) }}
+                        {{ form.last_name(placeholder=_('Familienaam')) }}
                     </div>
                     <div class="form-block">
                         {{ form.postal_code(placeholder=_('Postcode')) }}

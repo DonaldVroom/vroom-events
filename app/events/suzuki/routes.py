@@ -18,7 +18,6 @@ def suzuki_s_cross():
                         suzuki_lead = SuzukiLead(
                         auto="S-Cross",
                         email=form.email.data,
-                        salutation=form.salutation.data,
                         first_name=form.first_name.data,
                         last_name=form.last_name.data,
                         postal_code=form.postal_code.data,
@@ -29,7 +28,7 @@ def suzuki_s_cross():
                         db.session.commit()
                         return redirect(url_for('events.suzuki_thank_you'))
         elif request.method == 'GET': 
-                return render_template('events/suzuki/s-cross.html', title=(_('S Cross')), form=form)
+                return render_template('events/suzuki/s-cross.html', title=(_('S-Cross')), form=form)
 
 @bp.route('/suzuki/vitara', methods=['GET', 'POST'])
 def suzuki_vitara():
@@ -39,7 +38,6 @@ def suzuki_vitara():
                         suzuki_lead = SuzukiLead(
                         auto="Vitara",
                         email=form.email.data,
-                        salutation=form.salutation.data,
                         first_name=form.first_name.data,
                         last_name=form.last_name.data,
                         postal_code=form.postal_code.data,

@@ -7,8 +7,6 @@ from flask_babel import _, lazy_gettext as _l
 class SuzukiLeadForm(FlaskForm):
     auto = HiddenField(_l('auto'))
     email = StringField(_l('Email'), validators=[DataRequired(), Email()])
-    salutation = SelectField(_l('Aanspreking'), validators=[DataRequired()],
-                              choices=[('Mr', _l('Mr')), ('Ms', _l('Ms')), ('Mme', _l('Mme'))])
     first_name = StringField(_l('Voornaam'), validators=[DataRequired()])
     first_name = StringField(_l('Voornaam'), validators=[DataRequired()])
     last_name = StringField(_l('Familienaam'), validators=[DataRequired()])
