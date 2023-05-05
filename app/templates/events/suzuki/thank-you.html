@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="grid-suzuki">
+    {% include "events/suzuki/_header.html" %}
+    <section>
+        <div class="section-suzuki">
+            <h1>{{ _('Bedankt voor uw aanvraag!') }}</h1>
+            <p>{{ _('Een Suzuki medewerker zal eerstdaags contact met u opnemen.') }}</p>
+        </div>
+    </section>
+</div>
+{% endblock %}

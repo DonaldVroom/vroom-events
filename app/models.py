@@ -26,7 +26,7 @@ class SuzukiLead(db.Model):
     last_name = db.Column(db.String(255), nullable=False)
     postal_code = db.Column(db.String(255), nullable=False)
     phone = db.Column(db.String(255), nullable=False)
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+    created = db.Column(db.DateTime, default=datetime.utcnow)
 
     def __repr__(self):
         return f"<SuzukiLead {self.id}>"

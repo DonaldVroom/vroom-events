@@ -77,7 +77,6 @@ input[type=number] {
 .grid-suzuki {
     display: grid;
     width: 100%;
-    min-height: 100vh;
     grid-template-rows: 500px 1fr;
 }
 

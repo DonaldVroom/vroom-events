@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-05-05 14:00+0100\n"
-"PO-Revision-Date: 2023-05-05 14:03+0100\n"
+"POT-Creation-Date: 2023-05-05 14:12+0100\n"
+"PO-Revision-Date: 2023-05-05 14:12+0100\n"
 "Last-Translator: \n"
 "Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
@@ -84,6 +84,7 @@ msgid "auto"
 msgstr "voiture"
 
 #: app/events/suzuki/forms.py:10 app/templates/events/suzuki/s-cross.html:32
+#: app/templates/events/suzuki/vitara.html:32
 msgid "Aanspreking"
 msgstr "Civilité"
 
@@ -100,14 +101,17 @@ msgid "Mme"
 msgstr "Mme"
 
 #: app/events/suzuki/forms.py:15 app/templates/events/suzuki/s-cross.html:37
+#: app/templates/events/suzuki/vitara.html:37
 msgid "Postcode"
 msgstr "Code postal"
 
 #: app/events/suzuki/forms.py:16 app/templates/events/suzuki/s-cross.html:38
+#: app/templates/events/suzuki/vitara.html:38
 msgid "Telefoonnummer"
 msgstr "Téléphone"
 
-#: app/events/suzuki/routes.py:11 app/templates/events/suzuki/index.html:17
+#: app/events/suzuki/routes.py:11 app/events/suzuki/routes.py:58
+#: app/templates/events/suzuki/index.html:17
 #: app/templates/events/suzuki/index.html:37
 msgid "Suzuki"
 msgstr "Suzuki"
@@ -115,6 +119,10 @@ msgstr "Suzuki"
 #: app/events/suzuki/routes.py:32 app/templates/events/suzuki/index.html:18
 msgid "S Cross"
 msgstr "S Cross"
+
+#: app/events/suzuki/routes.py:53 app/templates/events/suzuki/index.html:38
+msgid "Vitara"
+msgstr "Vitara"
 
 #: app/templates/base.html:21
 msgid "VROOM"
@@ -262,16 +270,19 @@ msgstr "15 degrés Celsius"
 
 #: app/templates/events/qteam/index.html:85
 #: app/templates/events/suzuki/s-cross.html:30
+#: app/templates/events/suzuki/vitara.html:30
 msgid "Je email"
 msgstr "Votre adresse e-mail"
 
 #: app/templates/events/qteam/index.html:92
 #: app/templates/events/suzuki/s-cross.html:33
+#: app/templates/events/suzuki/vitara.html:33
 msgid "Je voornaam"
 msgstr "Votre prénom"
 
 #: app/templates/events/qteam/index.html:99
 #: app/templates/events/suzuki/s-cross.html:34
+#: app/templates/events/suzuki/vitara.html:34
 msgid "Je familienaam"
 msgstr "Votre nom de famille"
 
@@ -828,10 +839,6 @@ msgstr ""
 msgid "Vraag een offerte aan"
 msgstr "Demandez une offre"
 
-#: app/templates/events/suzuki/index.html:38
-msgid "Vitara"
-msgstr "Vitara"
-
 #: app/templates/events/suzuki/index.html:41
 msgid "Vanaf €19.999"
 msgstr "A partir de €19.999"
@@ -863,6 +870,7 @@ msgstr ""
 "Avec jusqu’à 6.000 € de remise! Offre limitée!"
 
 #: app/templates/events/suzuki/s-cross.html:40
+#: app/templates/events/suzuki/vitara.html:40
 msgid ""
 "Door op de onderstaande knop te klikken, bevestigt u dat u kennis hebt genomen "
 "van ons"
@@ -871,17 +879,43 @@ msgstr ""
 "dessous, vous confirmez que vous avez pris connaissance du"
 
 #: app/templates/events/suzuki/s-cross.html:41
+#: app/templates/events/suzuki/vitara.html:41
 msgid "privacybeleid"
 msgstr "politique de confidentialité"
 
 #: app/templates/events/suzuki/s-cross.html:41
+#: app/templates/events/suzuki/vitara.html:41
 msgid ""
 "en dat de gegevens van dit formulier gebruikt zullen worden door Suzuki Belgium."
 msgstr "et que les données de ce formulaire soient utilisées par Suzuki Belgium."
 
 #: app/templates/events/suzuki/s-cross.html:43
+#: app/templates/events/suzuki/vitara.html:43
 msgid "Bevestigen"
 msgstr "Confirmer"
+
+#: app/templates/events/suzuki/thank-you.html:8
+msgid "Bedankt voor uw aanvraag!"
+msgstr "Merci pour votre demande !"
+
+#: app/templates/events/suzuki/thank-you.html:9
+msgid "Een Suzuki medewerker zal eerstdaags contact met u opnemen."
+msgstr ""
+"Un représentant de Suzuki prendra contact avec vous dans les prochains jours."
+
+#: app/templates/events/suzuki/vitara.html:24
+msgid "Suzuki Vitara<br>Vraag een offerte aan."
+msgstr ""
+"Suzuki Vitara \n"
+"Demander une offre."
+
+#: app/templates/events/suzuki/vitara.html:25
+msgid ""
+"Vanaf € 19.999<br>\n"
+"                    Met tot €6.000 korting, beperkt in de tijd!"
+msgstr ""
+"A partir de € 19.999 \n"
+"Avec jusqu’à 6.000 € de remise! Offre limitée!"
 
 #~ msgid "Wedstrijdreglement"
 #~ msgstr "Règlement du concours"
