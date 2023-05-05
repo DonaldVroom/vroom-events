@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-05-05 14:12+0100\n"
-"PO-Revision-Date: 2023-05-05 17:07+0100\n"
+"POT-Creation-Date: 2023-05-05 17:08+0100\n"
+"PO-Revision-Date: 2023-05-05 17:10+0100\n"
 "Last-Translator: \n"
 "Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
@@ -42,19 +42,24 @@ msgid "Hoeveel personen zullen aan deze competitie deelnemen?"
 msgstr "Combien de personnes participeront à ce concours?"
 
 #: app/events/qteam/forms.py:14 app/events/suzuki/forms.py:9
+#: app/templates/events/suzuki/s-cross.html:30
+#: app/templates/events/suzuki/vitara.html:30
 msgid "Email"
 msgstr "Email"
 
-#: app/events/qteam/forms.py:15 app/events/suzuki/forms.py:12
-#: app/events/suzuki/forms.py:13
+#: app/events/qteam/forms.py:15 app/events/suzuki/forms.py:10
+#: app/events/suzuki/forms.py:11 app/templates/events/suzuki/s-cross.html:32
+#: app/templates/events/suzuki/vitara.html:32
 msgid "Voornaam"
 msgstr "Prénom"
 
-#: app/events/qteam/forms.py:16 app/events/suzuki/forms.py:14
+#: app/events/qteam/forms.py:16 app/events/suzuki/forms.py:12
+#: app/templates/events/suzuki/s-cross.html:33
+#: app/templates/events/suzuki/vitara.html:33
 msgid "Familienaam"
 msgstr "Nom de famille"
 
-#: app/events/qteam/forms.py:17 app/events/suzuki/forms.py:17
+#: app/events/qteam/forms.py:17 app/events/suzuki/forms.py:15
 #: app/templates/events/qteam/index.html:108
 msgid "Indienen"
 msgstr "Envoyer"
@@ -83,44 +88,27 @@ msgstr "Règlement"
 msgid "auto"
 msgstr "voiture"
 
-#: app/events/suzuki/forms.py:10 app/templates/events/suzuki/s-cross.html:32
-#: app/templates/events/suzuki/vitara.html:32
-msgid "Aanspreking"
-msgstr "Civilité"
-
-#: app/events/suzuki/forms.py:11
-msgid "Mr"
-msgstr "Mr"
-
-#: app/events/suzuki/forms.py:11
-msgid "Ms"
-msgstr "Ms"
-
-#: app/events/suzuki/forms.py:11
-msgid "Mme"
-msgstr "Mme"
-
-#: app/events/suzuki/forms.py:15 app/templates/events/suzuki/s-cross.html:37
-#: app/templates/events/suzuki/vitara.html:37
+#: app/events/suzuki/forms.py:13 app/templates/events/suzuki/s-cross.html:36
+#: app/templates/events/suzuki/vitara.html:36
 msgid "Postcode"
 msgstr "Code postal"
 
-#: app/events/suzuki/forms.py:16 app/templates/events/suzuki/s-cross.html:38
-#: app/templates/events/suzuki/vitara.html:38
+#: app/events/suzuki/forms.py:14 app/templates/events/suzuki/s-cross.html:37
+#: app/templates/events/suzuki/vitara.html:37
 msgid "Telefoonnummer"
 msgstr "Téléphone"
 
-#: app/events/suzuki/routes.py:11 app/events/suzuki/routes.py:58
-#: app/templates/events/suzuki/index.html:17
-#: app/templates/events/suzuki/index.html:37
+#: app/events/suzuki/routes.py:11 app/events/suzuki/routes.py:56
+#: app/templates/events/suzuki/index.html:16
+#: app/templates/events/suzuki/index.html:36
 msgid "Suzuki"
 msgstr "Suzuki"
 
-#: app/events/suzuki/routes.py:32 app/templates/events/suzuki/index.html:18
-msgid "S Cross"
-msgstr "S Cross"
+#: app/events/suzuki/routes.py:31 app/templates/events/suzuki/index.html:17
+msgid "S-Cross"
+msgstr "S-Cross"
 
-#: app/events/suzuki/routes.py:53 app/templates/events/suzuki/index.html:38
+#: app/events/suzuki/routes.py:51 app/templates/events/suzuki/index.html:37
 msgid "Vitara"
 msgstr "Vitara"
 
@@ -269,20 +257,14 @@ msgid "15 graden celcius"
 msgstr "15 degrés Celsius"
 
 #: app/templates/events/qteam/index.html:85
-#: app/templates/events/suzuki/s-cross.html:30
-#: app/templates/events/suzuki/vitara.html:30
 msgid "Je email"
 msgstr "Votre adresse e-mail"
 
 #: app/templates/events/qteam/index.html:92
-#: app/templates/events/suzuki/s-cross.html:33
-#: app/templates/events/suzuki/vitara.html:33
 msgid "Je voornaam"
 msgstr "Votre prénom"
 
 #: app/templates/events/qteam/index.html:99
-#: app/templates/events/suzuki/s-cross.html:34
-#: app/templates/events/suzuki/vitara.html:34
 msgid "Je familienaam"
 msgstr "Votre nom de famille"
 
@@ -811,18 +793,17 @@ msgstr "Dès que les gagnants seront connus, nous vous contacterons par e-mail."
 
 #: app/templates/events/suzuki/index.html:8
 msgid ""
-"Tot €6.000 korting! Beperkt aanbod... Kies het model dat u interesseert en vul "
-"het\n"
-"                offerteaanvraagformulier in om van dit aanbod te kunnen genieten."
+"Korting tot € 6.000! Aanbod beperkt geldig. Kies uw model en vul het "
+"offerteformulier in."
 msgstr ""
-"Jusqu’à € 6.000  de remise! Offre limitée… Sélectionnez le modèle qui vous "
+"Jusqu’à € 6.000 de remise! Offre limitée… Sélectionnez le modèle qui vous "
 "intéresse, et remplissez le formulaire de demande d’offre."
 
-#: app/templates/events/suzuki/index.html:21
-msgid "Vanaf €21.449"
+#: app/templates/events/suzuki/index.html:20
+msgid "Vanaf € 21.449"
 msgstr "A partir de € 21.449"
 
-#: app/templates/events/suzuki/index.html:24
+#: app/templates/events/suzuki/index.html:23
 msgid ""
 "Dankzij zijn krachtige SUV-karakter, diverse rijassistentiesystemen, ruime "
 "interieur en\n"
@@ -834,16 +815,16 @@ msgstr ""
 "généreux, sa calandre qui attire l’attention sont autant d’atouts qui facilitent "
 "votre quotiden et vous aident à dépasser vos limites."
 
-#: app/templates/events/suzuki/index.html:27
-#: app/templates/events/suzuki/index.html:47
+#: app/templates/events/suzuki/index.html:26
+#: app/templates/events/suzuki/index.html:46
 msgid "Vraag een offerte aan"
 msgstr "Demandez une offre"
 
-#: app/templates/events/suzuki/index.html:41
-msgid "Vanaf €19.999"
+#: app/templates/events/suzuki/index.html:40
+msgid "Vanaf € 19.999"
 msgstr "A partir de € 19.999"
 
-#: app/templates/events/suzuki/index.html:44
+#: app/templates/events/suzuki/index.html:43
 msgid ""
 "Op maat gemaakt voor al uw avonturen. De Suzuki Vitara onderscheidt zich door "
 "zijn\n"
@@ -865,13 +846,13 @@ msgstr ""
 #: app/templates/events/suzuki/s-cross.html:25
 msgid ""
 "Vanaf € 21.449<br>\n"
-"                    Met tot €6.000 korting, beperkt in de tijd!"
+"                    Met tot € 6.000 korting, beperkt in de tijd!"
 msgstr ""
 "A partir de € 21.449<br> \n"
-"Avec jusqu’à € 6.000  de remise! Offre limitée."
+"Avec jusqu’à € 6.000 de remise! Offre limitée."
 
-#: app/templates/events/suzuki/s-cross.html:40
-#: app/templates/events/suzuki/vitara.html:40
+#: app/templates/events/suzuki/s-cross.html:39
+#: app/templates/events/suzuki/vitara.html:39
 msgid ""
 "Door op de onderstaande knop te klikken, bevestigt u dat u kennis hebt genomen "
 "van ons"
@@ -879,19 +860,19 @@ msgstr ""
 "Ok, c’est tout! Nous espérons que vous gagnerez! En cliquant sur le bouton ci-"
 "dessous, vous confirmez que vous avez pris connaissance du"
 
-#: app/templates/events/suzuki/s-cross.html:41
-#: app/templates/events/suzuki/vitara.html:41
+#: app/templates/events/suzuki/s-cross.html:40
+#: app/templates/events/suzuki/vitara.html:40
 msgid "privacybeleid"
 msgstr "politique de confidentialité"
 
-#: app/templates/events/suzuki/s-cross.html:41
-#: app/templates/events/suzuki/vitara.html:41
+#: app/templates/events/suzuki/s-cross.html:40
+#: app/templates/events/suzuki/vitara.html:40
 msgid ""
 "en dat de gegevens van dit formulier gebruikt zullen worden door Suzuki Belgium."
 msgstr "et que les données de ce formulaire soient utilisées par Suzuki Belgium."
 
-#: app/templates/events/suzuki/s-cross.html:43
-#: app/templates/events/suzuki/vitara.html:43
+#: app/templates/events/suzuki/s-cross.html:42
+#: app/templates/events/suzuki/vitara.html:42
 msgid "Bevestigen"
 msgstr "Confirmer"
 
@@ -913,10 +894,32 @@ msgstr ""
 #: app/templates/events/suzuki/vitara.html:25
 msgid ""
 "Vanaf € 19.999<br>\n"
-"                    Met tot €6.000 korting, beperkt in de tijd!"
+"                    Met tot € 6.000 korting, beperkt in de tijd!"
 msgstr ""
 "A partir de € 19.999 \n"
+"<br>\n"
 "Avec jusqu’à € 6.000 de remise! Offre limitée!"
 
 #~ msgid "Wedstrijdreglement"
 #~ msgstr "Règlement du concours"
+
+#~ msgid "Aanspreking"
+#~ msgstr "Civilité"
+
+#~ msgid "Mr"
+#~ msgstr "Mr"
+
+#~ msgid "Ms"
+#~ msgstr "Ms"
+
+#~ msgid "Mme"
+#~ msgstr "Mme"
+
+#~ msgid ""
+#~ "Tot €6.000 korting! Beperkt aanbod... Kies het model dat u interesseert en "
+#~ "vul het\n"
+#~ "                offerteaanvraagformulier in om van dit aanbod te kunnen "
+#~ "genieten."
+#~ msgstr ""
+#~ "Jusqu’à € 6.000  de remise! Offre limitée… Sélectionnez le modèle qui vous "
+#~ "intéresse, et remplissez le formulaire de demande d’offre."
