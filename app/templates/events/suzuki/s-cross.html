@@ -5,18 +5,14 @@
     <section>
         <div class="section-suzuki-detail">
             <div class="suzuki-detail-left">
-                <img style="height: 329px; width: 681px;"
-                    src="{{ url_for('static', filename='images/suzuki/s-cross-1.png') }}">
+                <img src="{{ url_for('static', filename='images/suzuki/s-cross-1.png') }}">
                 <div class="suzuki-detail-left-two">
                     <div class="suzuki-detail-left-one">
-                        <img style="height: 522px; width: 335px;"
-                            src="{{ url_for('static', filename='images/suzuki/s-cross-2.png') }}">
+                        <img src="{{ url_for('static', filename='images/suzuki/s-cross-2.png') }}">
                     </div>
                     <div class="suzuki-detail-left-one">
-                        <img style="height: 253px; width: 335px;"
-                            src="{{ url_for('static', filename='images/suzuki/s-cross-3.png') }}">
-                        <img style="height: 253px; width: 335px;"
-                            src="{{ url_for('static', filename='images/suzuki/s-cross-4.png') }}">
+                        <img src="{{ url_for('static', filename='images/suzuki/s-cross-3.png') }}">
+                        <img src="{{ url_for('static', filename='images/suzuki/s-cross-4.png') }}">
                     </div>
                 </div>
             </div>
@@ -37,7 +33,9 @@
                         {{ form.phone(placeholder=_('Telefoonnummer')) }}
                     </div>
                     <p>{{ _('Door op de onderstaande knop te klikken, bevestigt u dat u kennis hebt genomen van ons') }}
-                        <a href="https://www.vroom.be/nl/privacybeleid/" target="_blank">{{ _('privacybeleid') }}</a> {{ _('en dat de gegevens van dit formulier gebruikt zullen worden door Suzuki Belgium.') }}</p>
+                        <a href="https://www.vroom.be/nl/privacybeleid/" target="_blank">{{ _('privacybeleid') }}</a> {{
+                        _('en dat de gegevens van dit formulier gebruikt zullen worden door Suzuki Belgium.') }}
+                    </p>
                     <button id="submit" name="submit" type="submit">
                         {{ _('Bevestigen') }}
                     </button>
