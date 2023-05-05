@@ -7,55 +7,63 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-05-04 18:01+0100\n"
+"POT-Creation-Date: 2023-05-05 07:47+0100\n"
 "PO-Revision-Date: 2023-05-04 18:01+0100\n"
 "Last-Translator: \n"
-"Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
+"Language-Team: fr <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Generated-By: Babel 2.12.1\n"
-"X-Generator: Poedit 3.2.2\n"
 
-#: app/events/qteam/forms.py:8
+#: app/events/routes.py:15
+msgid "Welcome"
+msgstr "Bienvenue"
+
+#: app/events/routes.py:20
+msgid "Regels"
+msgstr ""
+
+#: app/events/qteam/forms.py:8 app/events/suzuki/forms.py:8
 msgid "Hoeveel Q Team service centers zijn er in België aanwezig?"
 msgstr "Combien y a-t-il de centres de service Q Team en Belgique ?"
 
-#: app/events/qteam/forms.py:9
+#: app/events/qteam/forms.py:9 app/events/suzuki/forms.py:9
 msgid "Met welk type wagen kan je bij een Q Team service center terecht?"
 msgstr ""
-"Avec quel type de voiture pouvez-vous vous rendre dans un centre de service Q "
-"Team ?"
+"Avec quel type de voiture pouvez-vous vous rendre dans un centre de "
+"service Q Team ?"
 
-#: app/events/qteam/forms.py:10
+#: app/events/qteam/forms.py:10 app/events/suzuki/forms.py:10
 msgid "Vanaf wanneer is het aangeraden om op zomerbanden om te schakelen?"
 msgstr "A partir de quelle température est-il recommandé de passer aux pneus été ?"
 
-#: app/events/qteam/forms.py:12
+#: app/events/qteam/forms.py:12 app/events/suzuki/forms.py:12
 msgid "Hoeveel personen zullen aan deze competitie deelnemen?"
 msgstr "Combien de personnes participeront à ce concours?"
 
-#: app/events/qteam/forms.py:14
+#: app/events/qteam/forms.py:14 app/events/suzuki/forms.py:14
 msgid "Email"
 msgstr "Email"
 
-#: app/events/qteam/forms.py:15
+#: app/events/qteam/forms.py:15 app/events/suzuki/forms.py:15
 msgid "Voornaam"
 msgstr "Prénom"
 
-#: app/events/qteam/forms.py:16
+#: app/events/qteam/forms.py:16 app/events/suzuki/forms.py:16
 msgid "Familienaam"
 msgstr "Nom de famille"
 
-#: app/events/qteam/forms.py:17 app/templates/events/index.html:94
+#: app/events/qteam/forms.py:17 app/events/suzuki/forms.py:17
+#: app/templates/events/qteam/index.html:103
 msgid "Indienen"
 msgstr "Envoyer"
 
 #: app/events/qteam/routes.py:29
-msgid "Welcome"
-msgstr "Bienvenue"
+msgid "Q Team"
+msgstr ""
 
 #: app/events/qteam/routes.py:33
 msgid "Success"
@@ -65,164 +73,442 @@ msgstr "Réussi"
 msgid "Ended"
 msgstr "Terminé"
 
-#: app/events/qteam/routes.py:55 app/templates/events/results.html:6
+#: app/events/qteam/routes.py:55 app/templates/events/qteam/results.html:9
 msgid "Resultaten"
 msgstr "Résultats"
 
-#: app/templates/base.html:20
+#: app/events/suzuki/routes.py:11 app/templates/events/suzuki/index.html:6
+msgid "Suzuki"
+msgstr ""
+
+#: app/templates/base.html:21
 msgid "VROOM"
 msgstr "PIEUX"
 
-#: app/templates/base.html:42
+#: app/templates/base.html:39
 msgid "All rights reserved."
 msgstr "Tous droits réservés."
 
-#: app/templates/base.html:44
+#: app/templates/base.html:42
 msgid "Privacybeleid"
 msgstr "Politique de confidentialité"
 
-#: app/templates/base.html:47
+#: app/templates/base.html:45
 msgid "Verkoopsvoorwaarden"
 msgstr "Conditions"
 
-#: app/templates/base.html:50
+#: app/templates/base.html:49
 msgid "Cookiebeleid"
 msgstr "Politique en matière de cookies"
 
-#: app/templates/base.html:53
+#: app/templates/base.html:52
 msgid "Gebruiksvoorwaarden"
 msgstr "Conditions"
 
-#: app/templates/base.html:56
+#: app/templates/base.html:57
 msgid "Gegegevensgebruik"
 msgstr "Utilisation des données"
 
-#: app/templates/events/ended.html:6
+#: app/templates/events/index.html:6
+msgid "Events"
+msgstr ""
+
+#: app/templates/events/rules.html:6
+msgid "Wedstrijdreglement"
+msgstr ""
+
+#: app/templates/events/rules.html:7
+msgid "Artikel 1: algemeen"
+msgstr ""
+
+#: app/templates/events/rules.html:8
+msgid ""
+"Het bedrijf Movel BV, met hoofdzetel te 2600 Berchem (België), "
+"Posthofbrug 6-8, ingeschreven bij de Kruispuntbank der Ondernemingen "
+"onder het nummer 0794.705.855 en met btw-identificatienummer BE "
+"0794.705.855 (hierna de Organisator genoemd) organiseert in België een "
+"wedstrijd onder de naam “Porsche Club Francorchamps Days” (hierna de "
+"Wedstrijd genoemd (hierna het Evenement genoemd)."
+msgstr ""
+
+#: app/templates/events/rules.html:9
+msgid "Artikel 2: voorwaarden tot deelname"
+msgstr ""
+
+#: app/templates/events/rules.html:10
+msgid ""
+"De Wedstrijd staat open voor elke natuurlijke persoon die de leeftijd van"
+" 18 jaar bereikt heeft en die gedomicilieerd is in België (hierna de "
+"Deelnemer genoemd).\n"
+"\n"
+"            De medewerkers en personeelsleden van de Organisator, evenals"
+" de medewerkers en de personeelsleden van de ondernemingen die op de ene "
+"of andere manier betrokken zijn bij de organisatie of het verloop van de "
+"Wedstrijd (onder andere media, reclameagentschappen en leveranciers van "
+"(technische) diensten die betrokken zijn bij het verloop van de "
+"Wedstrijd) mogen niet deelnemen aan de Wedstrijd. Hun familieleden van de"
+" eerste graad mogen evenmin deelnemen.\n"
+"            \n"
+"            Door zijn deelname aan de Wedstrijd aanvaardt de Deelnemer "
+"onvoorwaardelijk en integraal het reglement, evenals elke beslissing die "
+"de Organisator zou nemen in het kader van deze Wedstrijd, en hij "
+"bevestigt de inhoud van het reglement gelezen, begrepen en zonder enige "
+"beperking aanvaard te hebben.\n"
+"            \n"
+"            De deelname gebeurt in eigen naam en kan in geen geval "
+"uitgaan van verschillende personen die georganiseerd handelen (of het nu "
+"gaat om een vereniging met rechtspersoonlijkheid of een feitelijke "
+"vereniging) of die op de ene of andere manier samenwerken om hun "
+"winstkansen te vergroten.\n"
+"            \n"
+"            In geval van misbruik, bedrog, fraude of indien er pertinente"
+" verdenkingen zouden bestaan dat een Deelnemer zich schuldig gemaakt zou "
+"hebben aan een van bovenstaande inbreuken, kan de betreffende Deelnemer "
+"zonder enige schadevergoeding uitgesloten worden van de Wedstrijd. Hij "
+"zal bijgevolg geen prijs kunnen winnen en/of de prijs die hij gewonnen "
+"zou hebben niet in ontvangst kunnen nemen. De Organisator kan hiervoor "
+"niet verantwoordelijk gesteld worden. Dit geldt ook in geval van (enige "
+"andere) overtreding, van welke aard ook, van (een van de bepalingen van) "
+"onderhavig reglement of van enige geldende wettelijke bepaling."
+msgstr ""
+
+#: app/templates/events/rules.html:19
+msgid "Artikel 3: de wedstrijd"
+msgstr ""
+
+#: app/templates/events/rules.html:20
+msgid ""
+"Het aantal deelnemers is onbeperkt. De Wedstrijd is alleen geldig in "
+"België. Deze Wedstrijd begint op 21/03/2023 en eindigt op 30/03/2023 om "
+"23.59 uur.\n"
+"\n"
+"            De sluitingsdatum voor deelnames is daarom 30/03/2023 om "
+"23.59 uur. Alle deelnames die na deze datum worden geregistreerd, worden "
+"uitgesloten van de Wedstrijd.\n"
+"            \n"
+"            Per Deelnemer wordt slechts één inzending voor de Wedstrijd "
+"geaccepteerd voor elk van de volgende periodes: van 21/03/2023 tot en met"
+" 30/03/2023;\n"
+"            \n"
+"            Indien een Deelnemer meer dan eenmaal deelneemt aan de "
+"Wedstrijd gedurende de bovengenoemde perioden, behoudt de Organisator "
+"zich het recht de Deelnemer uit te sluiten van de Wedstrijd."
+msgstr ""
+
+#: app/templates/events/rules.html:27
+msgid "Artikel 4. Deelname en bepaling van de winnaars"
+msgstr ""
+
+#: app/templates/events/rules.html:28
+msgid ""
+"Om deel te nemen aan de Wedstrijd moet de Deelnemer de gestelde vragen "
+"beantwoorden. De internetgebruiker verbindt zich ertoe geen pseudoniem te"
+" gebruiken van schokkende, beledigende, lasterlijke en racistische aard "
+"of in strijd met de in België geldende wetgeving.\n"
+"\n"
+"            Voor elke in artikel 3 genoemde periode wordt slechts één "
+"deelname per persoon aanvaard. Elke inschrijving die de Organisator na de"
+" in dit reglement vastgestelde termijnen ontvangt, wordt als ongeldig "
+"beschouwd.\n"
+"            \n"
+"            Elke valse, foutieve of onvolledige opgave van identiteit of "
+"e-mailadres leidt tot onmiddellijke uitsluiting van de deelname. De "
+"Organisator behoudt zich het recht voor om alle nodige controles van de "
+"identiteit en het e-mailadres van de deelnemers uit te voeren.\n"
+"            \n"
+"            Een Deelnemer wordt beschouwd als winnaar van de Wedstrijd "
+"als hij/zij:\n"
+"            \n"
+"                Voldoet aan de deelnemingsvoorwaarden die in de "
+"bovenstaande paragrafen en artikelen zijn vermeld;\n"
+"                Heeft correct gereageerd op de vragen over de auto in het"
+" algemeen en heeft het exacte antwoord gegeven of het antwoord dat het "
+"dichtst in de buurt komt bij de vraag \"Wat is het ronderecord van een "
+"Porsche?\";\n"
+"                Indien er meerdere exacte of bijna exacte antwoorden "
+"binnen dezelfde periode worden gegeven, wordt het antwoord dat als eerste"
+" is gegeven, geaccepteerd.\n"
+"            \n"
+"            De winnaars worden uiterlijk op 01/04/23 bekendgemaakt. De "
+"winnaars worden op die datum persoonlijk per e-mail verwittigd. De "
+"Organisator zal hen op dat ogenblik op de hoogte brengen van de "
+"voorwaarden en procedures die zij moeten volgen om hun prijs in ontvangst"
+" te nemen.\n"
+"            \n"
+"            De Deelnemer is daarom verplicht zijn/haar mailbox (inbox en "
+"spam) gade te slaan om na te gaan of hij/zij de wedstrijd heeft gewonnen."
+" De Organisator kan niet aansprakelijk worden gesteld indien de Deelnemer"
+" de officiële resultaten in zijn spamfolder ontvangt. Alleen de winnaars "
+"krijgen per e-mail bericht dat ze gewonnen hebben. Indien de Deelnemer "
+"zich niet houdt aan de per e-mail aangegeven procedure of zich niet "
+"tijdig meldt voor het Evenement, wordt zijn prijs als verloren beschouwd "
+"en blijft deze eigendom van de Organisator.\n"
+"            \n"
+"            Alle deelnemers aan de wedstrijd kunnen de resultaten van de "
+"gestelde vragen aan het einde van de wedstrijd bij de Organisator "
+"opvragen door een e-mail te sturen naar news@vroom.be."
+msgstr ""
+
+#: app/templates/events/rules.html:45
+msgid "Artikel 5: De prijs"
+msgstr ""
+
+#: app/templates/events/rules.html:46
+msgid ""
+"De prijzen voor de wedstrijd zijn als volgt: 5 x 1 keer een track race op"
+" het Porsche Days\n"
+"\n"
+"            De gewonnen prijzen zijn niet inwisselbaar voor hun "
+"geldwaarde. De toekenning van deze prijzen kan in geen enkel geval worden"
+" betwist, om welke reden dan ook, behalve in het geval van ernstig fouten"
+" of opzettelijk wangedrag van de Organisator.\n"
+"            \n"
+"            Eén Deelnemer kan slechts één maal winnen (= 1 winnaar en 1 "
+"kompaan) per periode genoemd in artikel 3.\n"
+"            \n"
+"            De Organisator behoudt zich het recht een alternatieve prijs "
+"van vergelijkbare waarde toe te kennen, als de hierboven beschreven prijs"
+" niet (meer) beschikbaar is of niet (meer) kan worden toegekend om "
+"redenen waarover de Organisator geen controle heeft.\n"
+"            \n"
+"            De Organisator kan niet verantwoordelijk worden gesteld voor "
+"eventuele vertragingen of verliezen bij de bezorging van de prijs, of als"
+" de prijs door nalatigheid van de winnaar naar een onjuist e-mailadres is"
+" gestuurd.\n"
+"            \n"
+"            De Organisator kan niet aansprakelijk worden gesteld voor "
+"enig incident/ongeval dat zich voordoet bij het gebruik van de prijs. "
+"Alle genoemde merken of productnamen zijn handelsmerken van hun "
+"respectieve eigenaars."
+msgstr ""
+
+#: app/templates/events/rules.html:57
+msgid "Artikel 6: bescherming van de persoonlijke gegevens"
+msgstr ""
+
+#: app/templates/events/rules.html:58
+msgid ""
+"De Deelnemer erkent en aanvaardt dat hij/zij door deelname aan de "
+"Wedstrijd de Organisator toestemming geeft om zijn/haar persoonlijke "
+"gegevens die via de website en het deelnameformulier zijn verzameld te "
+"gebruiken in de context van de Wedstrijd om een goede organisatie en een "
+"goed verloop van de Wedstrijd te waarborgen. De Deelnemer heeft het recht"
+" op toegang tot en verbetering van zijn/haar persoonsgegevens. De "
+"Deelnemer kan dit recht uitoefenen door een aangetekende brief te sturen "
+"naar de maatschappelijke zetel van de Organisator, zoals genoemd in "
+"artikel 1.\n"
+"\n"
+"            Voordat contact kan worden opgenomen met de winnaar, moet de "
+"deelnemer de velden naam, voornaam en e-mailadres invullen, die "
+"uitsluitend voor dit doel zullen worden gebruikt. Deze gegevens worden "
+"vernietigd 30 dagen na de datum van de officiële bekendmaking van de "
+"winnaars van de wedstrijd, te weten 01/04/2023."
+msgstr ""
+
+#: app/templates/events/rules.html:61
+msgid "Artikel 7: aansprakelijkheid"
+msgstr ""
+
+#: app/templates/events/rules.html:62
+msgid ""
+"Tenzij zijn aansprakelijkheid niet door de wet uitgesloten kan worden, "
+"kan de Organisator niet aansprakelijk gesteld worden tegenover de "
+"Deelnemers of derden voor de schade die (on)rechtstreeks veroorzaakt zou "
+"zijn als gevolg van de deelname aan de Wedstrijd of van het gebruik van "
+"de prijs.\n"
+"\n"
+"            In geval van overmacht of enige andere omstandigheid die "
+"losstaat van de wil van de Organisator, behoudt de Organisator zich het "
+"recht voor de Wedstrijd te wijzigen, uit te stellen, in te korten of stop"
+" te zetten. Hij behoudt zich eveneens het recht voor de regels, de prijs "
+"en de informatie met betrekking tot de Wedstrijd te wijzigen. De "
+"Organisator kan hiervoor niet verantwoordelijk gesteld worden. De "
+"Deelnemers zullen dus bij elke deelname opnieuw kennis moeten nemen van "
+"het reglement om zich ervan te vergewissen dat dit niet gewijzigd werd.\n"
+"            \n"
+"            De Organisator kan ook niet aansprakelijk gesteld worden voor"
+" het uitblijven van ontvangst of de laattijdige ontvangst van de email "
+"waarin de winnaar op de hoogte gebracht wordt van zijn overwinning, noch "
+"voor het niet gebruiken van de prijs en/of de wijziging van de prijs.\n"
+"            \n"
+"            De deelname aan de Wedstrijd via internet impliceert de "
+"kennis en de aanvaarding van de kenmerken en beperkingen van het "
+"internet, zoals de technische prestaties, de reactietijd voor het "
+"raadplegen of doorsturen van informatie. De Organisator kan in geen geval"
+" aansprakelijk gesteld worden voor het feit dat bepaalde gegevens niet "
+"beschermd zijn tegen eventuele interceptie ervan en tegen de risico’s op "
+"besmetting met eventuele virussen die op het internet circuleren. De "
+"Organisator besteedt de grootste zorg aan de organisatie van de "
+"Wedstrijd. Toch is het mogelijk dat informatie niet volledig of verkeerd "
+"is. Eventuele onnauwkeurigheden, drukfouten, typografie, vergissingen met"
+" betrekking tot de samenstelling of andere fouten en technische problemen"
+" of andere problemen met betrekking tot de Wedstrijd kunnen niet "
+"ingeroepen worden als basis voor enige verplichting of aansprakelijkheid "
+"uit hoofde van de Organisator. De Organisator kan ook niet aansprakelijk "
+"gesteld worden voor technische problemen die de deelname aan de Wedstrijd"
+" onmogelijk maken of voor technische problemen die het goede verloop van "
+"de Wedstrijd zouden verhinderen. Het is de verantwoordelijkheid van elke "
+"Deelnemer om zich ervan te vergewissen dat de technische middelen waarmee"
+" hij aan de Wedstrijd deelneemt correct functioneren. De Organisator kan "
+"niet aansprakelijk gesteld worden voor eventuele incompatibiliteit tussen"
+" de technologieën die gebruikt worden voor de Wedstrijd en de "
+"configuratie van de hardware en/of software die gebruikt wordt door de "
+"Deelnemer."
+msgstr ""
+
+#: app/templates/events/qteam/ended.html:8
 msgid "Helaas!"
 msgstr "Malheureusement!"
 
-#: app/templates/events/ended.html:7
+#: app/templates/events/qteam/ended.html:9
+#, fuzzy
 msgid ""
-"Deze wedstrijd is afgelopen. Maar maak je geen zorgen, we zullen binnenkort "
-"gelijkaardige wedstrijden organiseren. We kijken er naar uit om je daar opnieuw "
-"te zien!"
+"Deze wedstrijd is afgelopen. Maar maak je geen zorgen, we zullen "
+"binnenkort gelijkaardige wedstrijden\n"
+"            organiseren. We kijken er naar uit om je daar opnieuw te zien!"
 msgstr ""
-"Ce concours est terminé. Mais ne vous inquiétez pas, nous organiserons bientôt "
-"des compétitions similaires. Nous avons hâte de vous y revoir!"
+"Ce concours est terminé. Mais ne vous inquiétez pas, nous organiserons "
+"bientôt des compétitions similaires. Nous avons hâte de vous y revoir!"
 
-#: app/templates/events/index.html:5
+#: app/templates/events/qteam/index.html:8
 msgid "Deze wedstrijd wordt u aangeboden door VROOM, in samenwerking met Q Team."
 msgstr "Ce concours vous est proposé par VROOM en collaboration avec Q Team."
 
-#: app/templates/events/index.html:6
+#: app/templates/events/qteam/index.html:9
 msgid "Rij de zomer fris en veilig te gemoed!"
 msgstr "L’été s’annonce sous les meilleurs auspices !"
 
-#: app/templates/events/index.html:7
+#: app/templates/events/qteam/index.html:10
+#, fuzzy
 msgid ""
-"Upgrade je wagen en rijcomfort door het winnen van een van de vier gloednieuwe "
-"bandensets van Continental,\n"
-"        Pirelli of Michelin. Montage in een Q Team center inclusief!\n"
-"        Meedoen kan door het beantwoorden van drie eenvoudige vragen. Mis het "
-"niet - binnnekort ben je weg met een\n"
-"        nieuwe set banden!"
+"Upgrade je wagen en rijcomfort door het winnen van een van de vier "
+"gloednieuwe bandensets van\n"
+"            Continental,\n"
+"            Pirelli of Michelin. Montage in een Q Team center inclusief!\n"
+"            Meedoen kan door het beantwoorden van drie eenvoudige vragen."
+" Mis het niet - binnnenkort ben je weg met een\n"
+"            nieuwe set banden!"
 msgstr ""
-"Améliorez votre confort de conduite et celui de votre voiture en remportant l’un "
-"des quatre nouveaux jeux de pneus de Continental, Pirelli ou Michelin. "
-"L’installation est incluse dans l’un des centres Q Team !\n"
-"Vous pouvez participer en répondant à trois questions simples. Ne manquez pas "
-"cette occasion - bientôt, vous roulerez avec un nouveau jeu de pneus !"
+"Améliorez votre confort de conduite et celui de votre voiture en "
+"remportant l’un des quatre nouveaux jeux de pneus de Continental, Pirelli"
+" ou Michelin. L’installation est incluse dans l’un des centres Q Team !\n"
+"Vous pouvez participer en répondant à trois questions simples. Ne manquez"
+" pas cette occasion - bientôt, vous roulerez avec un nouveau jeu de pneus"
+" !"
 
-#: app/templates/events/index.html:11
+#: app/templates/events/qteam/index.html:15
 msgid "Dankzij Q Team, sterk in banden en onderhoud."
 msgstr "Q Team, solide en pneus et en entretien."
 
-#: app/templates/events/index.html:12
+#: app/templates/events/qteam/index.html:16
+#, fuzzy
 msgid ""
-"Wist u dat Q Team bijna 100 servicecenters heeft verspreid over België, waar u "
-"terecht kunt voor banden,\n"
-"        velgen en onderhoud - voor zowel particuliere als professionele "
-"voertuigen en tegen scherpe prijzen? Of u nu een\n"
-"        personenauto, bestelwagen of vrachtwagen heeft, Q Team is de onbetwiste "
-"marktleider in alle drie deze\n"
-"        categorieën. Dit voor zowel persoonlijke wagens, bedrijfswagens als "
-"leasewagens."
+"Wist u dat Q Team bijna 100 servicecenters heeft verspreid over België, "
+"waar u terecht kunt voor\n"
+"            banden,\n"
+"            velgen en onderhoud - voor zowel particuliere als "
+"professionele voertuigen en tegen scherpe prijzen? Of u nu\n"
+"            een\n"
+"            personenauto, bestelwagen of vrachtwagen heeft, Q Team is de "
+"onbetwiste marktleider in alle drie deze\n"
+"            categorieën. Dit voor zowel persoonlijke wagens, "
+"bedrijfswagens als leasewagens."
 msgstr ""
-"Saviez-vous que Q Team possède près de 100 centres de service répartis dans "
-"toute la Belgique où vous pouvez acheter des pneus, des jantes et effectuer "
-"l’entretien de votre véhicule privé ou professionnel à des prix compétitifs ? "
-"Que vous ayez une voiture, une camionnette ou un camion, Q Team est le leader "
-"incontesté du marché dans ces trois catégories. Cela s’applique aux voitures "
-"personnelles, aux voitures de société et aux voitures de leasing."
+"Saviez-vous que Q Team possède près de 100 centres de service répartis "
+"dans toute la Belgique où vous pouvez acheter des pneus, des jantes et "
+"effectuer l’entretien de votre véhicule privé ou professionnel à des prix"
+" compétitifs ? Que vous ayez une voiture, une camionnette ou un camion, Q"
+" Team est le leader incontesté du marché dans ces trois catégories. Cela "
+"s’applique aux voitures personnelles, aux voitures de société et aux "
+"voitures de leasing."
 
-#: app/templates/events/index.html:18
+#: app/templates/events/qteam/index.html:23
+msgid ""
+"Tip: all info is te vinden op de <a href=\"https://www.qteam.be\" "
+"target=\"_blank\">Q Team website</a>"
+msgstr "Astuce: toutes les informations sont disponibles sur <a href=\"https://www.qteam.be\" "
+"target=\"_blank\">le site web de Q Team</a>"
+
+#: app/templates/events/qteam/index.html:25
 msgid "Gelieve 1 van de antwoorden aan te duiden."
 msgstr "Veuillez indiquer 1 des réponses."
 
-#: app/templates/events/index.html:27
+#: app/templates/events/qteam/index.html:34
 msgid "Bijna 50"
 msgstr "Près de 50"
 
-#: app/templates/events/index.html:28
+#: app/templates/events/qteam/index.html:35
 msgid "Bijna 70"
 msgstr "Près de 70"
 
-#: app/templates/events/index.html:29
+#: app/templates/events/qteam/index.html:36
 msgid "Bijna 100"
 msgstr "Près de 100"
 
-#: app/templates/events/index.html:41
+#: app/templates/events/qteam/index.html:48
 msgid "Particuliere wagen"
 msgstr "Voiture privée"
 
-#: app/templates/events/index.html:42
+#: app/templates/events/qteam/index.html:49
 msgid "Particuliere wagen en bedrijfswagen"
 msgstr "Voiture privée et voiture de société"
 
-#: app/templates/events/index.html:43
+#: app/templates/events/qteam/index.html:50
 msgid "Particuliere wagen, bedrijfswagen en leasewagen"
 msgstr "Voiture particulière, voiture de société et voiture de leasing"
 
-#: app/templates/events/index.html:55
+#: app/templates/events/qteam/index.html:63
 msgid "2 graden celsius"
 msgstr "2 degrés Celsius"
 
-#: app/templates/events/index.html:56
+#: app/templates/events/qteam/index.html:64
 msgid "7 graden celsius"
 msgstr "7 degrés Celsius"
 
-#: app/templates/events/index.html:57
+#: app/templates/events/qteam/index.html:65
 msgid "15 graden celcius"
 msgstr "15 degrés Celsius"
 
-#: app/templates/events/index.html:74
+#: app/templates/events/qteam/index.html:82
 msgid "Je email"
 msgstr "Votre adresse e-mail"
 
-#: app/templates/events/index.html:81
+#: app/templates/events/qteam/index.html:89
 msgid "Je voornaam"
 msgstr "Votre prénom"
 
-#: app/templates/events/index.html:88
+#: app/templates/events/qteam/index.html:96
 msgid "Je familienaam"
 msgstr "Votre nom de famille"
 
-#: app/templates/events/results.html:8
+#: app/templates/events/qteam/index.html:101
+msgid ""
+"Ok, dat is alles! We hopen dat je zal winnen! Door op de onderstaande "
+"knop te klikken, bevestig je dat je kennis hebt genomen van het"
+msgstr ""
+
+#: app/templates/events/qteam/index.html:101
+msgid "wedstrijdreglement"
+msgstr ""
+
+#: app/templates/events/qteam/results.html:11
 msgid "Password:"
 msgstr "Mot de passe:"
 
-#: app/templates/events/results.html:9
+#: app/templates/events/qteam/results.html:12
 msgid "Password"
 msgstr "Mot de passe"
 
-#: app/templates/events/results.html:10
+#: app/templates/events/qteam/results.html:13
 msgid "Submit"
 msgstr "Envoyer"
 
-#: app/templates/events/thank-you.html:6
+#: app/templates/events/qteam/thank-you.html:9
 msgid "Bedankt voor je deelname!"
 msgstr "Merci de votre participation!"
 
-#: app/templates/events/thank-you.html:7
-msgid "Zodra een winnaar bekend is nemen we contact op via mail."
-msgstr "Dès qu’un gagnant est connu, nous vous contacterons par e-mail."
+#: app/templates/events/qteam/thank-you.html:10
+#, fuzzy
+msgid "Zodra de winnaars bekend zijn nemen we contact op via mail."
+msgstr "Dès que les gagnants seront connus, nous vous contacterons par e-mail."
+
