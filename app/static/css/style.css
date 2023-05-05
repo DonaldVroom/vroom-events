@@ -66,6 +66,10 @@ section {
     padding-bottom: 30px;
 }
 
+input[type=number] {
+    height: 23px;
+}
+
 /* Q team specific end */
 
 /* Suzuki specific start */

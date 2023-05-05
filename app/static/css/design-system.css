@@ -72,9 +72,9 @@ select {
     background: none;
     border: 1px solid #000000;
     padding: 7px 0 7px 15px;
-    border-radius: 20px;
+    border-radius: 8px;
     margin-bottom: 40px;
-    height: 23px;
+    height: 51px;
 }
 
 input[type=text] {
@@ -92,8 +92,8 @@ button, .button {
     margin-bottom: 45px;
     border: none;
     color: #ffffff;
-    height: 37px;
-    width: 159px;
+    height: 65px;
+    width: 100%;
     font-size: 16px;
     line-height: 22px;
 }
@@ -138,9 +138,6 @@ th, td{
 /* Custom selector start */
 
 .custom-select {
-    font-family: 'Satoshi-Regular';
-    font-size: 16px;
-    line-height: 22px;
     margin: 10px 0 20px 0;
 }
 
@@ -154,6 +151,8 @@ th, td{
     border-radius: 20px;
     cursor: pointer;
     margin-right: 10px;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .options-list li:hover {
