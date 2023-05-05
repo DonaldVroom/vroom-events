@@ -2,109 +2,114 @@
 
 {% block content %}
 <div class="grid-qteam">
-{% include "events/qteam/_header.html" %}
-<section>
-    <div class="section-qteam">
-        <span>{{ _('Deze wedstrijd wordt u aangeboden door VROOM, in samenwerking met Q Team.') }}</span>
-        <h1>{{ _('Rij de zomer fris en veilig tegemoet!') }}</h1>
-        <p>{{ _('Upgrade je wagen en rijcomfort door het winnen van een van de vier gloednieuwe bandensets van
-            Continental,
-            Pirelli of Michelin. Montage in een Q Team center inclusief!
-            Meedoen kan door het beantwoorden van drie eenvoudige vragen. Mis het niet - binnenkort ben je weg met een
-            nieuwe set banden!') }}</p>
-        <h1>{{ _('Dankzij Q Team, sterk in banden en onderhoud.') }}</h1>
-        <p>{{ _('Wist u dat Q Team bijna 100 servicecenters heeft verspreid over België, waar u terecht kunt voor
-            banden,
-            velgen en onderhoud - voor zowel particuliere als professionele voertuigen en tegen scherpe prijzen? Of u nu
-            een
-            personenauto, bestelwagen of vrachtwagen heeft, Q Team is de onbetwiste marktleider in alle drie deze
-            categorieën. Dit voor zowel persoonlijke wagens, bedrijfswagens als leasewagens.') }}</p>
-        <hr>
-        <span>{{ _('Tip: all info is te vinden op de <a href="https://www.qteam.be" target="_blank">Q Team website</a>') }}</span>
-        <div class="error-text" style="display: none; color: red;">
-            {{ _('Gelieve 1 van de antwoorden aan te duiden.') }}
-        </div>
-        <form method="post" action="" enctype="multipart/form-data">
-            {{ form.hidden_tag() }}
-            <div>
-                {{ form.how_many_centers.label }}
-                <div class="custom-select" data-name="how_many_centers">
-                    {{ form.how_many_centers(type='hidden') }}
-                    <ul class="options-list">
-                        <li class="option" data-value="0">{{ _('Bijna 50') }}</li>
-                        <li class="option" data-value="1">{{ _('Bijna 70') }}</li>
-                        <li class="option" data-value="2">{{ _('Bijna 100') }}</li>
-                    </ul>
-                </div>
-                {% for error in form.how_many_centers.errors %}
-                <span class="error-text">{{ error }}</span>
-                {% endfor %}
-            </div>
-            <div>
-                {{ form.which_type_car.label }}
-                <div class="custom-select" data-name="which_type_car">
-                    {{ form.which_type_car(type='hidden') }}
-                    <ul class="options-list">
-                        <li class="option" data-value="0">{{ _('Particuliere wagen') }}</li>
-                        <li class="option" data-value="1">{{ _('Particuliere wagen en bedrijfswagen') }}</li>
-                        <li class="option" data-value="2">{{ _('Particuliere wagen, bedrijfswagen en leasewagen') }}
-                        </li>
-                    </ul>
-                </div>
-                {% for error in form.which_type_car.errors %}
-                <span class="error-text">{{ error }}</span>
-                {% endfor %}
-            </div>
-            <div>
-                {{ form.when_summer_tires.label }}
-                <div class="custom-select" data-name="when_summer_tires">
-                    {{ form.when_summer_tires(type='hidden') }}
-                    <ul class="options-list">
-                        <li class="option" data-value="0">{{ _('2 graden celsius') }}</li>
-                        <li class="option" data-value="1">{{ _('7 graden celsius') }}</li>
-                        <li class="option" data-value="2">{{ _('15 graden celcius') }}</li>
-                    </ul>
-                </div>
-                {% for error in form.when_summer_tires.errors %}
-                <span class="error-text">{{ error }}</span>
-                {% endfor %}
-            </div>
-            <div>
-                {{ form.how_many_people.label }}
-                {{ form.how_many_people() }}
-                {% for error in form.how_many_people.errors %}
-                <span class="error-text">{{ error }}</span>
-                {% endfor %}
-            </div>
+    {% include "events/qteam/_header.html" %}
+    <section>
+        <div class="section-qteam">
+            <span>{{ _('Deze wedstrijd wordt u aangeboden door VROOM, in samenwerking met Q Team.') }}</span>
+            <h1>{{ _('Rij de zomer fris en veilig tegemoet!') }}</h1>
+            <p>{{ _('Upgrade je wagen en rijcomfort door het winnen van een van de vier gloednieuwe bandensets van
+                Continental,
+                Pirelli of Michelin. Montage in een Q Team center inclusief!
+                Meedoen kan door het beantwoorden van drie eenvoudige vragen. Mis het niet - binnenkort ben je weg met
+                een
+                nieuwe set banden!') }}</p>
+            <h1>{{ _('Dankzij Q Team, sterk in banden en onderhoud.') }}</h1>
+            <p>{{ _('Wist u dat Q Team bijna 100 servicecenters heeft verspreid over België, waar u terecht kunt voor
+                banden,
+                velgen en onderhoud - voor zowel particuliere als professionele voertuigen en tegen scherpe prijzen? Of
+                u nu
+                een
+                personenauto, bestelwagen of vrachtwagen heeft, Q Team is de onbetwiste marktleider in alle drie deze
+                categorieën. Dit voor zowel persoonlijke wagens, bedrijfswagens als leasewagens.') }}</p>
             <hr>
-            <div>
-                {{ form.email.label }}
-                {{ form.email(placeholder=_('Je email')) }}
-                {% for error in form.email.errors %}
-                <span class="error-text">{{ error }}</span>
-                {% endfor %}
+            <span>{{ _('Tip: all info is te vinden op de <a href="https://www.qteam.be" target="_blank">Q Team
+                    website</a>') }}</span>
+            <div class="error-text" style="display: none; color: red;">
+                {{ _('Gelieve 1 van de antwoorden aan te duiden.') }}
             </div>
-            <div>
-                {{ form.first_name.label }}
-                {{ form.first_name(placeholder=_('Je voornaam')) }}
-                {% for error in form.first_name.errors %}
-                <span class="error-text">{{ error }}</span>
-                {% endfor %}
-            </div>
-            <div>
-                {{ form.last_name.label }}
-                {{ form.last_name(placeholder=_('Je familienaam')) }}
-                {% for error in form.last_name.errors %}
-                <span class="error-text">{{ error }}</span>
-                {% endfor %}
-            </div>
-            <p>{{ _('Ok, dat is alles! We hopen dat je zal winnen! Door op de onderstaande knop te klikken, bevestig je dat je kennis hebt genomen van het') }} <a href="{{ url_for('events.qteam_rules') }}" target="_blank">{{ _('wedstrijdreglement') }}</a>.</p>
-            <button id="submit" name="submit" type="submit">
-                {{ _('Indienen') }}
-            </button>
-        </form>
-    </div>
-</section>
+            <form method="post" action="" enctype="multipart/form-data">
+                {{ form.hidden_tag() }}
+                <div>
+                    {{ form.how_many_centers.label }}
+                    <div class="custom-select" data-name="how_many_centers">
+                        {{ form.how_many_centers(type='hidden') }}
+                        <ul class="options-list">
+                            <li class="option" data-value="0">{{ _('Bijna 50') }}</li>
+                            <li class="option" data-value="1">{{ _('Bijna 70') }}</li>
+                            <li class="option" data-value="2">{{ _('Bijna 100') }}</li>
+                        </ul>
+                    </div>
+                    {% for error in form.how_many_centers.errors %}
+                    <span class="error-text">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div>
+                    {{ form.which_type_car.label }}
+                    <div class="custom-select" data-name="which_type_car">
+                        {{ form.which_type_car(type='hidden') }}
+                        <ul class="options-list">
+                            <li class="option" data-value="0">{{ _('Particuliere wagen') }}</li>
+                            <li class="option" data-value="1">{{ _('Particuliere wagen en bedrijfswagen') }}</li>
+                            <li class="option" data-value="2">{{ _('Particuliere wagen, bedrijfswagen en leasewagen') }}
+                            </li>
+                        </ul>
+                    </div>
+                    {% for error in form.which_type_car.errors %}
+                    <span class="error-text">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div>
+                    {{ form.when_summer_tires.label }}
+                    <div class="custom-select" data-name="when_summer_tires">
+                        {{ form.when_summer_tires(type='hidden') }}
+                        <ul class="options-list">
+                            <li class="option" data-value="0">{{ _('2 graden celsius') }}</li>
+                            <li class="option" data-value="1">{{ _('7 graden celsius') }}</li>
+                            <li class="option" data-value="2">{{ _('15 graden celcius') }}</li>
+                        </ul>
+                    </div>
+                    {% for error in form.when_summer_tires.errors %}
+                    <span class="error-text">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div>
+                    {{ form.how_many_people.label }}
+                    {{ form.how_many_people() }}
+                    {% for error in form.how_many_people.errors %}
+                    <span class="error-text">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <hr>
+                <div>
+                    {{ form.email.label }}
+                    {{ form.email(placeholder=_('Je email')) }}
+                    {% for error in form.email.errors %}
+                    <span class="error-text">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div>
+                    {{ form.first_name.label }}
+                    {{ form.first_name(placeholder=_('Je voornaam')) }}
+                    {% for error in form.first_name.errors %}
+                    <span class="error-text">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div>
+                    {{ form.last_name.label }}
+                    {{ form.last_name(placeholder=_('Je familienaam')) }}
+                    {% for error in form.last_name.errors %}
+                    <span class="error-text">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <p>{{ _('Ok, dat is alles! We hopen dat je zal winnen! Door op de onderstaande knop te klikken, bevestig
+                    je dat je kennis hebt genomen van het') }} <a href="{{ url_for('events.qteam_rules') }}"
+                        target="_blank">{{ _('wedstrijdreglement') }}</a>.</p>
+                <button id="submit" name="submit" type="submit">
+                    {{ _('Indienen') }}
+                </button>
+            </form>
+        </div>
+    </section>
 </div>
 <script>
     document.addEventListener('DOMContentLoaded', function () {

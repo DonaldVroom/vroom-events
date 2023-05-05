@@ -165,14 +165,26 @@ input[type=number] {
 }
 
 .suzuki-box .button {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 28.5px 0;
     width: 100%;
     text-align: center;
     text-decoration: none;
-    padding-top: 10px;
+    height: 50px;
 }
 
+.grid-suzuki-detail {
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    grid-template-rows: 1fr;
+}
+
+.section-suzuki-detail {
+    display: flex;
+}
 
 /* Suzuki specific end */
 

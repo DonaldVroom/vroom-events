@@ -47,4 +47,9 @@ def create_app(config_class=Config):
 
 @babel.localeselector
 def get_locale():
-    return request.accept_languages.best_match(current_app.config['LANGUAGES'])
+    locale = request.accept_languages.best_match(current_app.config['LANGUAGES'])
+    
+    if locale not in current_app.config['LANGUAGES']:
+        locale = 'nl'
+    
+    return locale
