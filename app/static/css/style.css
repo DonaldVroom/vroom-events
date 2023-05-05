@@ -314,6 +314,7 @@ footer ul li a {
 
     .grid-suzuki {
         justify-content: center;
+        justify-items: center;
     }
 
     .header-suzuki {
@@ -385,6 +386,10 @@ footer ul li a {
     input[type=password],
     select {
         margin-bottom: 20px;
+    }
+
+    .suzuki-detail-right form input[type=text], .suzuki-detail-right form select {
+        width: 93%;
     }
 
     /* Suzuki specific end */
