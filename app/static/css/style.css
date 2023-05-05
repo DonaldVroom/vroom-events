@@ -100,10 +100,6 @@ section {
     text-align: left;
 }
 
-.section-suzuki p {
-    padding-bottom: 30px;
-}
-
 .suzuki-two-box {
     display: flex;
     justify-content: space-around;
@@ -149,6 +145,10 @@ section {
 
 .suzuki-brand-text {
     width: 223px;
+}
+
+.suzuki-box-description {
+    margin: 0 20px;
 }
 
 
