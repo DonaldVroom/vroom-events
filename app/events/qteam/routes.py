@@ -24,16 +24,16 @@ def qteam_main():
             db.session.add(entry)
             db.session.commit()
             
-            return redirect(url_for('events.success'))
+            return redirect(url_for('events.qteam_success'))
     elif request.method == 'GET': 
         return render_template('events/qteam/index.html', title=(_('Q Team')), form=form)
 
 @bp.route('/q-team/success', methods=['GET'])
-def success():
+def qteam_success():
     return render_template('events/qteam/thank-you.html', title=(_('Success')))
 
 @bp.route('/q-team/ended', methods=['GET'])
-def ended():
+def qteam_ended():
     return render_template('events/qteam/ended.html', title=(_('Ended')))
 
 @bp.route('/q-team/results', methods=['GET', 'POST'])
@@ -53,3 +53,7 @@ def validate_password():
             return 'Invalid password'
     elif request.method == 'GET': 
         return render_template('events/qteam/results.html', title=(_('Resultaten')))
+    
+@bp.route('/q-team/rules', methods=['GET', 'POST'])
+def qteam_rules():
+        return render_template('events/qteam/rules.html', title=(_('Regels')))

@@ -68,8 +68,94 @@ section {
 
 /* Q team specific end */
 
+/* Suzuki specific start */
+
+.grid-suzuki {
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    grid-template-rows: 500px 1fr;
+}
+
+.header-suzuki {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../images/suzuki/header-suzuki.png');
+    background-position: center;
+    border-radius: 20px;
+    margin: 0 75px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.header-suzuki img {
+    display: block;
+    width: 178px;
+}
+
+.section-suzuki {
+    width: 962px;
+    text-align: left;
+}
+
+.section-suzuki p {
+    padding-bottom: 30px;
+}
+
+.suzuki-two-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.suzuki-box {
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    width: 464px;
+    display: flex;
+    flex-direction: column;
+}
+
+.suzuki-box p {
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.suzuki-span {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #0C1D17;
+}
+
+.suzuki-box .main-img {
+    width: 464px;
+    height: 250px;
+    border-top: 8px;
+}
+
+.suzuki-box-header {
+    margin: 27px 24px 17px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.suzuki-small-img {
+    width: 40px;
+    height: 40px;
+}
+
+.suzuki-brand-text {
+    width: 223px;
+}
+
+
+/* Suzuki specific end */
+
 footer {
-    background-color: #000000;
+    background-color: #1C2E2E;
     display: flex;
     flex-direction: row;
     justify-content: center;

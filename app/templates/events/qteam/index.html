@@ -6,7 +6,7 @@
 <section>
     <div class="section-qteam">
         <span>{{ _('Deze wedstrijd wordt u aangeboden door VROOM, in samenwerking met Q Team.') }}</span>
-        <h1>{{ _('Rij de zomer fris en veilig te gemoed!') }}</h1>
+        <h1>{{ _('Rij de zomer fris en veilig tegemoet!') }}</h1>
         <p>{{ _('Upgrade je wagen en rijcomfort door het winnen van een van de vier gloednieuwe bandensets van
             Continental,
             Pirelli of Michelin. Montage in een Q Team center inclusief!
@@ -98,7 +98,7 @@
                 <span class="error-text">{{ error }}</span>
                 {% endfor %}
             </div>
-            <p>{{ _('Ok, dat is alles! We hopen dat je zal winnen! Door op de onderstaande knop te klikken, bevestig je dat je kennis hebt genomen van het') }} <a href="{{ url_for('events.rules') }}" target="_blank">{{ _('wedstrijdreglement') }}</a>.</p>
+            <p>{{ _('Ok, dat is alles! We hopen dat je zal winnen! Door op de onderstaande knop te klikken, bevestig je dat je kennis hebt genomen van het') }} <a href="{{ url_for('events.qteam_rules') }}" target="_blank">{{ _('wedstrijdreglement') }}</a>.</p>
             <button id="submit" name="submit" type="submit">
                 {{ _('Indienen') }}
             </button>

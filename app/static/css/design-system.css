@@ -2,7 +2,7 @@
 
 body {
     font-family: "Satoshi", sans-serif;
-    font-feature-settings: "salt", "ss02";
+    font-feature-settings: 'ss03' on, 'ss02' on;
   }
 
 a,
@@ -35,6 +35,14 @@ h1 {
     font-family: 'Satoshi-Bold';
     font-size: 40px;
     line-height: 54px;
+    font-weight: 700;
+    margin: 10px 0 10px 0;
+}
+
+h2 {
+    font-family: 'Satoshi-Bold';
+    font-size: 30px;
+    line-height: 37px;
     font-weight: 700;
     margin: 10px 0 10px 0;
 }
