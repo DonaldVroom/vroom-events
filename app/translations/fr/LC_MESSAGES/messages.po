@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-05-05 11:07+0100\n"
-"PO-Revision-Date: 2023-05-05 11:14+0100\n"
+"POT-Creation-Date: 2023-05-05 12:57+0100\n"
+"PO-Revision-Date: 2023-05-05 12:58+0100\n"
 "Last-Translator: \n"
 "Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
@@ -54,7 +54,7 @@ msgid "Familienaam"
 msgstr "Nom de famille"
 
 #: app/events/qteam/forms.py:17 app/events/suzuki/forms.py:17
-#: app/templates/events/qteam/index.html:103
+#: app/templates/events/qteam/index.html:108
 msgid "Indienen"
 msgstr "Envoyer"
 
@@ -78,9 +78,14 @@ msgstr "Résultats"
 msgid "Regels"
 msgstr "Règlement"
 
-#: app/events/suzuki/routes.py:11
+#: app/events/suzuki/routes.py:11 app/templates/events/suzuki/index.html:17
+#: app/templates/events/suzuki/index.html:37
 msgid "Suzuki"
 msgstr "Suzuki"
+
+#: app/events/suzuki/routes.py:15 app/templates/events/suzuki/index.html:18
+msgid "S Cross"
+msgstr ""
 
 #: app/templates/base.html:21
 msgid "VROOM"
@@ -139,11 +144,12 @@ msgstr "L’été s’annonce sous les meilleurs auspices !"
 msgid ""
 "Upgrade je wagen en rijcomfort door het winnen van een van de vier gloednieuwe "
 "bandensets van\n"
-"            Continental,\n"
-"            Pirelli of Michelin. Montage in een Q Team center inclusief!\n"
-"            Meedoen kan door het beantwoorden van drie eenvoudige vragen. Mis "
-"het niet - binnenkort ben je weg met een\n"
-"            nieuwe set banden!"
+"                Continental,\n"
+"                Pirelli of Michelin. Montage in een Q Team center inclusief!\n"
+"                Meedoen kan door het beantwoorden van drie eenvoudige vragen. "
+"Mis het niet - binnenkort ben je weg met\n"
+"                een\n"
+"                nieuwe set banden!"
 msgstr ""
 "Améliorez votre confort de conduite et celui de votre voiture en remportant l’un "
 "des quatre nouveaux jeux de pneus de Continental, Pirelli ou Michelin. "
@@ -151,22 +157,23 @@ msgstr ""
 "Vous pouvez participer en répondant à trois questions simples. Ne manquez pas "
 "cette occasion - bientôt, vous roulerez avec un nouveau jeu de pneus !"
 
-#: app/templates/events/qteam/index.html:15
+#: app/templates/events/qteam/index.html:16
 msgid "Dankzij Q Team, sterk in banden en onderhoud."
 msgstr "Q Team, solide en pneus et en entretien."
 
-#: app/templates/events/qteam/index.html:16
+#: app/templates/events/qteam/index.html:17
 msgid ""
 "Wist u dat Q Team bijna 100 servicecenters heeft verspreid over België, waar u "
 "terecht kunt voor\n"
-"            banden,\n"
-"            velgen en onderhoud - voor zowel particuliere als professionele "
-"voertuigen en tegen scherpe prijzen? Of u nu\n"
-"            een\n"
-"            personenauto, bestelwagen of vrachtwagen heeft, Q Team is de "
+"                banden,\n"
+"                velgen en onderhoud - voor zowel particuliere als professionele "
+"voertuigen en tegen scherpe prijzen? Of\n"
+"                u nu\n"
+"                een\n"
+"                personenauto, bestelwagen of vrachtwagen heeft, Q Team is de "
 "onbetwiste marktleider in alle drie deze\n"
-"            categorieën. Dit voor zowel persoonlijke wagens, bedrijfswagens als "
-"leasewagens."
+"                categorieën. Dit voor zowel persoonlijke wagens, bedrijfswagens "
+"als leasewagens."
 msgstr ""
 "Saviez-vous que Q Team possède près de 100 centres de service répartis dans "
 "toute la Belgique où vous pouvez acheter des pneus, des jantes et effectuer "
@@ -175,75 +182,77 @@ msgstr ""
 "incontesté du marché dans ces trois catégories. Cela s’applique aux voitures "
 "personnelles, aux voitures de société et aux voitures de leasing."
 
-#: app/templates/events/qteam/index.html:23
+#: app/templates/events/qteam/index.html:25
 msgid ""
 "Tip: all info is te vinden op de <a href=\"https://www.qteam.be\" "
-"target=\"_blank\">Q Team website</a>"
+"target=\"_blank\">Q Team\n"
+"                    website</a>"
 msgstr ""
 "Astuce: toutes les informations sont disponibles sur <a href=\"https://www.qteam."
 "be\" target=\"_blank\">le site web de Q Team</a>"
 
-#: app/templates/events/qteam/index.html:25
+#: app/templates/events/qteam/index.html:28
 msgid "Gelieve 1 van de antwoorden aan te duiden."
 msgstr "Veuillez indiquer 1 des réponses."
 
-#: app/templates/events/qteam/index.html:34
+#: app/templates/events/qteam/index.html:37
 msgid "Bijna 50"
 msgstr "Près de 50"
 
-#: app/templates/events/qteam/index.html:35
+#: app/templates/events/qteam/index.html:38
 msgid "Bijna 70"
 msgstr "Près de 70"
 
-#: app/templates/events/qteam/index.html:36
+#: app/templates/events/qteam/index.html:39
 msgid "Bijna 100"
 msgstr "Près de 100"
 
-#: app/templates/events/qteam/index.html:48
+#: app/templates/events/qteam/index.html:51
 msgid "Particuliere wagen"
 msgstr "Voiture privée"
 
-#: app/templates/events/qteam/index.html:49
+#: app/templates/events/qteam/index.html:52
 msgid "Particuliere wagen en bedrijfswagen"
 msgstr "Voiture privée et voiture de société"
 
-#: app/templates/events/qteam/index.html:50
+#: app/templates/events/qteam/index.html:53
 msgid "Particuliere wagen, bedrijfswagen en leasewagen"
 msgstr "Voiture particulière, voiture de société et voiture de leasing"
 
-#: app/templates/events/qteam/index.html:63
+#: app/templates/events/qteam/index.html:66
 msgid "2 graden celsius"
 msgstr "2 degrés Celsius"
 
-#: app/templates/events/qteam/index.html:64
+#: app/templates/events/qteam/index.html:67
 msgid "7 graden celsius"
 msgstr "7 degrés Celsius"
 
-#: app/templates/events/qteam/index.html:65
+#: app/templates/events/qteam/index.html:68
 msgid "15 graden celcius"
 msgstr "15 degrés Celsius"
 
-#: app/templates/events/qteam/index.html:82
+#: app/templates/events/qteam/index.html:85
 msgid "Je email"
 msgstr "Votre adresse e-mail"
 
-#: app/templates/events/qteam/index.html:89
+#: app/templates/events/qteam/index.html:92
 msgid "Je voornaam"
 msgstr "Votre prénom"
 
-#: app/templates/events/qteam/index.html:96
+#: app/templates/events/qteam/index.html:99
 msgid "Je familienaam"
 msgstr "Votre nom de famille"
 
-#: app/templates/events/qteam/index.html:101
+#: app/templates/events/qteam/index.html:104
 msgid ""
 "Ok, dat is alles! We hopen dat je zal winnen! Door op de onderstaande knop te "
-"klikken, bevestig je dat je kennis hebt genomen van het"
+"klikken, bevestig\n"
+"                    je dat je kennis hebt genomen van het"
 msgstr ""
 "Ok, c’est tout! Nous espérons que vous gagnerez! En cliquant sur le bouton ci-"
 "dessous, vous confirmez que vous avez pris connaissance du"
 
-#: app/templates/events/qteam/index.html:101
+#: app/templates/events/qteam/index.html:106
 msgid "wedstrijdreglement"
 msgstr "règlement du concours"
 
@@ -763,6 +772,38 @@ msgid ""
 "offerteaanvraagformulier in. Er wordt\n"
 "                dan contact met u opgenomen om de details van de offerte overeen "
 "te komen."
+msgstr ""
+
+#: app/templates/events/suzuki/index.html:21
+#: app/templates/events/suzuki/index.html:41
+msgid "Vanaf €19.999"
+msgstr ""
+
+#: app/templates/events/suzuki/index.html:24
+msgid ""
+"Zijn krachtige SUV-karakter, de vele rijhulpmiddelen, het royale\n"
+"                            interieur en de opvallende grille aan de voorzijde "
+"maken uw leven gemakkelijker en helpen u\n"
+"                            uw\n"
+"                            grenzen te verleggen."
+msgstr ""
+
+#: app/templates/events/suzuki/index.html:28
+#: app/templates/events/suzuki/index.html:47
+msgid "Een offerte aanvragen"
+msgstr ""
+
+#: app/templates/events/suzuki/index.html:38
+msgid "Vitara"
+msgstr ""
+
+#: app/templates/events/suzuki/index.html:44
+msgid ""
+"Een echte avonturier, gemaakt voor al uw avonturen. De Suzuki Vitara bevestigt "
+"zijn karakter\n"
+"                            en veelzijdigheid met zijn exclusieve AllGrip "
+"technologie en hybride motor voor authentieke\n"
+"                            sensaties van plezier."
 msgstr ""
 
 #~ msgid "Wedstrijdreglement"

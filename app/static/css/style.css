@@ -183,7 +183,21 @@ input[type=number] {
 }
 
 .section-suzuki-detail {
+    width: 100%;
     display: flex;
+    justify-content: center;
+}
+
+.suzuki-detail-left {
+    width: 681px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.suzuki-detail-right {
+    width: 581px;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Suzuki specific end */
