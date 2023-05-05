@@ -13,3 +13,8 @@ def before_request():
 @bp.route('/', methods=['GET', 'POST'])
 def main():
         return render_template('events/index.html', title=(_('Welcome')))
+
+
+@bp.route('/rules', methods=['GET', 'POST'])
+def rules():
+        return render_template('events/rules.html', title=(_('Regels')))

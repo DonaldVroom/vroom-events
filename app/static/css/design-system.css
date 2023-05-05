@@ -13,6 +13,7 @@ button {
     line-height: 32px;
     font-family: 'Satoshi-Regular';
     font-weight: 400;
+    color: #000000;
 }
 
 input[type=text],
@@ -40,6 +41,9 @@ h1 {
 
 span {
     display: block;
+}
+
+span, span a {
     color: #888888;
     margin-bottom: 15px;
     font-size: 20px;

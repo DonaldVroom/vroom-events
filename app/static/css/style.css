@@ -109,13 +109,15 @@ footer ul li a {
     /* Q team specific start  */
 
     .header-qteam {
-        background: url('../images/header-mobile.png');
-        background-size: cover;
+        background: none;
+        background-color: #1C2E2E;
         margin: 0 30px;
+        display: flex;
+        justify-content: center;
     }
 
     .header-qteam img {
-        margin-left: 30px;
+        margin: 30px;
         width: 200px;
     }
 

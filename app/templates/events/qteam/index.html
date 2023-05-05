@@ -10,7 +10,7 @@
         <p>{{ _('Upgrade je wagen en rijcomfort door het winnen van een van de vier gloednieuwe bandensets van
             Continental,
             Pirelli of Michelin. Montage in een Q Team center inclusief!
-            Meedoen kan door het beantwoorden van drie eenvoudige vragen. Mis het niet - binnnekort ben je weg met een
+            Meedoen kan door het beantwoorden van drie eenvoudige vragen. Mis het niet - binnnenkort ben je weg met een
             nieuwe set banden!') }}</p>
         <h1>{{ _('Dankzij Q Team, sterk in banden en onderhoud.') }}</h1>
         <p>{{ _('Wist u dat Q Team bijna 100 servicecenters heeft verspreid over België, waar u terecht kunt voor
@@ -20,6 +20,7 @@
             personenauto, bestelwagen of vrachtwagen heeft, Q Team is de onbetwiste marktleider in alle drie deze
             categorieën. Dit voor zowel persoonlijke wagens, bedrijfswagens als leasewagens.') }}</p>
         <hr>
+        <span>{{ _('Tip: all info is te vinden op de <a href="https://www.qteam.be" target="_blank">Q Team website</a>') }}</span>
         <div class="error-text" style="display: none; color: red;">
             {{ _('Gelieve 1 van de antwoorden aan te duiden.') }}
         </div>
@@ -97,6 +98,7 @@
                 <span class="error-text">{{ error }}</span>
                 {% endfor %}
             </div>
+            <p>{{ _('Ok, dat is alles! We hopen dat je zal winnen! Door op de onderstaande knop te klikken, bevestig je dat je kennis hebt genomen van het') }} <a href="{{ url_for('events.rules') }}" target="_blank">{{ _('wedstrijdreglement') }}</a>.</p>
             <button id="submit" name="submit" type="submit">
                 {{ _('Indienen') }}
             </button>
