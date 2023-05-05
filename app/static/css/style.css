@@ -10,7 +10,7 @@ body {
     display: grid;
     width: 100%;
     min-height: 100vh;
-    grid-template-rows: 80px 500px 1fr 100px;
+    grid-template-rows: 80px 1fr 100px;
 }
 
 nav {
@@ -23,7 +23,22 @@ nav img {
     width: 170.75px;
 }
 
-header {
+section {
+    display: flex;
+    justify-content: center;
+    padding: 35px 0 20px 0;
+}
+
+/* Q team specific start */
+
+.grid-qteam {
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    grid-template-rows: 500px 1fr;
+}
+
+.header-qteam {
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url('../images/header.png');
@@ -36,58 +51,22 @@ header {
     align-items: center
 }
 
-header img {
+.header-qteam img {
     display: block;
     margin-left: 250px;
     width: 255px;
 }
 
-section {
-    display: flex;
-    justify-content: center;
-    padding: 35px 0 20px 0;
-}
-
-.section-content {
+.section-qteam {
     width: 962px;
     text-align: left;
 }
 
-.section-content p {
+.section-qteam p {
     padding-bottom: 30px;
 }
 
-/* Custom selector start */
-
-.custom-select {
-    font-family: 'Satoshi-Regular';
-    font-size: 16px;
-    line-height: 22px;
-    margin: 10px 0 20px 0;
-}
-
-.options-list {
-    display: flex;
-}
-
-.options-list li {
-    border: 1px solid #000000;
-    padding: 7px 30px 7px 30px;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-right: 10px;
-}
-
-.options-list li:hover {
-    background-color: #f1f1f1;
-}
-
-.options-list li.selected {
-    background-color: #1C2E2E;
-    color: #ffffff;
-}
-
-/* Custom selector end */
+/* Q team specific end */
 
 footer {
     background-color: #000000;
@@ -115,40 +94,8 @@ footer ul li a {
 }
 
 @media (max-width: 1000px) {
-    header {
-        background: url('../images/header-mobile.png');
-        background-size: cover;
-        margin: 0 30px;
-    }
-
-    header img {
-        margin-left: 30px;
-        width: 200px;
-    }
-
     .event {
-        grid-template-rows: 80px 300px 1fr 200px;
-    }
-
-    .section-content {
-        width: 100%;
-        padding: 0 30px;
-    }
-
-    .options-list {
-        flex-direction: column;
-    }
-
-    .options-list li {
-        width: 96%;
-        margin-bottom: 15px;
-        padding: 7px;
-        text-align: center;
-    }
-
-    input[type=text],
-    input[type=number] {
-        width: 96%;
+        grid-template-rows: 80px 1fr 200px;
     }
 
     footer ul {
@@ -158,4 +105,31 @@ footer ul li a {
         align-items: center;
         margin: 0 30px;
     }
+
+    /* Q team specific start  */
+
+    .header-qteam {
+        background: url('../images/header-mobile.png');
+        background-size: cover;
+        margin: 0 30px;
+    }
+
+    .header-qteam img {
+        margin-left: 30px;
+        width: 200px;
+    }
+
+    .grid-qteam {
+        display: grid;
+        width: 100%;
+        min-height: 100vh;
+        grid-template-rows: 300px 1fr;
+    }
+
+    .section-qteam {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    /* Q team specific end */
 }

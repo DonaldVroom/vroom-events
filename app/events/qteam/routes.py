@@ -7,7 +7,7 @@ from app.models import QteamEvent
 from app import db
 
 @bp.route('/q-team/', methods=['GET', 'POST'])
-def index():
+def qteam_main():
     form = QteamForm()
     if request.method == 'POST':
         if form.validate_on_submit():
@@ -26,15 +26,15 @@ def index():
             
             return redirect(url_for('events.success'))
     elif request.method == 'GET': 
-        return render_template('events/index.html', title=(_('Welcome')), form=form)
+        return render_template('events/qteam/index.html', title=(_('Q Team')), form=form)
 
 @bp.route('/q-team/success', methods=['GET'])
 def success():
-    return render_template('events/thank-you.html', title=(_('Success')))
+    return render_template('events/qteam/thank-you.html', title=(_('Success')))
 
 @bp.route('/q-team/ended', methods=['GET'])
 def ended():
-    return render_template('events/ended.html', title=(_('Ended')))
+    return render_template('events/qteam/ended.html', title=(_('Ended')))
 
 @bp.route('/q-team/results', methods=['GET', 'POST'])
 def validate_password():
@@ -52,4 +52,4 @@ def validate_password():
         else:
             return 'Invalid password'
     elif request.method == 'GET': 
-        return render_template('events/results.html', title=(_('Resultaten')))
+        return render_template('events/qteam/results.html', title=(_('Resultaten')))
