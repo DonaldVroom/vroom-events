@@ -13,3 +13,20 @@ class QteamEvent(db.Model):
     first_name = db.Column(db.String(255))
     last_name = db.Column(db.String(255))
     created = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+
+    def __repr__(self):
+        return f"<QteamEvent {self.id}>"
+
+class SuzukiLead(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    auto = db.Column(db.String(255), nullable=False)
+    email = db.Column(db.String(255), nullable=False)
+    salutation = db.Column(db.String(10), nullable=False)
+    first_name = db.Column(db.String(255), nullable=False)
+    last_name = db.Column(db.String(255), nullable=False)
+    postal_code = db.Column(db.String(255), nullable=False)
+    phone = db.Column(db.String(255), nullable=False)
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)
+
+    def __repr__(self):
+        return f"<SuzukiLead {self.id}>"

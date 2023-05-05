@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-05-05 12:57+0100\n"
-"PO-Revision-Date: 2023-05-05 12:58+0100\n"
+"POT-Creation-Date: 2023-05-05 14:00+0100\n"
+"PO-Revision-Date: 2023-05-05 14:03+0100\n"
 "Last-Translator: \n"
 "Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
@@ -23,33 +23,34 @@ msgstr ""
 msgid "Welcome"
 msgstr "Bienvenue"
 
-#: app/events/qteam/forms.py:8 app/events/suzuki/forms.py:8
+#: app/events/qteam/forms.py:8
 msgid "Hoeveel Q Team service centers zijn er in België aanwezig?"
 msgstr "Combien y a-t-il de centres de service Q Team en Belgique ?"
 
-#: app/events/qteam/forms.py:9 app/events/suzuki/forms.py:9
+#: app/events/qteam/forms.py:9
 msgid "Met welk type wagen kan je bij een Q Team service center terecht?"
 msgstr ""
 "Avec quel type de voiture pouvez-vous vous rendre dans un centre de service Q "
 "Team ?"
 
-#: app/events/qteam/forms.py:10 app/events/suzuki/forms.py:10
+#: app/events/qteam/forms.py:10
 msgid "Vanaf wanneer is het aangeraden om op zomerbanden om te schakelen?"
 msgstr "A partir de quelle température est-il recommandé de passer aux pneus été ?"
 
-#: app/events/qteam/forms.py:12 app/events/suzuki/forms.py:12
+#: app/events/qteam/forms.py:12
 msgid "Hoeveel personen zullen aan deze competitie deelnemen?"
 msgstr "Combien de personnes participeront à ce concours?"
 
-#: app/events/qteam/forms.py:14 app/events/suzuki/forms.py:14
+#: app/events/qteam/forms.py:14 app/events/suzuki/forms.py:9
 msgid "Email"
 msgstr "Email"
 
-#: app/events/qteam/forms.py:15 app/events/suzuki/forms.py:15
+#: app/events/qteam/forms.py:15 app/events/suzuki/forms.py:12
+#: app/events/suzuki/forms.py:13
 msgid "Voornaam"
 msgstr "Prénom"
 
-#: app/events/qteam/forms.py:16 app/events/suzuki/forms.py:16
+#: app/events/qteam/forms.py:16 app/events/suzuki/forms.py:14
 msgid "Familienaam"
 msgstr "Nom de famille"
 
@@ -78,14 +79,42 @@ msgstr "Résultats"
 msgid "Regels"
 msgstr "Règlement"
 
+#: app/events/suzuki/forms.py:8
+msgid "auto"
+msgstr "voiture"
+
+#: app/events/suzuki/forms.py:10 app/templates/events/suzuki/s-cross.html:32
+msgid "Aanspreking"
+msgstr "Civilité"
+
+#: app/events/suzuki/forms.py:11
+msgid "Mr"
+msgstr "Mr"
+
+#: app/events/suzuki/forms.py:11
+msgid "Ms"
+msgstr "Ms"
+
+#: app/events/suzuki/forms.py:11
+msgid "Mme"
+msgstr "Mme"
+
+#: app/events/suzuki/forms.py:15 app/templates/events/suzuki/s-cross.html:37
+msgid "Postcode"
+msgstr "Code postal"
+
+#: app/events/suzuki/forms.py:16 app/templates/events/suzuki/s-cross.html:38
+msgid "Telefoonnummer"
+msgstr "Téléphone"
+
 #: app/events/suzuki/routes.py:11 app/templates/events/suzuki/index.html:17
 #: app/templates/events/suzuki/index.html:37
 msgid "Suzuki"
 msgstr "Suzuki"
 
-#: app/events/suzuki/routes.py:15 app/templates/events/suzuki/index.html:18
+#: app/events/suzuki/routes.py:32 app/templates/events/suzuki/index.html:18
 msgid "S Cross"
-msgstr ""
+msgstr "S Cross"
 
 #: app/templates/base.html:21
 msgid "VROOM"
@@ -232,14 +261,17 @@ msgid "15 graden celcius"
 msgstr "15 degrés Celsius"
 
 #: app/templates/events/qteam/index.html:85
+#: app/templates/events/suzuki/s-cross.html:30
 msgid "Je email"
 msgstr "Votre adresse e-mail"
 
 #: app/templates/events/qteam/index.html:92
+#: app/templates/events/suzuki/s-cross.html:33
 msgid "Je voornaam"
 msgstr "Votre prénom"
 
 #: app/templates/events/qteam/index.html:99
+#: app/templates/events/suzuki/s-cross.html:34
 msgid "Je familienaam"
 msgstr "Votre nom de famille"
 
@@ -768,43 +800,88 @@ msgstr "Dès que les gagnants seront connus, nous vous contacterons par e-mail."
 
 #: app/templates/events/suzuki/index.html:8
 msgid ""
-"Selecteer het model waarin u geïnteresseerd bent en vul het "
-"offerteaanvraagformulier in. Er wordt\n"
-"                dan contact met u opgenomen om de details van de offerte overeen "
-"te komen."
+"Tot €6.000 korting! Beperkt aanbod... Kies het model dat u interesseert en vul "
+"het\n"
+"                offerteaanvraagformulier in om van dit aanbod te kunnen genieten."
 msgstr ""
+"Jusqu’à 6.000 € de remise! Offre limitée… Sélectionnez le modèle qui vous "
+"intéresse, et remplissez le formulaire de demande d’offre."
 
 #: app/templates/events/suzuki/index.html:21
-#: app/templates/events/suzuki/index.html:41
-msgid "Vanaf €19.999"
-msgstr ""
+msgid "Vanaf €21.449"
+msgstr "A partir de €21.449"
 
 #: app/templates/events/suzuki/index.html:24
 msgid ""
-"Zijn krachtige SUV-karakter, de vele rijhulpmiddelen, het royale\n"
-"                            interieur en de opvallende grille aan de voorzijde "
-"maken uw leven gemakkelijker en helpen u\n"
-"                            uw\n"
-"                            grenzen te verleggen."
+"Dankzij zijn krachtige SUV-karakter, diverse rijassistentiesystemen, ruime "
+"interieur en\n"
+"                            opvallende grille, heeft deze auto talloze voordelen "
+"die uw dagelijkse leven gemakkelijker\n"
+"                            maken en u helpen uw grenzen te verleggen."
 msgstr ""
+"Son caractère puissant de SUV, ses multiples aides à la conduite, son habitacle "
+"généreux, sa calandre qui attire l’attention sont autant d’atouts qui facilitent "
+"votre quotiden et vous aident à dépasser vos limites."
 
-#: app/templates/events/suzuki/index.html:28
+#: app/templates/events/suzuki/index.html:27
 #: app/templates/events/suzuki/index.html:47
-msgid "Een offerte aanvragen"
-msgstr ""
+msgid "Vraag een offerte aan"
+msgstr "Demandez une offre"
 
 #: app/templates/events/suzuki/index.html:38
 msgid "Vitara"
-msgstr ""
+msgstr "Vitara"
+
+#: app/templates/events/suzuki/index.html:41
+msgid "Vanaf €19.999"
+msgstr "A partir de €19.999"
 
 #: app/templates/events/suzuki/index.html:44
 msgid ""
-"Een echte avonturier, gemaakt voor al uw avonturen. De Suzuki Vitara bevestigt "
-"zijn karakter\n"
-"                            en veelzijdigheid met zijn exclusieve AllGrip "
-"technologie en hybride motor voor authentieke\n"
-"                            sensaties van plezier."
+"Op maat gemaakt voor al uw avonturen. De Suzuki Vitara onderscheidt zich door "
+"zijn\n"
+"                            sterk karakter en veelzijdigheid, met exclusieve "
+"AllGrip-technologie en een hybride motor\n"
+"                            voor authentiek rijplezier."
 msgstr ""
+"Un véritable baroudeur, taillé pour toutes vos aventures. le Suzuki Vitara "
+"affirme son caractère et sa polyvalence avec sa technologie exclusive AllGrip et "
+"son moteur hybride pour des sensations de plaisir authentiques."
+
+#: app/templates/events/suzuki/s-cross.html:24
+msgid "Suzuki S-Cross<br>Vraag een offerte aan."
+msgstr ""
+"Suzuki S-Cross \n"
+"Demander une offre."
+
+#: app/templates/events/suzuki/s-cross.html:25
+msgid ""
+"Vanaf € 21.449<br>\n"
+"                    Met tot €6.000 korting, beperkt in de tijd!"
+msgstr ""
+"A partir de € 21.449 \n"
+"Avec jusqu’à 6.000 € de remise! Offre limitée!"
+
+#: app/templates/events/suzuki/s-cross.html:40
+msgid ""
+"Door op de onderstaande knop te klikken, bevestigt u dat u kennis hebt genomen "
+"van ons"
+msgstr ""
+"Ok, c’est tout! Nous espérons que vous gagnerez! En cliquant sur le bouton ci-"
+"dessous, vous confirmez que vous avez pris connaissance du"
+
+#: app/templates/events/suzuki/s-cross.html:41
+msgid "privacybeleid"
+msgstr "politique de confidentialité"
+
+#: app/templates/events/suzuki/s-cross.html:41
+msgid ""
+"en dat de gegevens van dit formulier gebruikt zullen worden door Suzuki Belgium."
+msgstr "et que les données de ce formulaire soient utilisées par Suzuki Belgium."
+
+#: app/templates/events/suzuki/s-cross.html:43
+msgid "Bevestigen"
+msgstr "Confirmer"
 
 #~ msgid "Wedstrijdreglement"
 #~ msgstr "Règlement du concours"

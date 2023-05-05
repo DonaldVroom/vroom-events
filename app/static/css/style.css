@@ -178,7 +178,6 @@ input[type=number] {
 .grid-suzuki-detail {
     display: grid;
     width: 100%;
-    min-height: 100vh;
     grid-template-rows: 1fr;
 }
 
@@ -191,14 +190,54 @@ input[type=number] {
 .suzuki-detail-left {
     width: 681px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
 }
+
+.suzuki-detail-left-two {
+    display: flex;
+    gap: 10px;
+}
+
+.suzuki-detail-left-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
 
 .suzuki-detail-right {
     width: 581px;
+    margin-left: 50px;
     display: flex;
+    flex-direction: column;
+}
+.suzuki-detail-right form {
+    margin-top: 50px;
+}
+
+.suzuki-detail-right form p, .suzuki-detail-right form a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 10px;
+}
+
+.suzuki-detail-right form input[type=text], .suzuki-detail-right form select  {
+    width: 100%;
+}
+
+.suzuki-detail-right form select  {
+    width: 50%;
+    height: 67px;
+}
+
+.form-block {
+    display: flex;
+    gap: 10px;
     justify-content: space-between;
 }
+
+
 
 /* Suzuki specific end */
 
@@ -219,7 +258,7 @@ footer ul {
     width: 962px;
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
 }
 
 footer ul li a {

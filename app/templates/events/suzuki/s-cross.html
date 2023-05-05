@@ -5,10 +5,44 @@
     <section>
         <div class="section-suzuki-detail">
             <div class="suzuki-detail-left">
-                <img src="{{ url_for('static', filename='images/suzuki/s-cross-1.png') }}">
+                <img style="height: 329px; width: 681px;"
+                    src="{{ url_for('static', filename='images/suzuki/s-cross-1.png') }}">
+                <div class="suzuki-detail-left-two">
+                    <div class="suzuki-detail-left-one">
+                        <img style="height: 522px; width: 335px;"
+                            src="{{ url_for('static', filename='images/suzuki/s-cross-2.png') }}">
+                    </div>
+                    <div class="suzuki-detail-left-one">
+                        <img style="height: 253px; width: 335px;"
+                            src="{{ url_for('static', filename='images/suzuki/s-cross-3.png') }}">
+                        <img style="height: 253px; width: 335px;"
+                            src="{{ url_for('static', filename='images/suzuki/s-cross-4.png') }}">
+                    </div>
+                </div>
             </div>
             <div class="suzuki-detail-right">
-                <h1>Suzuki</h1>
+                <h1>{{ _('Suzuki S-Cross<br>Vraag een offerte aan.') }}</h1>
+                <p>{{ _('Vanaf € 21.449<br>
+                    Met tot €6.000 korting, beperkt in de tijd!') }}</p>
+                <form method="post">
+                    {{ form.hidden_tag() }}
+                    <div class="form-block">
+                        {{ form.email(placeholder=_('Je email')) }}</div>
+                    <div class="form-block">
+                        {{ form.salutation(placeholder=_('Aanspreking')) }}
+                        {{ form.first_name(placeholder=_('Je voornaam')) }}
+                        {{ form.last_name(placeholder=_('Je familienaam')) }}
+                    </div>
+                    <div class="form-block">
+                        {{ form.postal_code(placeholder=_('Postcode')) }}
+                        {{ form.phone(placeholder=_('Telefoonnummer')) }}
+                    </div>
+                    <p>{{ _('Door op de onderstaande knop te klikken, bevestigt u dat u kennis hebt genomen van ons') }}
+                        <a href="https://www.vroom.be/nl/privacybeleid/" target="_blank">{{ _('privacybeleid') }}</a> {{ _('en dat de gegevens van dit formulier gebruikt zullen worden door Suzuki Belgium.') }}</p>
+                    <button id="submit" name="submit" type="submit">
+                        {{ _('Bevestigen') }}
+                    </button>
+                </form>
             </div>
         </div>
     </section>
