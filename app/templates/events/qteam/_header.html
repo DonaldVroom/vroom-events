@@ -1,5 +1,9 @@
 <header class="header-qteam">
     <div>
-        <img src="{{ url_for('static', filename='images/q-team-logo-white.png') }}">
+        {% if locale == 'nl' %}
+        <img src="{{ url_for('static', filename='images/q-team/q-team-logo-white-nl.png') }}">
+        {% else %}
+        <img src="{{ url_for('static', filename='images/q-team/q-team-logo-white-fr.png') }}">
+        {% endif %}
     </div>
 </header>
