@@ -8,6 +8,8 @@ from config import Config
 import logging
 from logging.handlers import SMTPHandler
 from apscheduler.schedulers.background import BackgroundScheduler
+from datetime import datetime
+from pytz import timezone
 
 db = SQLAlchemy()
 migrate = Migrate()
@@ -32,9 +34,12 @@ def create_app(config_class=Config):
     from app.events.qteam.send_results import send_results_qteam
     from app.events.suzuki.send_results import send_results_suzuki
 
+    # define the time at which the job should run
+    tz = timezone('Europe/Brussels') # change timezone to GMT+2
+    job_time = datetime.now(tz).replace(hour=8, minute=0, second=0)
     # Schedule the send_email job, passing the app object
-    scheduler.add_job(send_results_qteam, 'cron', args=[app], hour=14, minute=56)
-    scheduler.add_job(send_results_suzuki, 'cron', args=[app], hour=14, minute=56)
+    scheduler.add_job(send_results_qteam, 'cron', args=[app], run_date=job_time)
+    scheduler.add_job(send_results_suzuki, 'cron', args=[app], run_data=job_time)
     scheduler.start()
 
     if not app.debug and not app.testing:
