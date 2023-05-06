@@ -36,10 +36,10 @@ def create_app(config_class=Config):
 
     # define the time at which the job should run
     tz = timezone('Europe/Brussels') # change timezone to GMT+2
-    job_time = datetime.now(tz).replace(hour=8, minute=0, second=0)
+
     # Schedule the send_email job, passing the app object
-    scheduler.add_job(send_results_qteam, 'cron', args=[app], run_date=job_time)
-    scheduler.add_job(send_results_suzuki, 'cron', args=[app], run_data=job_time)
+    scheduler.add_job(send_results_qteam, 'cron', args=[app], hour=8, minute=0, timezone=tz)
+    scheduler.add_job(send_results_suzuki, 'cron', args=[app], hour=8, minute=0, timezone=tz)
     scheduler.start()
 
     if not app.debug and not app.testing:
