@@ -17,3 +17,5 @@ class Config(object):
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     ADMINS = os.environ.get('ADMINS')
     LANGUAGES = ['nl', 'fr']
+    DEFAULT_MAIL_SENDER = os.environ.get('ADMINS')
+    MAIL_RESULT_RECIPIENTS = os.environ.get('MAIL_RESULT_RECIPIENTS')

@@ -13,6 +13,7 @@ class QteamEvent(db.Model):
     first_name = db.Column(db.String(255))
     last_name = db.Column(db.String(255))
     created = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    locale = db.Column(db.String(10))
 
     def __repr__(self):
         return f"<QteamEvent {self.id}>"
@@ -26,6 +27,7 @@ class SuzukiLead(db.Model):
     postal_code = db.Column(db.String(255), nullable=False)
     phone = db.Column(db.String(255), nullable=False)
     created = db.Column(db.DateTime, default=datetime.utcnow)
+    locale = db.Column(db.String(10))
 
     def __repr__(self):
         return f"<SuzukiLead {self.id}>"

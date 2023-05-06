@@ -1,4 +1,4 @@
-from flask_babel import _
+from flask_babel import _, get_locale
 from datetime import datetime
 from flask import render_template, url_for, redirect, request
 from app.events import bp
@@ -11,6 +11,7 @@ def qteam_main():
     form = QteamForm()
     if request.method == 'POST':
         if form.validate_on_submit():
+            locale = str(get_locale())
             entry = QteamEvent(
                 how_many_centers=form.how_many_centers.data,
                 which_type_car=form.which_type_car.data,
@@ -19,7 +20,8 @@ def qteam_main():
                 email=form.email.data,
                 first_name=form.first_name.data,
                 last_name=form.last_name.data,
-                created=datetime.utcnow()
+                created=datetime.utcnow(),
+                locale=locale
             )
             db.session.add(entry)
             db.session.commit()
@@ -37,16 +39,16 @@ def qteam_ended():
     return render_template('events/qteam/ended.html', title=(_('Ended')))
 
 @bp.route('/q-team/results', methods=['GET', 'POST'])
-def validate_password():
+def qteam_results():
     if request.method == 'POST':
         password = request.form['password']
         if password == 'QteamVroom2023':
             events = QteamEvent.query.all()
             data = '<table>'
-            data += '<tr><th>ID</th><th>How Many Centers</th><th>Which Type Car</th><th>When Summer Tires</th><th>How Many People</th><th>Email</th><th>First Name</th><th>Last Name</th><th>Created</th></tr>'
+            data += '<tr><th>ID</th><th>How Many Centers</th><th>Which Type Car</th><th>When Summer Tires</th><th>How Many People</th><th>Email</th><th>First Name</th><th>Last Name</th><th>Created</th><th>Locale</th></tr>'
             for event in events:
                 created_date = datetime.strftime(event.created, '%d-%m-%Y')
-                data += f'<tr><td>{event.id}</td><td>{event.how_many_centers}</td><td>{event.which_type_car}</td><td>{event.when_summer_tires}</td><td>{event.how_many_people}</td><td>{event.email}</td><td>{event.first_name}</td><td>{event.last_name}</td><td>{created_date}</td></tr>'
+                data += f'<tr><td>{event.id}</td><td>{event.how_many_centers}</td><td>{event.which_type_car}</td><td>{event.when_summer_tires}</td><td>{event.how_many_people}</td><td>{event.email}</td><td>{event.first_name}</td><td>{event.last_name}</td><td>{created_date}</td><td>{event.locale}</td></tr>'
             data += '</table>'
             return data
         else:
