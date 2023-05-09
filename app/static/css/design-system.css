@@ -1,7 +1,7 @@
 @import "fonts/satoshi/satoshi.css";
 
 body {
-    font-family: "Satoshi", sans-serif;
+    font-family: "Satoshi", Helvetica, sans-serif;
     font-feature-settings: 'ss03' on, 'ss02' on;
   }
 
@@ -11,7 +11,7 @@ label,
 button, li {
     font-size: 24px;
     line-height: 32px;
-    font-family: 'Satoshi-Regular';
+    font-family: 'Satoshi-Regular', Helvetica, sans-serif;
     font-weight: 400;
     color: #000000;
 }
@@ -21,7 +21,7 @@ input[type=number],
 select {
     font-size: 16px;
     line-height: 22px;
-    font-family: 'Satoshi-Regular';
+    font-family: 'Satoshi-Regular', Helvetica, sans-serif;
 }
 
 footer a,
@@ -31,7 +31,7 @@ footer p {
 }
 
 h1 {
-    font-family: 'Satoshi-Bold';
+    font-family: 'Satoshi-Bold', Helvetica, sans-serif;
     font-size: 40px;
     line-height: 54px;
     font-weight: 700;
@@ -39,7 +39,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Satoshi-Bold';
+    font-family: 'Satoshi-Bold', Helvetica, sans-serif;
     font-size: 30px;
     line-height: 37px;
     font-weight: 700;
@@ -55,7 +55,7 @@ span, span a {
     margin-bottom: 15px;
     font-size: 20px;
     line-height: 27px;
-    font-family: 'Satoshi-Regular';
+    font-family: 'Satoshi-Regular', Helvetica, sans-serif;
 }
 
 label {
@@ -112,7 +112,7 @@ hr {
 .error-text {
     font-size: 24px;
     line-height: 32px;
-    font-family: 'Satoshi-Regular';
+    font-family: 'Satoshi-Regular', Helvetica, sans-serif;
     font-weight: 400;
     margin-bottom: 20px;
 }
@@ -136,7 +136,7 @@ td {
 th, td{
     font-size: 13px;
     line-height: 14px;
-    font-family: 'Satoshi-Regular';
+    font-family: 'Satoshi-Regular', Helvetica, sans-serif;
     font-weight: 400;
 }
 
