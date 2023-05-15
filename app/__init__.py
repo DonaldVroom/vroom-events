@@ -1,4 +1,5 @@
 import os
+import fcntl
 from flask import Flask, request, current_app
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -31,9 +32,12 @@ def create_app(config_class=Config):
     from app.events import bp as events_bp
     app.register_blueprint(events_bp)
 
-    if not workers_created:  # Check if workers have already been created
-        create_workers(app)
-        workers_created = True  # Update the flag
+    with open('/tmp/workers.lock', 'w') as lock_file:
+        try:
+            fcntl.flock(lock_file, fcntl.LOCK_EX | fcntl.LOCK_NB)
+            create_workers(app)
+        except IOError:
+            pass
 
     if not app.debug and not app.testing:
         if app.config['MAIL_SERVER']:
