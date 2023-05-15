@@ -39,8 +39,14 @@ def create_app(config_class=Config):
     tz = timezone('Europe/Brussels') # change timezone to GMT+2
 
     # Schedule the send_email job, passing the app object
-    scheduler.add_job(send_results_qteam, 'cron', args=[app], hour=8, minute=0, timezone=tz)
-    scheduler.add_job(send_results_suzuki, 'cron', args=[app], hour=8, minute=0, timezone=tz)
+    # Check if the qteam job already exists
+    if 'send_results_qteam' not in job_names:
+        scheduler.add_job(send_results_qteam, 'cron', args=[app], hour=8, minute=0, timezone=tz)
+
+    # Check if the suzuki job already exists
+    if 'send_results_suzuki' not in job_names:
+        scheduler.add_job(send_results_suzuki, 'cron', args=[app], hour=8, minute=0, timezone=tz)
+        
     scheduler.start()
 
     existing_jobs = scheduler.get_jobs()
