@@ -8,8 +8,8 @@ from config import Config
 import logging
 from logging.handlers import SMTPHandler
 from apscheduler.schedulers.background import BackgroundScheduler
-from datetime import datetime
 from pytz import timezone
+
 
 db = SQLAlchemy()
 migrate = Migrate()
@@ -28,33 +28,6 @@ def create_app(config_class=Config):
 
     from app.events import bp as events_bp
     app.register_blueprint(events_bp)
-
-    # Email scheduel
-    scheduler = BackgroundScheduler()
-    from app.events.qteam.send_results import send_results_qteam
-    from app.events.suzuki.send_results import send_results_suzuki
-
-
-    # define the time at which the job should run
-    tz = timezone('Europe/Brussels') # change timezone to GMT+2
-
-    # Schedule the send_email job, passing the app object,
-    existing_jobs = scheduler.get_jobs()
-    job_names = [job.name for job in existing_jobs]
-
-    # Check if the qteam job already exists
-    if 'send_results_qteam' not in job_names:
-        scheduler.add_job(send_results_qteam, 'cron', args=[app], hour=8, minute=0, timezone=tz)
-        print("Qteam worker created")
-
-    # Check if the suzuki job already exists
-    if 'send_results_suzuki' not in job_names:
-        scheduler.add_job(send_results_suzuki, 'cron', args=[app], hour=8, minute=0, timezone=tz)
-        print("Suzuki worker created")
-    
-    scheduler.start()
-
-
 
     if not app.debug and not app.testing:
         if app.config['MAIL_SERVER']:
@@ -84,3 +57,30 @@ def get_locale():
     
     return locale
 
+
+def create_workers():
+    from app.events.qteam.send_results import send_results_qteam
+    from app.events.suzuki.send_results import send_results_suzuki
+    # Email schedule
+    scheduler = BackgroundScheduler()
+    
+    # define the time at which the job should run
+    tz = timezone('Europe/Brussels') # change timezone to GMT+2
+
+    # Schedule the send_email job, passing the app object,
+    existing_jobs = scheduler.get_jobs()
+    job_names = [job.name for job in existing_jobs]
+
+    # Check if the qteam job already exists
+    if 'send_results_qteam' not in job_names:
+        scheduler.add_job(send_results_qteam, 'cron', args=[current_app], hour=8, minute=0, timezone=tz)
+        print("Qteam worker created")
+
+    # Check if the suzuki job already exists
+    if 'send_results_suzuki' not in job_names:
+        scheduler.add_job(send_results_suzuki, 'cron', args=[current_app], hour=8, minute=0, timezone=tz)
+        print("Suzuki worker created")
+        
+    scheduler.start()
+
+create_workers()

@@ -1,6 +1,6 @@
 from flask import current_app
 from app.models import SuzukiLead
-from app.email import send_email
+from app.email_sender import send_email
 
 def create_table(data, model):
     html_table = "<table border='1'>"
