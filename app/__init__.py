@@ -34,6 +34,7 @@ def create_app(config_class=Config):
     from app.events.qteam.send_results import send_results_qteam
     from app.events.suzuki.send_results import send_results_suzuki
 
+
     # define the time at which the job should run
     tz = timezone('Europe/Brussels') # change timezone to GMT+2
 
@@ -41,6 +42,10 @@ def create_app(config_class=Config):
     scheduler.add_job(send_results_qteam, 'cron', args=[app], hour=8, minute=0, timezone=tz)
     scheduler.add_job(send_results_suzuki, 'cron', args=[app], hour=8, minute=0, timezone=tz)
     scheduler.start()
+
+    existing_jobs = scheduler.get_jobs()
+    job_names = [job.name for job in existing_jobs]
+    print(job_names)
 
     if not app.debug and not app.testing:
         if app.config['MAIL_SERVER']:
