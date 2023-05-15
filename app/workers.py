@@ -1,14 +1,29 @@
+import os
+import sys
+from flask import Flask
 from apscheduler.schedulers.background import BackgroundScheduler
 from pytz import timezone
 
+# Get the absolute path of the current file
+current_file_path = os.path.abspath(__file__)
+
+# Get the directory path containing the app module
+app_directory = os.path.dirname(os.path.dirname(current_file_path))
+
+# Add the app directory to sys.path
+sys.path.append(app_directory)
+
+# Import the necessary modules from the app package
+from app.events.qteam.send_results import send_results_qteam
+from app.events.suzuki.send_results import send_results_suzuki
+
+
 def create_workers(app):
-    from app.events.qteam.send_results import send_results_qteam
-    from app.events.suzuki.send_results import send_results_suzuki
     # Email schedule
     scheduler = BackgroundScheduler()
     
-    # define the time at which the job should run
-    tz = timezone('Europe/Brussels') # change timezone to GMT+2
+    # Define the time at which the job should run
+    tz = timezone('Europe/Brussels')  # change timezone to GMT+2
 
     # Schedule the send_email job, passing the app object,
     existing_jobs = scheduler.get_jobs()
@@ -25,3 +40,8 @@ def create_workers(app):
         print("Suzuki worker created")
         
     scheduler.start()
+
+
+app = Flask(__name__)
+app.app_context().push()
+create_workers(app)

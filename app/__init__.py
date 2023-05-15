@@ -1,5 +1,4 @@
 import os
-import fcntl
 from flask import Flask, request, current_app
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -8,7 +7,6 @@ from flask_babel import Babel, lazy_gettext as _l
 from config import Config
 import logging
 from logging.handlers import SMTPHandler
-from app.workers import create_workers
 
 
 db = SQLAlchemy()
@@ -18,8 +16,6 @@ babel = Babel()
 
 
 def create_app(config_class=Config):
-    global workers_created
-    workers_created = False
 
     app = Flask(__name__)
     app.config.from_object(config_class)
@@ -32,12 +28,6 @@ def create_app(config_class=Config):
     from app.events import bp as events_bp
     app.register_blueprint(events_bp)
 
-    with open('/tmp/workers.lock', 'w') as lock_file:
-        try:
-            fcntl.flock(lock_file, fcntl.LOCK_EX | fcntl.LOCK_NB)
-            create_workers(app)
-        except IOError:
-            pass
 
     if not app.debug and not app.testing:
         if app.config['MAIL_SERVER']:
