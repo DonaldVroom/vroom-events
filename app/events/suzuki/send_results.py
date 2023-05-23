@@ -23,20 +23,19 @@ def create_table(data, model):
     
     return html_table
 
-def send_results_suzuki(app):
-    with app.app_context():
-        suzuki_events = SuzukiLead.query.all()
+def send_results_suzuki():
+    suzuki_events = SuzukiLead.query.all()
 
-        suzuki_events_str = create_table(suzuki_events, SuzukiLead)
+    suzuki_events_str = create_table(suzuki_events, SuzukiLead)
 
-        html_content = f"<h3>Suzuki Events</h3>{suzuki_events_str}"
+    html_content = f"<h3>Suzuki Events</h3>{suzuki_events_str}"
 
-        # Update the following line to include sender parameter
-        subject="VROOM events: Suzuki"
-        sender=current_app.config['DEFAULT_MAIL_SENDER']
-        recipients=current_app.config['MAIL_RESULT_RECIPIENTS']
-        recipients_list = recipients.split(';')
-        text_body = ""
-        html_body=html_content
+    # Update the following line to include sender parameter
+    subject="VROOM events: Suzuki"
+    sender=current_app.config['DEFAULT_MAIL_SENDER']
+    recipients=current_app.config['MAIL_RESULT_RECIPIENTS']
+    recipients_list = recipients.split(';')
+    text_body = ""
+    html_body=html_content
 
-        send_email(subject, sender, recipients_list, text_body, html_body)
+    send_email(subject, sender, recipients_list, text_body, html_body)

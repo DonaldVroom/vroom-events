@@ -1,5 +1,7 @@
 import os
 import click
+from app.events.qteam.send_results import send_results_qteam
+from app.events.suzuki.send_results import send_results_suzuki
 
 
 def register(app):
@@ -7,6 +9,14 @@ def register(app):
     def translate():
         """Translation and localization commands."""
         pass
+
+    @app.cli.command()
+    def emailreports():
+        """Send email reports."""
+        print('Creating email report job')
+        send_results_qteam()
+        send_results_suzuki()
+        print('Done!')
 
     @translate.command()
     @click.argument('lang')
@@ -33,3 +43,4 @@ def register(app):
         """Compile all languages."""
         if os.system('pybabel compile -d app/translations'):
             raise RuntimeError('compile command failed')
+        
