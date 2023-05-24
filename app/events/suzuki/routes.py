@@ -8,7 +8,7 @@ from app import db
 
 @bp.route('/suzuki/', methods=['GET'])
 def suzuki_main():
-        return render_template('events/suzuki/index.html', title=(_('Suzuki')))
+        return render_template('events/suzuki/ended.html', title=(_('Suzuki')))
 
 @bp.route('/suzuki/s-cross', methods=['GET', 'POST'])
 def suzuki_s_cross():

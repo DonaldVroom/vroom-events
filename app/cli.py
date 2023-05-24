@@ -15,7 +15,6 @@ def register(app):
         """Send email reports."""
         print('Creating email report job')
         send_results_qteam()
-        send_results_suzuki()
         print('Done!')
 
     @translate.command()
