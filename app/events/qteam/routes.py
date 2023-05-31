@@ -10,23 +10,20 @@ from app import db
 def qteam_main():
     form = QteamForm()
     if request.method == 'POST':
-        if form.validate_on_submit():
-            locale = str(get_locale())
-            entry = QteamEvent(
-                how_many_centers=form.how_many_centers.data,
-                which_type_car=form.which_type_car.data,
-                when_summer_tires=form.when_summer_tires.data,
-                how_many_people=form.how_many_people.data,
-                email=form.email.data,
-                first_name=form.first_name.data,
-                last_name=form.last_name.data,
-                created=datetime.utcnow(),
-                locale=locale
-            )
-            db.session.add(entry)
-            db.session.commit()
-            
-            return redirect(url_for('events.qteam_success'))
+        try:
+            if form.validate_on_submit():
+                locale = str(get_locale())
+                entry = QteamEvent()
+                form.populate_obj(entry)
+                entry.created = datetime.utcnow()
+                entry.locale = locale
+                db.session.add(entry)
+                db.session.commit()
+                return redirect(url_for('events.qteam_success'))
+        except Exception as e:
+            db.session.rollback()
+            print(e)
+            return redirect(url_for('events.qteam_main'))
     elif request.method == 'GET': 
         return render_template('events/qteam/index.html', title=(_('Q Team')), form=form)
 

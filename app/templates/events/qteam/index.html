@@ -9,7 +9,7 @@
             <h1>{{ _('Bereid uw wagen voor op het huidige prachtige weer!') }}</h1>
             <p>{{ _('Mis deze kans niet! Beleef een verbeterde rijervaring door één van de vier sets banden van
                 Continental, Pirelli of Michelin te winnen, op maat van uw wagen. Bovendien zorgt onze partner QTeam
-                voor gratis montage in één van hun 103 servicepunten in België. Grijp je kans door voor 10 juni 2023 de
+                voor gratis montage in één van hun 103 servicepunten in België. Grijp je kans door voor 12 juni 2023 de
                 volgende drie vragen juist te beantwoorden. Zo wordt u misschien één van de gelukkige winnaars!') }}</p>
             <h1>{{ _('Dankzij qteam, de belgische marktleider in banden bent u in goede handen') }}</h1>
             <p>{{ _("QTeam is de toonaangevende specialist in België op het gebied van banden en mobiliteit, met meer
@@ -17,7 +17,7 @@
                 oplossingen voor alle type auto's, bestelwagens en vrachtwagens, of het nu gaat om particuliere, lease-
                 of zakelijke voertuigen. Bij QTeam bent u verzekerd van een veilige reis.") }}</p>
             <hr>
-            <span>{{ _('Tip: all info is te vinden op de <a href="https://www.qteam.be" target="_blank">Q Team
+            <span>{{ _('Tip: all info is te vinden op de <a href="https://www.qteam.be" target="_blank">QTeam
                     website</a>') }}</span>
             <div class="error-text" style="display: none; color: red;">
                 {{ _('Gelieve 1 van de antwoorden aan te duiden.') }}
@@ -29,9 +29,9 @@
                     <div class="custom-select" data-name="how_many_centers">
                         {{ form.how_many_centers(type='hidden') }}
                         <ul class="options-list">
-                            <li class="option" data-value="0">{{ _('Bijna 50') }}</li>
-                            <li class="option" data-value="1">{{ _('Bijna 70') }}</li>
-                            <li class="option" data-value="2">{{ _('Bijna 100') }}</li>
+                            <li class="option" data-value="0">{{ _('< 50') }}</li>
+                            <li class="option" data-value="1">{{ _('50 - 100') }}</li>
+                            <li class="option" data-value="2">{{ _('> 100') }}</li>
                         </ul>
                     </div>
                     {% for error in form.how_many_centers.errors %}
@@ -77,7 +77,7 @@
                 <hr>
                 <div>
                     {{ form.email.label }}
-                    {{ form.email(placeholder=_('Je email')) }}
+                    {{ form.email(placeholder=_('Je email'), type="email") }}
                     {% for error in form.email.errors %}
                     <span class="error-text">{{ error }}</span>
                     {% endfor %}

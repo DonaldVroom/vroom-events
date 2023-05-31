@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-05-31 11:46+0100\n"
-"PO-Revision-Date: 2023-05-31 11:46+0100\n"
+"POT-Creation-Date: 2023-05-31 11:56+0100\n"
+"PO-Revision-Date: 2023-05-31 11:57+0100\n"
 "Last-Translator: \n"
 "Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
@@ -174,7 +174,7 @@ msgid ""
 "                Continental, Pirelli of Michelin te winnen, op maat van uw "
 "wagen. Bovendien zorgt onze partner QTeam\n"
 "                voor gratis montage in één van hun 103 servicepunten in België. "
-"Grijp je kans door voor 10 juni 2023 de\n"
+"Grijp je kans door voor 12 juni 2023 de\n"
 "                volgende drie vragen juist te beantwoorden. Zo wordt u misschien "
 "één van de gelukkige winnaars!"
 msgstr ""
@@ -184,7 +184,7 @@ msgstr ""
 "Continental, Pirelli ou Michelin adaptés à votre véhicule. Le montage vous sera "
 "également offert par notre partenaire QTeam et pourra s’effectuer dans l’un de "
 "leurs 103 Centres de service en Belgique. Ne tardez pas à tenter votre chance en "
-"répondant dès à présent aux 3 questions suivantes avant le 10 juin 2023 et soyez "
+"répondant dès à présent aux 3 questions suivantes avant le 12 juin 2023 et soyez "
 "l’un de nos heureux gagnants !"
 
 #: app/templates/events/qteam/index.html:14
@@ -212,27 +212,27 @@ msgstr ""
 #: app/templates/events/qteam/index.html:20
 msgid ""
 "Tip: all info is te vinden op de <a href=\"https://www.qteam.be\" "
-"target=\"_blank\">Q Team\n"
+"target=\"_blank\">QTeam\n"
 "                    website</a>"
 msgstr ""
 "Astuce: toutes les informations sont disponibles sur <a href=\"https://www.qteam."
-"be\" target=\"_blank\">le site web de Q Team</a>"
+"be\" target=\"_blank\">le site web de QTeam</a>"
 
 #: app/templates/events/qteam/index.html:23
 msgid "Gelieve 1 van de antwoorden aan te duiden."
 msgstr "Veuillez indiquer 1 des réponses."
 
 #: app/templates/events/qteam/index.html:32
-msgid "Bijna 50"
-msgstr "Près de 50"
+msgid "< 50"
+msgstr "< 50"
 
 #: app/templates/events/qteam/index.html:33
-msgid "Bijna 70"
-msgstr "Près de 70"
+msgid "50 - 100"
+msgstr "50 - 100"
 
 #: app/templates/events/qteam/index.html:34
-msgid "Bijna 100"
-msgstr "Près de 100"
+msgid "> 100"
+msgstr "> 100"
 
 #: app/templates/events/qteam/index.html:46
 msgid "Particuliere wagen"
@@ -968,3 +968,12 @@ msgstr ""
 #~ "Que vous ayez une voiture, une camionnette ou un camion, Q Team est le leader "
 #~ "incontesté du marché dans ces trois catégories. Cela s’applique aux voitures "
 #~ "personnelles, aux voitures de société et aux voitures de leasing."
+
+#~ msgid "Bijna 50"
+#~ msgstr "Près de 50"
+
+#~ msgid "Bijna 70"
+#~ msgstr "Près de 70"
+
+#~ msgid "Bijna 100"
+#~ msgstr "Près de 100"
