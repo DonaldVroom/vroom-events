@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-05-31 11:56+0100\n"
-"PO-Revision-Date: 2023-05-31 11:57+0100\n"
+"POT-Creation-Date: 2023-05-31 12:58+0100\n"
+"PO-Revision-Date: 2023-05-31 12:58+0100\n"
 "Last-Translator: \n"
 "Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
@@ -28,7 +28,7 @@ msgid "Hoeveel Q Team service centers zijn er in België aanwezig?"
 msgstr "Combien y a-t-il de centres de service Q Team en Belgique ?"
 
 #: app/events/qteam/forms.py:9
-msgid "Met welk type wagen kan je bij een Q Team service center terecht?"
+msgid "Met welk type wagen kunt u bij een Q Team service center terecht?"
 msgstr ""
 "Avec quel type de voiture pouvez-vous vous rendre dans un centre de service Q "
 "Team ?"
@@ -64,25 +64,25 @@ msgstr "Nom de famille"
 msgid "Indienen"
 msgstr "Envoyer"
 
-#: app/events/qteam/routes.py:31
+#: app/events/qteam/routes.py:28
 msgid "Q Team"
 msgstr "Q Team"
 
-#: app/events/qteam/routes.py:35
+#: app/events/qteam/routes.py:32
 msgid "Success"
 msgstr "Réussi"
 
-#: app/events/qteam/routes.py:39
+#: app/events/qteam/routes.py:36
 msgid "Ended"
 msgstr "Terminé"
 
-#: app/events/qteam/routes.py:57 app/events/suzuki/routes.py:78
+#: app/events/qteam/routes.py:54 app/events/suzuki/routes.py:78
 #: app/templates/events/qteam/results.html:9
 #: app/templates/events/suzuki/results.html:9
 msgid "Resultaten"
 msgstr "Résultats"
 
-#: app/events/qteam/routes.py:61
+#: app/events/qteam/routes.py:58
 msgid "Regels"
 msgstr "Règlement"
 
@@ -174,7 +174,7 @@ msgid ""
 "                Continental, Pirelli of Michelin te winnen, op maat van uw "
 "wagen. Bovendien zorgt onze partner QTeam\n"
 "                voor gratis montage in één van hun 103 servicepunten in België. "
-"Grijp je kans door voor 12 juni 2023 de\n"
+"Grijp uw kans door voor 12 juni 2023 de\n"
 "                volgende drie vragen juist te beantwoorden. Zo wordt u misschien "
 "één van de gelukkige winnaars!"
 msgstr ""
@@ -188,7 +188,7 @@ msgstr ""
 "l’un de nos heureux gagnants !"
 
 #: app/templates/events/qteam/index.html:14
-msgid "Dankzij qteam, de belgische marktleider in banden bent u in goede handen"
+msgid "Dankzij qteam, de Belgische marktleider in banden bent u in goede handen"
 msgstr "Avec qteam le leader belge du pneumatique, vous êtes entre de bonnes mains"
 
 #: app/templates/events/qteam/index.html:15
@@ -272,9 +272,9 @@ msgstr "Votre nom de famille"
 
 #: app/templates/events/qteam/index.html:99
 msgid ""
-"Ok, dat is alles! We hopen dat je zal winnen! Door op de onderstaande knop te "
+"Ok, dat is alles! We hopen dat u zal winnen! Door op de onderstaande knop te "
 "klikken, bevestig\n"
-"                    je dat je kennis hebt genomen van het"
+"                    je dat u kennis heeft genomen van het"
 msgstr ""
 "Ok, c’est tout! Nous espérons que vous gagnerez! En cliquant sur le bouton ci-"
 "dessous, vous confirmez que vous avez pris connaissance du"
