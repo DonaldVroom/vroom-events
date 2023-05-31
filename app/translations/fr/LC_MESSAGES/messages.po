@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-05-05 17:08+0100\n"
-"PO-Revision-Date: 2023-05-05 18:01+0100\n"
+"POT-Creation-Date: 2023-05-31 09:29+0100\n"
+"PO-Revision-Date: 2023-05-31 09:33+0100\n"
 "Last-Translator: \n"
 "Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
@@ -17,9 +17,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "Generated-By: Babel 2.12.1\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.1\n"
 
-#: app/events/routes.py:19
+#: app/events/routes.py:25
 msgid "Welcome"
 msgstr "Bienvenue"
 
@@ -42,45 +42,47 @@ msgid "Hoeveel personen zullen aan deze competitie deelnemen?"
 msgstr "Combien de personnes participeront à ce concours?"
 
 #: app/events/qteam/forms.py:14 app/events/suzuki/forms.py:9
-#: app/templates/events/suzuki/s-cross.html:30
-#: app/templates/events/suzuki/vitara.html:30
+#: app/templates/events/suzuki/s-cross.html:26
+#: app/templates/events/suzuki/vitara.html:26
 msgid "Email"
 msgstr "Email"
 
 #: app/events/qteam/forms.py:15 app/events/suzuki/forms.py:10
-#: app/events/suzuki/forms.py:11 app/templates/events/suzuki/s-cross.html:32
-#: app/templates/events/suzuki/vitara.html:32
+#: app/events/suzuki/forms.py:11 app/templates/events/suzuki/s-cross.html:28
+#: app/templates/events/suzuki/vitara.html:28
 msgid "Voornaam"
 msgstr "Prénom"
 
 #: app/events/qteam/forms.py:16 app/events/suzuki/forms.py:12
-#: app/templates/events/suzuki/s-cross.html:33
-#: app/templates/events/suzuki/vitara.html:33
+#: app/templates/events/suzuki/s-cross.html:29
+#: app/templates/events/suzuki/vitara.html:29
 msgid "Familienaam"
 msgstr "Nom de famille"
 
 #: app/events/qteam/forms.py:17 app/events/suzuki/forms.py:15
-#: app/templates/events/qteam/index.html:108
+#: app/templates/events/qteam/index.html:103
 msgid "Indienen"
 msgstr "Envoyer"
 
-#: app/events/qteam/routes.py:29
+#: app/events/qteam/routes.py:31
 msgid "Q Team"
 msgstr "Q Team"
 
-#: app/events/qteam/routes.py:33
+#: app/events/qteam/routes.py:35
 msgid "Success"
 msgstr "Réussi"
 
-#: app/events/qteam/routes.py:37
+#: app/events/qteam/routes.py:39
 msgid "Ended"
 msgstr "Terminé"
 
-#: app/events/qteam/routes.py:55 app/templates/events/qteam/results.html:9
+#: app/events/qteam/routes.py:57 app/events/suzuki/routes.py:78
+#: app/templates/events/qteam/results.html:9
+#: app/templates/events/suzuki/results.html:9
 msgid "Resultaten"
 msgstr "Résultats"
 
-#: app/events/qteam/routes.py:59
+#: app/events/qteam/routes.py:61
 msgid "Regels"
 msgstr "Règlement"
 
@@ -88,27 +90,27 @@ msgstr "Règlement"
 msgid "auto"
 msgstr "voiture"
 
-#: app/events/suzuki/forms.py:13 app/templates/events/suzuki/s-cross.html:36
-#: app/templates/events/suzuki/vitara.html:36
+#: app/events/suzuki/forms.py:13 app/templates/events/suzuki/s-cross.html:32
+#: app/templates/events/suzuki/vitara.html:32
 msgid "Postcode"
 msgstr "Code postal"
 
-#: app/events/suzuki/forms.py:14 app/templates/events/suzuki/s-cross.html:37
-#: app/templates/events/suzuki/vitara.html:37
+#: app/events/suzuki/forms.py:14 app/templates/events/suzuki/s-cross.html:33
+#: app/templates/events/suzuki/vitara.html:33
 msgid "Telefoonnummer"
 msgstr "Téléphone"
 
-#: app/events/suzuki/routes.py:11 app/events/suzuki/routes.py:56
+#: app/events/suzuki/routes.py:11 app/events/suzuki/routes.py:60
 #: app/templates/events/suzuki/index.html:16
 #: app/templates/events/suzuki/index.html:36
 msgid "Suzuki"
 msgstr "Suzuki"
 
-#: app/events/suzuki/routes.py:31 app/templates/events/suzuki/index.html:17
+#: app/events/suzuki/routes.py:33 app/templates/events/suzuki/index.html:17
 msgid "S-Cross"
 msgstr "S-Cross"
 
-#: app/events/suzuki/routes.py:51 app/templates/events/suzuki/index.html:37
+#: app/events/suzuki/routes.py:55 app/templates/events/suzuki/index.html:37
 msgid "Vitara"
 msgstr "Vitara"
 
@@ -158,56 +160,56 @@ msgstr ""
 "des compétitions similaires. Nous avons hâte de vous y revoir!"
 
 #: app/templates/events/qteam/index.html:8
-msgid "Deze wedstrijd wordt u aangeboden door VROOM, in samenwerking met Q Team."
-msgstr "Ce concours vous est proposé par VROOM en collaboration avec Q Team."
+msgid "Deze wedstrijd wordt u aangeboden door Vroom in samenwerking met QTeam"
+msgstr "Ce concours vous est proposé par Vroom en collaboration avec QTeam"
 
 #: app/templates/events/qteam/index.html:9
-msgid "Rij de zomer fris en veilig tegemoet!"
-msgstr "L’été s’annonce sous les meilleurs auspices !"
+msgid "BEREID UW WAGEN VOOR OP HET HUIDIGE PRACHTIGE WEER!"
+msgstr "PRÉPAREZ VOTRE VOITURE À L’ARRIVÉE DE L’ÉTÉ!"
 
 #: app/templates/events/qteam/index.html:10
 msgid ""
-"Upgrade je wagen en rijcomfort door het winnen van een van de vier gloednieuwe "
-"bandensets van\n"
-"                Continental,\n"
-"                Pirelli of Michelin. Montage in een Q Team center inclusief!\n"
-"                Meedoen kan door het beantwoorden van drie eenvoudige vragen. "
-"Mis het niet - binnenkort ben je weg met\n"
-"                een\n"
-"                nieuwe set banden!"
+"Mis deze kans niet! Beleef een verbeterde rijervaring door één van de vier sets "
+"banden van\n"
+"                Continental, Pirelli of Michelin te winnen, op maat van uw "
+"wagen. Bovendien zorgt onze partner QTeam\n"
+"                voor gratis montage in één van hun 103 servicepunten in België. "
+"Grijp je kans door voor 10 juni 2023 de\n"
+"                volgende drie vragen juist te beantwoorden. Zo wordt u misschien "
+"één van de gelukkige winnaars!"
 msgstr ""
-"Améliorez votre confort de conduite et celui de votre voiture en remportant l’un "
-"des quatre nouveaux jeux de pneus de Continental, Pirelli ou Michelin. "
-"L’installation est incluse dans l’un des centres Q Team !\n"
-"Vous pouvez participer en répondant à trois questions simples. Ne manquez pas "
-"cette occasion - bientôt, vous roulerez avec un nouveau jeu de pneus !"
+"Si vous disposez d’une voiture, ne laissez pas passer cette opportunité ! A "
+"l’approche de l’été, assurez-vous d’avoir les bons pneus pour des sensations de "
+"conduite optimales. Remportez l’un des quatre sets de pneus de marque "
+"Continental, Pirelli ou Michelin adaptés à votre véhicule. Le montage vous sera "
+"également offert par notre partenaire QTeam et pourra s’effectuer dans l’un de "
+"leurs 103 Centres de service en Belgique. Ne tardez pas à tenter votre chance en "
+"répondant dès à présent aux 3 questions suivantes avant le 10 juin 2023 et soyez "
+"l’un de nos heureux gagnants !"
 
-#: app/templates/events/qteam/index.html:16
-msgid "Dankzij Q Team, sterk in banden en onderhoud."
-msgstr "Q Team, solide en pneus et en entretien."
+#: app/templates/events/qteam/index.html:14
+msgid "DANKZIJ QTEAM, DE BELGISCHE MARKTLEIDER IN BANDEN BENT U IN GOEDE HANDEN"
+msgstr "AVEC QTEAM LE LEADER BELGE DU PNEUMATIQUE, VOUS ÊTES ENTRE DE BONNES MAINS"
 
-#: app/templates/events/qteam/index.html:17
+#: app/templates/events/qteam/index.html:15
 msgid ""
-"Wist u dat Q Team bijna 100 servicecenters heeft verspreid over België, waar u "
-"terecht kunt voor\n"
-"                banden,\n"
-"                velgen en onderhoud - voor zowel particuliere als professionele "
-"voertuigen en tegen scherpe prijzen? Of\n"
-"                u nu\n"
-"                een\n"
-"                personenauto, bestelwagen of vrachtwagen heeft, Q Team is de "
-"onbetwiste marktleider in alle drie deze\n"
-"                categorieën. Dit voor zowel persoonlijke wagens, bedrijfswagens "
-"als leasewagens."
+"QTeam is de toonaangevende specialist in België op het gebied van banden en "
+"mobiliteit, met meer\n"
+"                dan 50 jaar ervaring. Met het uitgebreide netwerk van 103 "
+"servicecentra bieden ze innovatieve lokale\n"
+"                oplossingen voor alle type auto's, bestelwagens en vrachtwagens, "
+"of het nu gaat om particuliere, lease-\n"
+"                of zakelijke voertuigen. Bij QTeam bent u verzekerd van een "
+"veilige reis."
 msgstr ""
-"Saviez-vous que Q Team possède près de 100 centres de service répartis dans "
-"toute la Belgique où vous pouvez acheter des pneus, des jantes et effectuer "
-"l’entretien de votre véhicule privé ou professionnel à des prix compétitifs ? "
-"Que vous ayez une voiture, une camionnette ou un camion, Q Team est le leader "
-"incontesté du marché dans ces trois catégories. Cela s’applique aux voitures "
-"personnelles, aux voitures de société et aux voitures de leasing."
+"Avec plus de 50 ans d’expérience, QTeam est le n°1 en Belgique dans le domaine "
+"du pneumatique et de la mobilité. En effet, fort de 103 Centres de service sur "
+"lesquels s’appuyer, QTeam offre des solutions de proximité innovantes pour les "
+"voitures, les SUV, les camionnettes et les poids lourds ; que le véhicule soit "
+"privé, de leasing ou professionnel. Avec QTeam, c’est d’abord une question de "
+"sécurité."
 
-#: app/templates/events/qteam/index.html:25
+#: app/templates/events/qteam/index.html:20
 msgid ""
 "Tip: all info is te vinden op de <a href=\"https://www.qteam.be\" "
 "target=\"_blank\">Q Team\n"
@@ -216,59 +218,59 @@ msgstr ""
 "Astuce: toutes les informations sont disponibles sur <a href=\"https://www.qteam."
 "be\" target=\"_blank\">le site web de Q Team</a>"
 
-#: app/templates/events/qteam/index.html:28
+#: app/templates/events/qteam/index.html:23
 msgid "Gelieve 1 van de antwoorden aan te duiden."
 msgstr "Veuillez indiquer 1 des réponses."
 
-#: app/templates/events/qteam/index.html:37
+#: app/templates/events/qteam/index.html:32
 msgid "Bijna 50"
 msgstr "Près de 50"
 
-#: app/templates/events/qteam/index.html:38
+#: app/templates/events/qteam/index.html:33
 msgid "Bijna 70"
 msgstr "Près de 70"
 
-#: app/templates/events/qteam/index.html:39
+#: app/templates/events/qteam/index.html:34
 msgid "Bijna 100"
 msgstr "Près de 100"
 
-#: app/templates/events/qteam/index.html:51
+#: app/templates/events/qteam/index.html:46
 msgid "Particuliere wagen"
 msgstr "Voiture privée"
 
-#: app/templates/events/qteam/index.html:52
+#: app/templates/events/qteam/index.html:47
 msgid "Particuliere wagen en bedrijfswagen"
 msgstr "Voiture privée et voiture de société"
 
-#: app/templates/events/qteam/index.html:53
+#: app/templates/events/qteam/index.html:48
 msgid "Particuliere wagen, bedrijfswagen en leasewagen"
 msgstr "Voiture particulière, voiture de société et voiture de leasing"
 
-#: app/templates/events/qteam/index.html:66
+#: app/templates/events/qteam/index.html:61
 msgid "2 graden celsius"
 msgstr "2 degrés Celsius"
 
-#: app/templates/events/qteam/index.html:67
+#: app/templates/events/qteam/index.html:62
 msgid "7 graden celsius"
 msgstr "7 degrés Celsius"
 
-#: app/templates/events/qteam/index.html:68
+#: app/templates/events/qteam/index.html:63
 msgid "15 graden celcius"
 msgstr "15 degrés Celsius"
 
-#: app/templates/events/qteam/index.html:85
+#: app/templates/events/qteam/index.html:80
 msgid "Je email"
 msgstr "Votre adresse e-mail"
 
-#: app/templates/events/qteam/index.html:92
+#: app/templates/events/qteam/index.html:87
 msgid "Je voornaam"
 msgstr "Votre prénom"
 
-#: app/templates/events/qteam/index.html:99
+#: app/templates/events/qteam/index.html:94
 msgid "Je familienaam"
 msgstr "Votre nom de famille"
 
-#: app/templates/events/qteam/index.html:104
+#: app/templates/events/qteam/index.html:99
 msgid ""
 "Ok, dat is alles! We hopen dat je zal winnen! Door op de onderstaande knop te "
 "klikken, bevestig\n"
@@ -277,19 +279,22 @@ msgstr ""
 "Ok, c’est tout! Nous espérons que vous gagnerez! En cliquant sur le bouton ci-"
 "dessous, vous confirmez que vous avez pris connaissance du"
 
-#: app/templates/events/qteam/index.html:106
+#: app/templates/events/qteam/index.html:101
 msgid "wedstrijdreglement"
 msgstr "règlement du concours"
 
 #: app/templates/events/qteam/results.html:11
+#: app/templates/events/suzuki/results.html:11
 msgid "Password:"
 msgstr "Mot de passe:"
 
 #: app/templates/events/qteam/results.html:12
+#: app/templates/events/suzuki/results.html:12
 msgid "Password"
 msgstr "Mot de passe"
 
 #: app/templates/events/qteam/results.html:13
+#: app/templates/events/suzuki/results.html:13
 msgid "Submit"
 msgstr "Envoyer"
 
@@ -412,16 +417,16 @@ msgstr "ARTICLE 3 : LE CONCOURS"
 msgid ""
 "Het aantal deelnemers is onbeperkt. De Wedstrijd is alleen geldig in België. "
 "Deze Wedstrijd begint\n"
-"                op 30/05/2023 en eindigt op 10/06/2023 om 23.59 uur.<br><br>\n"
+"                op 01/06/2023 en eindigt op 12/06/2023 om 23.59 uur.<br><br>\n"
 "\n"
-"                De sluitingsdatum voor deelnames is daarom 10/06/2023 om 23.59 "
+"                De sluitingsdatum voor deelnames is daarom 12/06/2023 om 23.59 "
 "uur. Alle deelnames die na deze datum\n"
 "                worden geregistreerd, worden uitgesloten van de Wedstrijd."
 "<br><br>\n"
 "\n"
 "                Per Deelnemer wordt slechts één inzending voor de Wedstrijd "
 "geaccepteerd voor elk van de volgende\n"
-"                periodes: van 30/05/2023 tot en met 10/06/2023;<br><br>\n"
+"                periodes: van 01/06/2023 tot en met 12/06/2023;<br><br>\n"
 "\n"
 "                Indien een Deelnemer meer dan eenmaal deelneemt aan de Wedstrijd "
 "gedurende de bovengenoemde perioden,\n"
@@ -429,16 +434,16 @@ msgid ""
 "sluiten van de Wedstrijd."
 msgstr ""
 "Le nombre de Participants est illimité. Le Concours est valable uniquement en "
-"Belgique. Le présent Concours débute le 30/05/2023 et se termine le 10/06/2023 à "
+"Belgique. Le présent Concours débute le 01/06/2023 et se termine le 12/06/2023 à "
 "23h59.\n"
 "<br><br>\n"
 "\n"
-"La date limite de participation est donc fixée au 10/06/2023 à 23h59. Toutes les "
+"La date limite de participation est donc fixée au 12/06/2023 à 23h59. Toutes les "
 "participations enregistrées après cette date seront exclues du Concours.\n"
 "<br><br>\n"
 "\n"
 "Une seule participation au Concours sera acceptée par Participant pour la "
-"période du 30/05/2023 au le 10/06/2023\n"
+"période du 01/06/2023 au le 12/06/2023\n"
 "<br><br>\n"
 "\n"
 "En cas de participation à plusieurs reprises d’un Participant au Concours lors "
@@ -836,14 +841,14 @@ msgstr ""
 "affirme son caractère et sa polyvalence avec sa technologie exclusive AllGrip et "
 "son moteur hybride pour des sensations de plaisir authentiques."
 
-#: app/templates/events/suzuki/s-cross.html:24
+#: app/templates/events/suzuki/s-cross.html:20
 msgid "Suzuki S-Cross<br>Vraag een offerte aan."
 msgstr ""
 "Suzuki S-Cross \n"
 "<br>\n"
 "Demander une offre."
 
-#: app/templates/events/suzuki/s-cross.html:25
+#: app/templates/events/suzuki/s-cross.html:21
 msgid ""
 "Vanaf € 21.449<br>\n"
 "                    Met tot € 6.000 korting, beperkt in de tijd!"
@@ -851,8 +856,8 @@ msgstr ""
 "A partir de € 21.449<br> \n"
 "Avec jusqu’à € 6.000 de remise! Offre limitée."
 
-#: app/templates/events/suzuki/s-cross.html:39
-#: app/templates/events/suzuki/vitara.html:39
+#: app/templates/events/suzuki/s-cross.html:35
+#: app/templates/events/suzuki/vitara.html:35
 msgid ""
 "Door op de onderstaande knop te klikken, bevestigt u dat u kennis hebt genomen "
 "van ons"
@@ -860,39 +865,39 @@ msgstr ""
 "Ok, c’est tout! Nous espérons que vous gagnerez! En cliquant sur le bouton ci-"
 "dessous, vous confirmez que vous avez pris connaissance du"
 
-#: app/templates/events/suzuki/s-cross.html:40
-#: app/templates/events/suzuki/vitara.html:40
+#: app/templates/events/suzuki/s-cross.html:36
+#: app/templates/events/suzuki/vitara.html:36
 msgid "privacybeleid"
 msgstr "politique de confidentialité"
 
-#: app/templates/events/suzuki/s-cross.html:40
-#: app/templates/events/suzuki/vitara.html:40
+#: app/templates/events/suzuki/s-cross.html:37
+#: app/templates/events/suzuki/vitara.html:37
 msgid ""
 "en dat de gegevens van dit formulier gebruikt zullen worden door Suzuki Belgium."
 msgstr "et que les données de ce formulaire soient utilisées par Suzuki Belgium."
 
-#: app/templates/events/suzuki/s-cross.html:42
-#: app/templates/events/suzuki/vitara.html:42
+#: app/templates/events/suzuki/s-cross.html:40
+#: app/templates/events/suzuki/vitara.html:40
 msgid "Bevestigen"
 msgstr "Confirmer"
 
-#: app/templates/events/suzuki/thank-you.html:8
+#: app/templates/events/suzuki/thank-you.html:9
 msgid "Bedankt voor uw aanvraag!"
 msgstr "Merci pour votre demande !"
 
-#: app/templates/events/suzuki/thank-you.html:9
+#: app/templates/events/suzuki/thank-you.html:10
 msgid "Een Suzuki medewerker zal eerstdaags contact met u opnemen."
 msgstr ""
 "Un représentant de Suzuki prendra contact avec vous dans les prochains jours."
 
-#: app/templates/events/suzuki/vitara.html:24
+#: app/templates/events/suzuki/vitara.html:20
 msgid "Suzuki Vitara<br>Vraag een offerte aan."
 msgstr ""
 "Suzuki Vitara \n"
 "<br>\n"
 "Demander une offre."
 
-#: app/templates/events/suzuki/vitara.html:25
+#: app/templates/events/suzuki/vitara.html:21
 msgid ""
 "Vanaf € 19.999<br>\n"
 "                    Met tot € 6.000 korting, beperkt in de tijd!"
@@ -924,3 +929,42 @@ msgstr ""
 #~ msgstr ""
 #~ "Jusqu’à € 6.000  de remise! Offre limitée… Sélectionnez le modèle qui vous "
 #~ "intéresse, et remplissez le formulaire de demande d’offre."
+
+#~ msgid "Rij de zomer fris en veilig tegemoet!"
+#~ msgstr "L’été s’annonce sous les meilleurs auspices !"
+
+#~ msgid ""
+#~ "Upgrade je wagen en rijcomfort door het winnen van een van de vier "
+#~ "gloednieuwe bandensets van\n"
+#~ "                Continental,\n"
+#~ "                Pirelli of Michelin. Montage in een Q Team center inclusief!\n"
+#~ "                Meedoen kan door het beantwoorden van drie eenvoudige vragen. "
+#~ "Mis het niet - binnenkort ben je weg met\n"
+#~ "                een\n"
+#~ "                nieuwe set banden!"
+#~ msgstr ""
+#~ "Améliorez votre confort de conduite et celui de votre voiture en remportant "
+#~ "l’un des quatre nouveaux jeux de pneus de Continental, Pirelli ou Michelin. "
+#~ "L’installation est incluse dans l’un des centres Q Team !\n"
+#~ "Vous pouvez participer en répondant à trois questions simples. Ne manquez pas "
+#~ "cette occasion - bientôt, vous roulerez avec un nouveau jeu de pneus !"
+
+#~ msgid ""
+#~ "Wist u dat Q Team bijna 100 servicecenters heeft verspreid over België, waar "
+#~ "u terecht kunt voor\n"
+#~ "                banden,\n"
+#~ "                velgen en onderhoud - voor zowel particuliere als "
+#~ "professionele voertuigen en tegen scherpe prijzen? Of\n"
+#~ "                u nu\n"
+#~ "                een\n"
+#~ "                personenauto, bestelwagen of vrachtwagen heeft, Q Team is de "
+#~ "onbetwiste marktleider in alle drie deze\n"
+#~ "                categorieën. Dit voor zowel persoonlijke wagens, "
+#~ "bedrijfswagens als leasewagens."
+#~ msgstr ""
+#~ "Saviez-vous que Q Team possède près de 100 centres de service répartis dans "
+#~ "toute la Belgique où vous pouvez acheter des pneus, des jantes et effectuer "
+#~ "l’entretien de votre véhicule privé ou professionnel à des prix compétitifs ? "
+#~ "Que vous ayez une voiture, une camionnette ou un camion, Q Team est le leader "
+#~ "incontesté du marché dans ces trois catégories. Cela s’applique aux voitures "
+#~ "personnelles, aux voitures de société et aux voitures de leasing."
