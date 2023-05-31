@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-05-31 09:29+0100\n"
-"PO-Revision-Date: 2023-05-31 09:33+0100\n"
+"POT-Creation-Date: 2023-05-31 11:46+0100\n"
+"PO-Revision-Date: 2023-05-31 11:46+0100\n"
 "Last-Translator: \n"
 "Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
@@ -164,8 +164,8 @@ msgid "Deze wedstrijd wordt u aangeboden door Vroom in samenwerking met QTeam"
 msgstr "Ce concours vous est proposé par Vroom en collaboration avec QTeam"
 
 #: app/templates/events/qteam/index.html:9
-msgid "BEREID UW WAGEN VOOR OP HET HUIDIGE PRACHTIGE WEER!"
-msgstr "PRÉPAREZ VOTRE VOITURE À L’ARRIVÉE DE L’ÉTÉ!"
+msgid "Bereid uw wagen voor op het huidige prachtige weer!"
+msgstr "Préparez votre voiture à l’arrivée de l’été!"
 
 #: app/templates/events/qteam/index.html:10
 msgid ""
@@ -188,8 +188,8 @@ msgstr ""
 "l’un de nos heureux gagnants !"
 
 #: app/templates/events/qteam/index.html:14
-msgid "DANKZIJ QTEAM, DE BELGISCHE MARKTLEIDER IN BANDEN BENT U IN GOEDE HANDEN"
-msgstr "AVEC QTEAM LE LEADER BELGE DU PNEUMATIQUE, VOUS ÊTES ENTRE DE BONNES MAINS"
+msgid "Dankzij qteam, de belgische marktleider in banden bent u in goede handen"
+msgstr "Avec qteam le leader belge du pneumatique, vous êtes entre de bonnes mains"
 
 #: app/templates/events/qteam/index.html:15
 msgid ""
