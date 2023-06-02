@@ -38,9 +38,9 @@ section {
 }
 
 .header-qteam {
-    background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../images/q-team/header.png');
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('../images/q-team/header.png');
     background-position: center;
     border-radius: 20px;
     margin: 0 75px;
@@ -80,9 +80,9 @@ input[type=number] {
 }
 
 .header-suzuki {
-    background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('../images/suzuki/header-suzuki.png');
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+        url('../images/suzuki/header-suzuki.png');
     background-position: center;
     border-radius: 20px;
     margin: 0 75px;
@@ -204,7 +204,7 @@ input[type=number] {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-} 
+}
 
 .suzuki-detail-right {
     width: 581px;
@@ -224,14 +224,16 @@ input[type=number] {
     margin-top: 50px;
 }
 
-.suzuki-detail-right form p, .suzuki-detail-right form a {
+.suzuki-detail-right form p,
+.suzuki-detail-right form a {
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 10px;
 }
 
-.suzuki-detail-right form input[type=text], .suzuki-detail-right form select  {
+.suzuki-detail-right form input[type=text],
+.suzuki-detail-right form select {
     width: 100%;
 }
 
@@ -242,6 +244,41 @@ input[type=number] {
 }
 
 /* Suzuki specific end */
+
+/* Ford specific start */
+
+.grid-ford {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 650px 1fr;
+    justify-content: center;
+}
+
+.header-ford {
+    background-image: url('../images/ford/ford-bg.png');
+    background-position: center;
+    border-radius: 20px;
+    background-size: cover;
+    width: 1362px;
+    height: 650px;
+}
+
+.section-ford {
+    width: 962px;
+    text-align: left;
+}
+
+.section-ford p {
+    padding-bottom: 30px;
+}
+
+.form-input-two {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+/* Ford specific end */
 
 footer {
     background-color: #1C2E2E;
@@ -266,6 +303,22 @@ footer ul {
 footer ul li a {
     margin: 0 5px 0 5px;
     text-decoration: none;
+}
+
+@media (max-width: 1361px) {
+    /* Ford specific start */
+
+    .grid-ford {
+        grid-template-rows: 500px 1fr;
+    }
+
+    .header-ford {
+        width: 100%;
+        height: 500px;
+        margin: 0;
+    }
+
+    /* Ford specific end */
 }
 
 @media (max-width: 1000px) {
@@ -388,9 +441,50 @@ footer ul li a {
         margin-bottom: 20px;
     }
 
-    .suzuki-detail-right form input[type=text], .suzuki-detail-right form select {
+    .suzuki-detail-right form input[type=text],
+    .suzuki-detail-right form select {
         width: 93%;
     }
 
     /* Suzuki specific end */
+
+    /* Ford specific start */
+
+    .grid-ford {
+        display: grid;
+        width: 100%;
+        min-height: 100vh;
+        grid-template-rows: 300px 1fr;
+    }
+
+    .header-ford {
+        margin: 0 25px;
+        width: calc(100% - 50px);
+        height: 300px;
+    }
+
+    .section-ford {
+        width: 100%;
+        padding: 0 30px;
+    }
+
+    .form-input-two {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0px;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=number],
+    input[type=password],
+    select {
+        margin-bottom: 20px;
+    }
+
+    /* Ford specific end */
+
 }
+
+

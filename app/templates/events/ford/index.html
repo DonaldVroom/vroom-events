@@ -1,0 +1,202 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="grid-ford">
+    {% include "events/ford/_header.html" %}
+    <section>
+        <div class="section-ford">
+            <span>{{ _('Deze wedstrijd wordt u aangeboden door Vroom in samenwerking met Ford') }}</span>
+            <h1>{{ _('Ervaar het onvergetelijke: Vroom nodigt je uit voor een avontuurlijke dag met de nieuwe Ford Ranger en Ford Bronco!') }}</h1>
+            <p>{{ _('Neem deel aan deze exclusieve wedstrijd en vervoeg ons op 17 juni 2023 op een avontuur door adembenemende landschappen in de Ardennen, met de gloednieuwe Ford Ranger en Ford Bronco.') }}</p>
+            <p>{{ _("Tijdens dit buitengewone evenement staan er spannende uitdagingen op je te wachten die je rijvaardigheid en teamwork op de proef stellen. Of je nu een ervaren off-roader bent of nieuw bent in avontuur, de Ford Ranger en Ford Bronco, begeleid door onze deskundige gidsen, zijn je betrouwbare metgezellen. Doorkruis de prachtige Ardennen met weelderige bossen en ruige bergen en bewonder de natuur vanuit een uniek perspectief. Onderweg geniet je van een heerlijke barbecue en neem je deel aan verrassende activiteiten die je avontuurlijke dag nog specialer maken.") }}</p>
+            <p>{{ _('Schrijf je in vóór 12 juni en maak kans om één van de 10 gelukkige winnaars te zijn, elk met de mogelijkheid om nog iemand extra mee te nemen. Bereid je voor op een herinnering die je leven lang zal meegaan!') }}</p>
+            <hr>
+            <span>{{ _('Tip: sommige van de antwoorden zijn terug te vinden op de <a href="https://www.ford.be/" target="_blank">Ford
+                    website</a>') }}</span>
+            <div class="error-text" style="display: none; color: red;">
+                {{ _('Gelieve 1 van de antwoorden aan te duiden.') }}
+            </div>
+            <form method="post" action="" enctype="multipart/form-data">
+                {{ form.hidden_tag() }}
+                <div>
+                    {{ form.first_generation.label }}
+                    <div class="custom-select" data-name="first_generation">
+                        {{ form.first_generation(type='hidden') }}
+                        <ul class="options-list">
+                            <li class="option" data-value="0">{{ _('1963') }}</li>
+                            <li class="option" data-value="1">{{ _('1966') }}</li>
+                            <li class="option" data-value="2">{{ _('1969') }}</li>
+                        </ul>
+                    </div>
+                    {% for error in form.first_generation.errors %}
+                    <span class="error-text">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div>
+                    {{ form.goat_meaning.label }}
+                    <div class="custom-select" data-name="goat_meaning">
+                        {{ form.goat_meaning(type='hidden') }}
+                        <ul class="options-list">
+                            <li class="option" data-value="0">{{ _('Een geit') }}</li>
+                            <li class="option" data-value="1">{{ _('Greatest Of All Time') }}</li>
+                            <li class="option" data-value="2">{{ _('Goes Over All Terrain') }}
+                            </li>
+                        </ul>
+                    </div>
+                    {% for error in form.goat_meaning.errors %}
+                    <span class="error-text">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div>
+                    {{ form.famous_person.label }}
+                    <div class="custom-select" data-name="famous_person">
+                        {{ form.famous_person(type='hidden') }}
+                        <ul class="options-list">
+                            <li class="option" data-value="0">{{ _('Johnny Hallyday') }}</li>
+                            <li class="option" data-value="1">{{ _('Diego Maradona') }}</li>
+                            <li class="option" data-value="2">{{ _('The Pope John Paul II') }}</li>
+                        </ul>
+                    </div>
+                    {% for error in form.famous_person.errors %}
+                    <span class="error-text">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div>
+                    {{ form.how_old.label }}
+                    <div class="custom-select" data-name="how_old">
+                        {{ form.how_old(type='hidden') }}
+                        <ul class="options-list">
+                            <li class="option" data-value="0">{{ _('40 jaar oud') }}</li>
+                            <li class="option" data-value="1">{{ _('45 jaar oud') }}</li>
+                            <li class="option" data-value="2">{{ _('50 jaar oud') }}</li>
+                        </ul>
+                    </div>
+                    {% for error in form.how_old.errors %}
+                    <span class="error-text">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div>
+                    {{ form.towing_capacity.label }}
+                    <div class="custom-select" data-name="towing_capacity">
+                        {{ form.towing_capacity(type='hidden') }}
+                        <ul class="options-list">
+                            <li class="option" data-value="0">{{ _('3,000 kg') }}</li>
+                            <li class="option" data-value="1">{{ _('3,250 kg') }}</li>
+                            <li class="option" data-value="2">{{ _('3,500 kg') }}</li>
+                        </ul>
+                    </div>
+                    {% for error in form.towing_capacity.errors %}
+                    <span class="error-text">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div>
+                    {{ form.total_gears.label }}
+                    <div class="custom-select" data-name="total_gears">
+                        {{ form.total_gears(type='hidden') }}
+                        <ul class="options-list">
+                            <li class="option" data-value="0">{{ _('6') }}</li>
+                            <li class="option" data-value="1">{{ _('7') }}</li>
+                            <li class="option" data-value="2">{{ _('8') }}</li>
+                        </ul>
+                    </div>
+                    {% for error in form.total_gears.errors %}
+                    <span class="error-text">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div>
+                    {{ form.how_many_people.label }}
+                    {{ form.how_many_people() }}
+                    {% for error in form.how_many_people.errors %}
+                    <span class="error-text">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <hr>
+                <div class="form-input-two">
+                    
+                        {{ form.first_name(placeholder=_('Je voornaam')) }}
+                        {% for error in form.first_name.errors %}
+                        <span class="error-text">{{ error }}</span>
+                        {% endfor %}
+                    
+                        {{ form.last_name(placeholder=_('Je familienaam')) }}
+                        {% for error in form.last_name.errors %}
+                        <span class="error-text">{{ error }}</span>
+                        {% endfor %}
+                    
+                </div>
+                <div class="form-input-two">
+                    
+                        {{ form.email(placeholder=_('Je email'), type="email") }}
+                        {% for error in form.email.errors %}
+                        <span class="error-text">{{ error }}</span>
+                        {% endfor %}
+                    
+                        {{ form.phone(placeholder=_('Telefoon')) }}
+                        {% for error in form.phone.errors %}
+                        <span class="error-text">{{ error }}</span>
+                        {% endfor %}
+                    
+                </div>
+                <p>{{ _('Ok, dat is alles! We hopen dat u zal winnen! Door op de onderstaande knop te klikken, bevestig
+                    je dat u kennis heeft genomen van het') }} <a href="{{ url_for('events.ford_rules') }}"
+                        target="_blank">{{ _('wedstrijdreglement') }}</a>.</p>
+                <button id="submit" name="submit" type="submit">
+                    {{ _('Indienen') }}
+                </button>
+            </form>
+        </div>
+    </section>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const options = document.querySelectorAll('.option');
+        const form = document.querySelector('form');
+        const formError = document.querySelector('.error-text');
+
+        options.forEach(option => {
+            option.addEventListener('click', function () {
+                const customSelect = option.closest('.custom-select');
+                const inputName = customSelect.getAttribute('data-name');
+                const optionsList = customSelect.querySelectorAll('.option');
+
+                optionsList.forEach(opt => opt.classList.remove('selected'));
+                option.classList.add('selected');
+                const selectedValue = option.getAttribute('data-value');
+                const hiddenInput = document.querySelector(`input[name="${inputName}"]`);
+
+                if (hiddenInput) {
+                    hiddenInput.value = selectedValue;
+                    // Trigger the change event on the hidden input field
+                    hiddenInput.dispatchEvent(new Event('change'));
+                } else {
+                    console.error(`Hidden input not found for inputName: ${inputName}`);
+                }
+            });
+        });
+
+        form.addEventListener('submit', function (event) {
+            const customSelects = document.querySelectorAll('.custom-select');
+            let emptyCustomSelectFound = false;
+
+            customSelects.forEach(customSelect => {
+                const inputName = customSelect.getAttribute('data-name');
+                const hiddenInput = document.querySelector(`input[name="${inputName}"]`);
+
+                if (hiddenInput && hiddenInput.value === "") {
+                    emptyCustomSelectFound = true;
+                }
+            });
+
+            if (emptyCustomSelectFound) {
+                event.preventDefault();
+                formError.style.display = 'block';
+            } else {
+                formError.style.display = 'none';
+            }
+        });
+    });
+
+
+</script>
+
+{% endblock %}

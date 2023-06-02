@@ -31,3 +31,24 @@ class SuzukiLead(db.Model):
 
     def __repr__(self):
         return f"<SuzukiLead {self.id}>"
+    
+class FordBroncoEvent(db.Model):
+    __tablename__ = 'fordbroncoevent'
+
+    id = db.Column(db.Integer, primary_key=True)
+    first_generation = db.Column(db.String(), nullable=False)
+    goat_meaning = db.Column(db.String(), nullable=False)
+    famous_person = db.Column(db.String(), nullable=False)
+    how_old = db.Column(db.String(), nullable=False)
+    towing_capacity = db.Column(db.String(), nullable=False)
+    total_gears = db.Column(db.String(), nullable=False)
+    how_many_people = db.Column(db.Integer(), nullable=False)
+    first_name = db.Column(db.String(255))
+    last_name = db.Column(db.String(255))
+    email = db.Column(db.String())
+    phone = db.Column(db.String())
+    created = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    locale = db.Column(db.String(10))
+
+    def __repr__(self):
+        return f"<QteamEvent {self.id}>"
