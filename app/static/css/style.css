@@ -250,7 +250,7 @@ input[type=number] {
 .grid-ford {
     display: grid;
     width: 100%;
-    grid-template-rows: 650px 1fr;
+    grid-template-rows: 477px 1fr;
     justify-content: center;
 }
 
@@ -259,8 +259,8 @@ input[type=number] {
     background-position: center;
     border-radius: 20px;
     background-size: cover;
-    width: 1362px;
-    height: 650px;
+    width: 1000px;
+    height: 477px;
 }
 
 .section-ford {
@@ -309,12 +309,12 @@ footer ul li a {
     /* Ford specific start */
 
     .grid-ford {
-        grid-template-rows: 500px 1fr;
+        grid-template-rows: 477px 1fr;
     }
 
     .header-ford {
         width: 100%;
-        height: 500px;
+        height: 477px;
         margin: 0;
     }
 
