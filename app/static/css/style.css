@@ -40,7 +40,7 @@ section {
 .header-qteam {
     background-image:
         linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-        url('../images/q-team/header.png');
+        url('../images/q-team/bg.png');
     background-position: center;
     border-radius: 20px;
     margin: 0 75px;
@@ -51,9 +51,10 @@ section {
 }
 
 .header-qteam img {
-    display: block;
-    margin-left: 250px;
-    width: 255px;
+    position: absolute;
+    right: 250px;
+    top: 280px;
+    width: 300px;
 }
 
 .section-qteam {
@@ -345,6 +346,8 @@ footer ul li a {
     }
 
     .header-qteam img {
+        position:initial;
+        display: block;
         margin: 30px;
         width: 200px;
     }
