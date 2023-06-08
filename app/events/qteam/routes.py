@@ -25,7 +25,7 @@ def qteam_main():
             print(e)
             return redirect(url_for('events.qteam_main'))
     elif request.method == 'GET': 
-        return render_template('events/qteam/index.html', title=(_('Q Team')), form=form)
+        return render_template('events/qteam/index.html', title=(_('QTeam')), form=form)
 
 @bp.route('/q-team/success', methods=['GET'])
 def qteam_success():
