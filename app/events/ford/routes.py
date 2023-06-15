@@ -25,7 +25,8 @@ def ford_main():
             print(e)
             return redirect(url_for('events.ford_main'))
     elif request.method == 'GET': 
-        return render_template('events/ford/index.html', title=(_('Ford')), form=form)
+        #return render_template('events/ford/index.html', title=(_('Ford')), form=form)
+        return render_template('events/ford/ended.html', title=(_('Ended')))
 
 @bp.route('/ford/success', methods=['GET'])
 def ford_success():
