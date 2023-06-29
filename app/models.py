@@ -17,6 +17,24 @@ class QteamEvent(db.Model):
 
     def __repr__(self):
         return f"<QteamEvent {self.id}>"
+    
+class QteamEvent2(db.Model):
+    __tablename__ = 'qteamevent2'
+
+    id = db.Column(db.Integer, primary_key=True)
+    q1 = db.Column(db.String(), nullable=False)
+    q2 = db.Column(db.String(), nullable=False)
+    q3 = db.Column(db.String(), nullable=False)
+    q4 = db.Column(db.Integer(), nullable=False)
+    how_many_people = db.Column(db.Integer(), nullable=False)
+    email = db.Column(db.String())
+    first_name = db.Column(db.String(255))
+    last_name = db.Column(db.String(255))
+    created = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    locale = db.Column(db.String(10))
+
+    def __repr__(self):
+        return f"<QteamEvent2 {self.id}>"
 
 class SuzukiLead(db.Model):
     id = db.Column(db.Integer, primary_key=True)

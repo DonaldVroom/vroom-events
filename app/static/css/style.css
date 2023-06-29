@@ -50,11 +50,27 @@ section {
     align-items: center
 }
 
+.header-qteam2 {
+    border-radius: 20px;
+    margin: 0 75px;
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    justify-content: center;
+}
+
 .header-qteam img {
     position: absolute;
     right: 250px;
     top: 280px;
     width: 300px;
+}
+
+.header-qteam2 img {
+    background-position: center;
+    border-radius: 20px;
+    margin: 0 75px;
+    background-size: cover;
 }
 
 .section-qteam {
@@ -68,6 +84,10 @@ section {
 
 input[type=number] {
     height: 23px;
+}
+
+.grid-qteam2 input[type=email] {
+    width: 100%;
 }
 
 /* Q team specific end */
@@ -352,11 +372,29 @@ footer ul li a {
         width: 200px;
     }
 
+    .header-qteam2 {
+        background: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-qteam2 img {
+        height: 250px;
+        margin: 0;
+        padding: 0 10px;
+    }
+
     .grid-qteam {
         display: grid;
         width: 100%;
         min-height: 100vh;
         grid-template-rows: 300px 1fr;
+    }
+
+    section {
+        padding-top: 0px;
     }
 
     .section-qteam {
