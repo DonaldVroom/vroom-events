@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-06-29 15:48+0100\n"
-"PO-Revision-Date: 2023-06-29 15:49+0100\n"
+"POT-Creation-Date: 2023-06-29 17:02+0100\n"
+"PO-Revision-Date: 2023-06-29 17:02+0100\n"
 "Last-Translator: \n"
 "Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
@@ -81,7 +81,7 @@ msgstr "Téléphone"
 #: app/events/qteam2/forms.py:18 app/events/suzuki/forms.py:15
 #: app/templates/events/ford/index.html:144
 #: app/templates/events/qteam/index.html:103
-#: app/templates/events/qteam2/index.html:109
+#: app/templates/events/qteam2/index.html:108
 msgid "Indienen"
 msgstr "Envoyer"
 
@@ -242,7 +242,7 @@ msgstr "Astuce : certaines des réponses peuvent être trouvées sur le <a href=
 
 #: app/templates/events/ford/index.html:17
 #: app/templates/events/qteam/index.html:23
-#: app/templates/events/qteam2/index.html:18
+#: app/templates/events/qteam2/index.html:17
 msgid "Gelieve 1 van de antwoorden aan te duiden."
 msgstr "Veuillez indiquer 1 des réponses."
 
@@ -307,12 +307,12 @@ msgid "3,500 kg"
 msgstr "3,500 kg"
 
 #: app/templates/events/ford/index.html:97
-#: app/templates/events/qteam2/index.html:56
+#: app/templates/events/qteam2/index.html:55
 msgid "6"
 msgstr "6"
 
 #: app/templates/events/ford/index.html:98
-#: app/templates/events/qteam2/index.html:57
+#: app/templates/events/qteam2/index.html:56
 msgid "7"
 msgstr "7"
 
@@ -322,19 +322,19 @@ msgstr "10"
 
 #: app/templates/events/ford/index.html:116
 #: app/templates/events/qteam/index.html:87
-#: app/templates/events/qteam2/index.html:94
+#: app/templates/events/qteam2/index.html:93
 msgid "Je voornaam"
 msgstr "Votre prénom"
 
 #: app/templates/events/ford/index.html:121
 #: app/templates/events/qteam/index.html:94
-#: app/templates/events/qteam2/index.html:99
+#: app/templates/events/qteam2/index.html:98
 msgid "Je familienaam"
 msgstr "Votre nom de famille"
 
 #: app/templates/events/ford/index.html:129
 #: app/templates/events/qteam/index.html:80
-#: app/templates/events/qteam2/index.html:88
+#: app/templates/events/qteam2/index.html:87
 msgid "Je email"
 msgstr "Votre adresse e-mail"
 
@@ -345,7 +345,7 @@ msgstr "Ok, c’est tout! Nous espérons que vous gagnerez! En cliquant sur le b
 
 #: app/templates/events/ford/index.html:142
 #: app/templates/events/qteam/index.html:101
-#: app/templates/events/qteam2/index.html:106
+#: app/templates/events/qteam2/index.html:105
 msgid "wedstrijdreglement"
 msgstr "règlement du concours"
 
@@ -672,7 +672,7 @@ msgid "Dankzij QTeam, de Belgische marktleider in banden bent u in goede handen"
 msgstr "Avec QTeam le leader belge du pneumatique, vous êtes entre de bonnes mains"
 
 #: app/templates/events/qteam/index.html:15
-#: app/templates/events/qteam2/index.html:114
+#: app/templates/events/qteam2/index.html:113
 msgid "QTeam is de toonaangevende specialist in België op het gebied van banden en mobiliteit, met meer\n"
 "                dan 50 jaar ervaring. Met het uitgebreide netwerk van 103 servicecentra bieden ze innovatieve lokale\n"
 "                oplossingen voor alle type auto's, bestelwagens en vrachtwagens, of het nu gaat om particuliere, lease-\n"
@@ -944,66 +944,65 @@ msgstr "Libérez le fan de F1 qui est en vous"
 #: app/templates/events/qteam2/index.html:10
 msgid "Bent u klaar voor een spannende competitie die uw F1-droom kan laten uitkomen? QTeam als Belgische\n"
 "                marktleider in banden, Pirelli en Vroom slaan de handen in elkaar om u als motorsportliefhebber iets\n"
-"                unieks te bieden. We bieden u de mogelijkheid om één van de drie SILVER Tickets voor de Belgian Grand\n"
-"                Prix 2023 te winnen, of één van de vier officiële Pirelli Podium F1 petten."
+"                unieks te bieden. We bieden u de mogelijkheid om één van de SILVER Tickets voor de Belgian Grand Prix 2023 te winnen, of één van de officiële Pirelli Podium F1 petten."
 msgstr "Vous rêvez d’assister à un Grand Prix de Formule 1? Alors ce concours est pour vous ! QTeam, le leader Belge du pneumatique, Pirelli et Vroom se sont associés pour proposer une opportunité unique à tous les amoureux de sport automobile.\n"
-"En effet, vous avez la possibilité de remporter l’un des trois billets SILVER pour le Grand Prix de Belgique 2023, ou l’une des 4 casquettes officielles Pirelli F1 Podium."
+"En effet, vous avez la chance de gagner un des billets SILVER pour le Grand Prix de Belgique 2023 ou l’une des casquettes officielles Pirelli Podium F1."
 
-#: app/templates/events/qteam2/index.html:14
+#: app/templates/events/qteam2/index.html:13
 msgid "Grijp uw kans door voor 15 juli 2023 de volgende vragen juist te beantwoorden. Zo wordt u misschien\n"
 "                één van de gelukkige winnaars!"
 msgstr "Ne tardez pas à tenter votre chance en répondant dès à présent aux questions suivantes avant le 15 juillet 2023. On espère que vous serez l’un des heureux gagnants !"
 
-#: app/templates/events/qteam2/index.html:27
+#: app/templates/events/qteam2/index.html:26
 msgid "Kimi Räikkönen"
 msgstr "Kimi Räikkönen"
 
-#: app/templates/events/qteam2/index.html:28
+#: app/templates/events/qteam2/index.html:27
 msgid "Michael Schumacher"
 msgstr "Michael Schumacher"
 
-#: app/templates/events/qteam2/index.html:29
+#: app/templates/events/qteam2/index.html:28
 msgid "Lewis Hamilton"
 msgstr "Lewis Hamilton"
 
-#: app/templates/events/qteam2/index.html:41
+#: app/templates/events/qteam2/index.html:40
 msgid "2011"
 msgstr "2011"
 
-#: app/templates/events/qteam2/index.html:42
+#: app/templates/events/qteam2/index.html:41
 msgid "2015"
 msgstr "2015"
 
-#: app/templates/events/qteam2/index.html:43
+#: app/templates/events/qteam2/index.html:42
 msgid "2019"
 msgstr "2019"
 
-#: app/templates/events/qteam2/index.html:58
+#: app/templates/events/qteam2/index.html:57
 msgid "8"
 msgstr "8"
 
-#: app/templates/events/qteam2/index.html:70
+#: app/templates/events/qteam2/index.html:69
 msgid "15 inch"
 msgstr "15 pouces"
 
-#: app/templates/events/qteam2/index.html:71
+#: app/templates/events/qteam2/index.html:70
 msgid "17 inch"
 msgstr "17 pouces"
 
-#: app/templates/events/qteam2/index.html:72
+#: app/templates/events/qteam2/index.html:71
 msgid "18 inch"
 msgstr "18 pouces"
 
-#: app/templates/events/qteam2/index.html:104
+#: app/templates/events/qteam2/index.html:103
 msgid "Door op de onderstaande knop te klikken, bevestig\n"
 "                    je dat u kennis heeft genomen van het"
 msgstr "Ok, c’est tout! Nous espérons que vous gagnerez! En cliquant sur le bouton ci-dessous, vous confirmez que vous avez pris connaissance du"
 
-#: app/templates/events/qteam2/index.html:107
+#: app/templates/events/qteam2/index.html:106
 msgid "Uw data blijft bij Vroom, en wordt niet gedeeld met partners."
 msgstr "Vos informations personnelles ne seront pas partagées avec nos partenaires."
 
-#: app/templates/events/qteam2/index.html:113
+#: app/templates/events/qteam2/index.html:112
 msgid "Mogelijk gemaakt door QTeam, de Belgische marktleider in banden"
 msgstr "Avec QTeam le leader belge du pneumatique, vous êtes entre de bonnes mains"
 
