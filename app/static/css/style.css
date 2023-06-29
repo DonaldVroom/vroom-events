@@ -34,7 +34,7 @@ section {
 .grid-qteam {
     display: grid;
     width: 100%;
-    grid-template-rows: 500px 1fr;
+    grid-template-rows: 350px 1fr;
 }
 
 .header-qteam {
@@ -69,8 +69,8 @@ section {
 .header-qteam2 img {
     background-position: center;
     border-radius: 20px;
-    margin: 0 75px;
     background-size: cover;
+    width: 991px;
 }
 
 .section-qteam {
@@ -326,7 +326,7 @@ footer ul li a {
     text-decoration: none;
 }
 
-@media (max-width: 1361px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     /* Ford specific start */
 
     .grid-ford {
@@ -340,9 +340,59 @@ footer ul li a {
     }
 
     /* Ford specific end */
+
+        /* Q team specific start  */
+
+        .header-qteam {
+            background: none;
+            background-color: #1C2E2E;
+            margin: 0 30px;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .header-qteam img {
+            position:initial;
+            display: block;
+            margin: 30px;
+            width: 200px;
+        }
+    
+        .header-qteam2 {
+            background: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .header-qteam2 img {
+            margin: 0;
+            padding: 0 10px;
+            width: 700px;
+        }
+    
+        .grid-qteam {
+            display: grid;
+            width: 100%;
+            min-height: 100vh;
+            grid-template-rows: 300px 1fr;
+        }
+    
+        section {
+            padding-top: 0px;
+        }
+    
+        .section-qteam {
+            width: 100%;
+            padding: 0 30px;
+        }
+    
+        /* Q team specific end */
+    
 }
 
-@media (max-width: 1000px) {
+@media only screen and (max-width: 767px) {
     .event {
         grid-template-rows: 80px 1fr 300px;
     }
@@ -381,16 +431,16 @@ footer ul li a {
     }
 
     .header-qteam2 img {
-        height: 250px;
         margin: 0;
         padding: 0 10px;
+        width: 300px;
     }
 
     .grid-qteam {
         display: grid;
         width: 100%;
         min-height: 100vh;
-        grid-template-rows: 300px 1fr;
+        grid-template-rows: 150px 1fr;
     }
 
     section {
@@ -400,6 +450,10 @@ footer ul li a {
     .section-qteam {
         width: 100%;
         padding: 0 30px;
+    }
+
+    .grid-qteam2 input[type=email] {
+        width: 96%;
     }
 
     /* Q team specific end */

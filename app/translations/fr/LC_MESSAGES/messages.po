@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-06-29 13:11+0100\n"
-"PO-Revision-Date: 2023-06-29 13:17+0100\n"
+"POT-Creation-Date: 2023-06-29 15:48+0100\n"
+"PO-Revision-Date: 2023-06-29 15:49+0100\n"
 "Last-Translator: \n"
 "Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
@@ -643,7 +643,6 @@ msgstr "L’Organisateur -sauf dans la mesure où la responsabilité de celui-ci
 
 #: app/templates/events/ford/thank-you.html:9
 #: app/templates/events/qteam/thank-you.html:9
-#: app/templates/events/qteam2/thank-you.html:9
 msgid "Bedankt voor je deelname!"
 msgstr "Merci de votre participation!"
 
@@ -936,11 +935,11 @@ msgstr "Le Participant reconnaît et accepte que par sa participation au Concour
 
 #: app/templates/events/qteam2/index.html:8
 msgid "Deze wedstrijd wordt u aangeboden door Vroom in samenwerking met QTeam en Pirelli."
-msgstr "Ce concours vous est proposé par Vroom en collaboration avec QTeam"
+msgstr "Ce concours vous est proposé par Vroom en collaboration avec QTeam."
 
 #: app/templates/events/qteam2/index.html:9
 msgid "Beleef een onvergetelijke F1 ervaring"
-msgstr "Libérez le fan de F1 qui est en vous !"
+msgstr "Libérez le fan de F1 qui est en vous"
 
 #: app/templates/events/qteam2/index.html:10
 msgid "Bent u klaar voor een spannende competitie die uw F1-droom kan laten uitkomen? QTeam als Belgische\n"
@@ -1001,12 +1000,16 @@ msgid "Door op de onderstaande knop te klikken, bevestig\n"
 msgstr "Ok, c’est tout! Nous espérons que vous gagnerez! En cliquant sur le bouton ci-dessous, vous confirmez que vous avez pris connaissance du"
 
 #: app/templates/events/qteam2/index.html:107
-msgid "Uw data blijft bij Vroom, en wordt niet gedeeld met partners"
+msgid "Uw data blijft bij Vroom, en wordt niet gedeeld met partners."
 msgstr "Vos informations personnelles ne seront pas partagées avec nos partenaires."
 
 #: app/templates/events/qteam2/index.html:113
 msgid "Mogelijk gemaakt door QTeam, de Belgische marktleider in banden"
 msgstr "Avec QTeam le leader belge du pneumatique, vous êtes entre de bonnes mains"
+
+#: app/templates/events/qteam2/thank-you.html:9
+msgid "Bedankt voor uw deelname!"
+msgstr "Merci de votre participation!"
 
 #: app/templates/events/suzuki/index.html:8
 msgid "Korting tot € 6.000! Aanbod beperkt geldig. Kies uw model en vul het offerteformulier in."
