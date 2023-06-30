@@ -1,7 +1,6 @@
 import os
 import click
-from app.events.qteam.send_results import send_results_qteam
-from app.events.ford.send_results import send_results_ford
+from app.events.qteam2.send_results import send_results_qteam2
 
 
 def register(app):
@@ -14,8 +13,7 @@ def register(app):
     def emailreports():
         """Send email reports."""
         print('Creating email report job')
-        send_results_qteam()
-        send_results_ford()
+        send_results_qteam2()
         print('Done!')
 
     @translate.command()

@@ -1,5 +1,5 @@
 from flask import current_app
-from app.models import QteamEvent
+from app.models import QteamEvent2
 from app.email_sender import send_email
 
 def create_table(data, model):
@@ -23,10 +23,10 @@ def create_table(data, model):
     
     return html_table
 
-def send_results_qteam():
-    qteam_events = QteamEvent.query.all()
+def send_results_qteam2():
+    qteam_events = QteamEvent2.query.all()
 
-    qteam_events_str = create_table(qteam_events, QteamEvent)
+    qteam_events_str = create_table(qteam_events, QteamEvent2)
 
     html_content = f"<h3>Q Team Events</h3>{qteam_events_str}"
 
