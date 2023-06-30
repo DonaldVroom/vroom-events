@@ -30,6 +30,7 @@ class QteamEvent2(db.Model):
     email = db.Column(db.String())
     first_name = db.Column(db.String(255))
     last_name = db.Column(db.String(255))
+    phone = db.Column(db.String())
     created = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     locale = db.Column(db.String(10))
 

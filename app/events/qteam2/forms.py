@@ -15,4 +15,5 @@ class QteamForm2(FlaskForm):
     email = StringField(_l('Email'), validators=[DataRequired(), Email()])
     first_name = StringField(_l('Voornaam'), validators=[DataRequired()])
     last_name = StringField(_l('Familienaam'), validators=[DataRequired()])
+    phone = StringField(_l('Telefoon'), validators=[DataRequired()])
     submit = SubmitField(_l('Indienen'))

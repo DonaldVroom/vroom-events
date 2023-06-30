@@ -37,10 +37,9 @@
                     <div class="custom-select" data-name="q2">
                         {{ form.q2(type='hidden') }}
                         <ul class="options-list">
-                            <li class="option" data-value="0">{{ _('2011') }}</li>
-                            <li class="option" data-value="1">{{ _('2015') }}</li>
-                            <li class="option" data-value="2">{{ _('2019') }}
-                            </li>
+                            <li class="option" data-value="0">2011</li>
+                            <li class="option" data-value="1">2015</li>
+                            <li class="option" data-value="2">2019</li>
                         </ul>
                     </div>
                     {% for error in form.q2.errors %}
@@ -52,9 +51,9 @@
                     <div class="custom-select" data-name="q3">
                         {{ form.q3(type='hidden') }}
                         <ul class="options-list">
-                            <li class="option" data-value="0">{{ _('6') }}</li>
-                            <li class="option" data-value="1">{{ _('7') }}</li>
-                            <li class="option" data-value="2">{{ _('8') }}</li>
+                            <li class="option" data-value="0">6</li>
+                            <li class="option" data-value="1">7</li>
+                            <li class="option" data-value="2">8</li>
                         </ul>
                     </div>
                     {% for error in form.q3.errors %}
@@ -88,6 +87,11 @@
                     {% for error in form.email.errors %}
                     <span class="error-text">{{ error }}</span>
                     {% endfor %}
+
+                    {{ form.phone(placeholder=_('Telefoon')) }}
+                        {% for error in form.phone.errors %}
+                        <span class="error-text">{{ error }}</span>
+                    {% endfor %}
                 </div>
                 <div class="form-block">
                     {{ form.first_name(placeholder=_('Je voornaam')) }}
@@ -101,7 +105,7 @@
                     {% endfor %}
                 </div>
                 <p>{{ _('Door op de onderstaande knop te klikken, bevestig
-                    je dat u kennis heeft genomen van het') }} <a href="{{ url_for('events.qteam_rules') }}"
+                    je dat u kennis heeft genomen van het') }} <a href="{{ url_for('events.qteam_rules2') }}"
                         target="_blank">{{ _('wedstrijdreglement') }}</a>.</p>
                 <p>{{ _('Uw data blijft bij Vroom, en wordt niet gedeeld met partners.') }}</p>
                 <button id="submit" name="submit" type="submit">
