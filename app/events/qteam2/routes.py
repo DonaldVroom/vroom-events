@@ -6,26 +6,30 @@ from app.events.forms import QteamForm2
 from app.models import QteamEvent2
 from app import db
 
-@bp.route('/q-team/f1/', methods=['GET', 'POST'])
+# @bp.route('/q-team/f1/', methods=['GET', 'POST'])
+# def qteam_main2():
+#     form = QteamForm2()
+#     if request.method == 'POST':
+#         try:
+#             if form.validate_on_submit():
+#                 locale = str(get_locale())
+#                 entry = QteamEvent2()
+#                 form.populate_obj(entry)
+#                 entry.created = datetime.utcnow()
+#                 entry.locale = locale
+#                 db.session.add(entry)
+#                 db.session.commit()
+#                 return redirect(url_for('events.qteam_success2'))
+#         except Exception as e:
+#             db.session.rollback()
+#             print(e)
+#             return redirect(url_for('events.qteam_main2'))
+#     elif request.method == 'GET': 
+#         return render_template('events/qteam2/index.html', title=(_('QTeam')), form=form)
+
+@bp.route('/q-team/f1/', methods=['GET'])
 def qteam_main2():
-    form = QteamForm2()
-    if request.method == 'POST':
-        try:
-            if form.validate_on_submit():
-                locale = str(get_locale())
-                entry = QteamEvent2()
-                form.populate_obj(entry)
-                entry.created = datetime.utcnow()
-                entry.locale = locale
-                db.session.add(entry)
-                db.session.commit()
-                return redirect(url_for('events.qteam_success2'))
-        except Exception as e:
-            db.session.rollback()
-            print(e)
-            return redirect(url_for('events.qteam_main2'))
-    elif request.method == 'GET': 
-        return render_template('events/qteam2/index.html', title=(_('QTeam')), form=form)
+    return render_template('events/qteam2/ended.html', title=(_('Ended')))
 
 @bp.route('/q-team/f1/success', methods=['GET'])
 def qteam_success2():
