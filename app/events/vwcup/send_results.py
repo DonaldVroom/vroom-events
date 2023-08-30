@@ -1,5 +1,5 @@
 from flask import current_app
-from app.models import QteamEvent2
+from app.models import VwCupEvent
 from app.email_sender import send_email
 
 def create_table(data, model):
@@ -23,15 +23,15 @@ def create_table(data, model):
     
     return html_table
 
-def send_results_qteam2():
-    qteam_events = QteamEvent2.query.all()
+def send_results_vw_cup():
+    vw_cup_events = VwCupEvent.query.all()
 
-    qteam_events_str = create_table(qteam_events, QteamEvent2)
+    vw_cup_eventds_str = create_table(vw_cup_events, VwCupEvent)
 
-    html_content = f"<h3>Q Team Events</h3>{qteam_events_str}"
+    html_content = f"<h3>VW Cup Events</h3>{vw_cup_eventds_str}"
 
     # Update the following line to include sender parameter
-    subject="VROOM events: Q Team"
+    subject="VROOM events: VW Cup"
     sender=current_app.config['DEFAULT_MAIL_SENDER']
     recipients=current_app.config['MAIL_RESULT_RECIPIENTS']
     recipients_list = recipients.split(';')

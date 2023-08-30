@@ -1,6 +1,6 @@
 import os
 import click
-from app.events.qteam2.send_results import send_results_qteam2
+from app.events.vwcup.send_results import send_results_vw_cup
 
 
 def register(app):
@@ -13,7 +13,7 @@ def register(app):
     def emailreports():
         """Send email reports."""
         print('Creating email report job')
-        send_results_qteam2()
+        send_results_vw_cup()
         print('Done!')
 
     @translate.command()
