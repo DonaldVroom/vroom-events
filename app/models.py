@@ -71,3 +71,21 @@ class FordBroncoEvent(db.Model):
 
     def __repr__(self):
         return f"<QteamEvent {self.id}>"
+    
+
+class VwCupEvent(db.Model):
+    __tablename__ = 'vwcupevent'
+
+    id = db.Column(db.Integer, primary_key=True)
+    q1 = db.Column(db.String(), nullable=False)
+    q2 = db.Column(db.String(), nullable=False)
+    how_many_people = db.Column(db.Integer(), nullable=False)
+    email = db.Column(db.String())
+    first_name = db.Column(db.String(255))
+    last_name = db.Column(db.String(255))
+    phone = db.Column(db.String())
+    created = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    locale = db.Column(db.String(10))
+
+    def __repr__(self):
+        return f"<vwcupevent {self.id}>"

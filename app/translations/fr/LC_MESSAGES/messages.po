@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-07-12 22:04+0100\n"
-"PO-Revision-Date: 2023-07-12 22:05+0100\n"
+"POT-Creation-Date: 2023-08-30 18:19+0100\n"
+"PO-Revision-Date: 2023-08-30 18:30+0100\n"
 "Last-Translator: \n"
 "Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Generated-By: Babel 2.12.1\n"
 "X-Generator: Poedit 3.3.2\n"
 
-#: app/events/routes.py:27
+#: app/events/routes.py:28
 msgid "Welcome"
 msgstr "Bienvenue"
 
@@ -56,67 +56,72 @@ msgid "Hoeveel versnellingen heeft de Ford EcoBlue Dieselmotor?"
 msgstr "Combien de vitesses a le moteur diesel Ford EcoBlue ?"
 
 #: app/events/ford/forms.py:15 app/events/qteam/forms.py:12
-#: app/events/qteam2/forms.py:13
+#: app/events/qteam2/forms.py:13 app/events/vwcup/forms.py:11
 msgid "Hoeveel personen zullen aan deze competitie deelnemen?"
 msgstr "Combien de personnes participeront à ce concours?"
 
 #: app/events/ford/forms.py:17 app/events/qteam/forms.py:14
 #: app/events/qteam2/forms.py:15 app/events/suzuki/forms.py:9
-#: app/templates/events/suzuki/s-cross.html:26
+#: app/events/vwcup/forms.py:13 app/templates/events/suzuki/s-cross.html:26
 #: app/templates/events/suzuki/vitara.html:25
 msgid "Email"
 msgstr "Email"
 
 #: app/events/ford/forms.py:18 app/events/qteam/forms.py:15
 #: app/events/qteam2/forms.py:16 app/events/suzuki/forms.py:10
-#: app/events/suzuki/forms.py:11 app/templates/events/suzuki/s-cross.html:28
+#: app/events/suzuki/forms.py:11 app/events/vwcup/forms.py:14
+#: app/templates/events/suzuki/s-cross.html:28
 #: app/templates/events/suzuki/vitara.html:27
 msgid "Voornaam"
 msgstr "Prénom"
 
 #: app/events/ford/forms.py:19 app/events/qteam/forms.py:16
 #: app/events/qteam2/forms.py:17 app/events/suzuki/forms.py:12
-#: app/templates/events/suzuki/s-cross.html:29
+#: app/events/vwcup/forms.py:15 app/templates/events/suzuki/s-cross.html:29
 #: app/templates/events/suzuki/vitara.html:28
 msgid "Familienaam"
 msgstr "Nom de famille"
 
 #: app/events/ford/forms.py:20 app/events/qteam2/forms.py:18
-#: app/templates/events/ford/index.html:134
+#: app/events/vwcup/forms.py:16 app/templates/events/ford/index.html:134
 #: app/templates/events/qteam2/index.html:91
+#: app/templates/events/vw-cup/index.html:63
 msgid "Telefoon"
 msgstr "Téléphone"
 
 #: app/events/ford/forms.py:21 app/events/qteam/forms.py:17
 #: app/events/qteam2/forms.py:19 app/events/suzuki/forms.py:15
-#: app/templates/events/ford/index.html:144
+#: app/events/vwcup/forms.py:17 app/templates/events/ford/index.html:144
 #: app/templates/events/qteam/index.html:103
 #: app/templates/events/qteam2/index.html:112
+#: app/templates/events/vw-cup/index.html:84
 msgid "Indienen"
 msgstr "Envoyer"
 
 #: app/events/ford/routes.py:29 app/events/ford/routes.py:37
 #: app/events/qteam/routes.py:29 app/events/qteam/routes.py:37
-#: app/events/qteam2/routes.py:36
+#: app/events/qteam2/routes.py:32 app/events/qteam2/routes.py:40
+#: app/events/vwcup/routes.py:40
 msgid "Ended"
 msgstr "Terminé"
 
 #: app/events/ford/routes.py:33 app/events/qteam/routes.py:33
-#: app/events/qteam2/routes.py:32
+#: app/events/qteam2/routes.py:36 app/events/vwcup/routes.py:36
 msgid "Success"
 msgstr "Réussi"
 
 #: app/events/ford/routes.py:55 app/events/qteam/routes.py:55
-#: app/events/qteam2/routes.py:54 app/events/suzuki/routes.py:78
-#: app/templates/events/ford/results.html:9
+#: app/events/qteam2/routes.py:58 app/events/suzuki/routes.py:78
+#: app/events/vwcup/routes.py:58 app/templates/events/ford/results.html:9
 #: app/templates/events/qteam/results.html:9
 #: app/templates/events/qteam2/results.html:9
 #: app/templates/events/suzuki/results.html:9
+#: app/templates/events/vw-cup/results.html:9
 msgid "Resultaten"
 msgstr "Résultats"
 
 #: app/events/ford/routes.py:59 app/events/qteam/routes.py:59
-#: app/events/qteam2/routes.py:58
+#: app/events/qteam2/routes.py:62 app/events/vwcup/routes.py:62
 msgid "Regels"
 msgstr "Règlement"
 
@@ -168,10 +173,6 @@ msgstr ""
 "Après la mise en place de nouvelles réglementations techniques en 2022, les "
 "pneus de F1 ne font désormais plus 13 pouces. Quelle est la nouvelle taille?"
 
-#: app/events/qteam2/routes.py:28
-msgid "QTeam"
-msgstr "QTeam"
-
 #: app/events/suzuki/forms.py:8
 msgid "auto"
 msgstr "voiture"
@@ -199,6 +200,22 @@ msgstr "S-Cross"
 #: app/events/suzuki/routes.py:55 app/templates/events/suzuki/index.html:37
 msgid "Vitara"
 msgstr "Vitara"
+
+#: app/events/vwcup/forms.py:8
+msgid "Indien je een 2de hands auto koopt:"
+msgstr "Lorsque vous achetez une voiture d’occasion :"
+
+#: app/events/vwcup/forms.py:9
+msgid ""
+"Er staat naast de kilometerhistoriek, extra informatie op de Car-Pass. Welke van "
+"de onderstaande gegevens vindt u NIET op de Car-Pass?"
+msgstr ""
+"Le Car-Pass contient bien plus de données que l’historique kilométrique. Quelle "
+"information ne se trouve pas sur le Car-Pass ?"
+
+#: app/events/vwcup/routes.py:28
+msgid "VW Cup"
+msgstr "VW Cup"
 
 #: app/templates/base.html:21
 msgid "VROOM"
@@ -234,11 +251,13 @@ msgstr "Épreuves"
 
 #: app/templates/events/ford/ended.html:8 app/templates/events/qteam/ended.html:8
 #: app/templates/events/qteam2/ended.html:8
+#: app/templates/events/vw-cup/ended.html:8
 msgid "Helaas!"
 msgstr "Malheureusement!"
 
 #: app/templates/events/ford/ended.html:9 app/templates/events/qteam/ended.html:9
 #: app/templates/events/qteam2/ended.html:9
+#: app/templates/events/vw-cup/ended.html:9
 msgid ""
 "Deze wedstrijd is afgelopen. Maar maak je geen zorgen, we zullen binnenkort "
 "gelijkaardige wedstrijden\n"
@@ -312,6 +331,7 @@ msgstr ""
 
 #: app/templates/events/ford/index.html:17 app/templates/events/qteam/index.html:23
 #: app/templates/events/qteam2/index.html:17
+#: app/templates/events/vw-cup/index.html:16
 msgid "Gelieve 1 van de antwoorden aan te duiden."
 msgstr "Veuillez indiquer 1 des réponses."
 
@@ -390,18 +410,21 @@ msgstr "10"
 #: app/templates/events/ford/index.html:116
 #: app/templates/events/qteam/index.html:87
 #: app/templates/events/qteam2/index.html:97
+#: app/templates/events/vw-cup/index.html:69
 msgid "Je voornaam"
 msgstr "Votre prénom"
 
 #: app/templates/events/ford/index.html:121
 #: app/templates/events/qteam/index.html:94
 #: app/templates/events/qteam2/index.html:102
+#: app/templates/events/vw-cup/index.html:74
 msgid "Je familienaam"
 msgstr "Votre nom de famille"
 
 #: app/templates/events/ford/index.html:129
 #: app/templates/events/qteam/index.html:80
 #: app/templates/events/qteam2/index.html:86
+#: app/templates/events/vw-cup/index.html:58
 msgid "Je email"
 msgstr "Votre adresse e-mail"
 
@@ -417,6 +440,7 @@ msgstr ""
 #: app/templates/events/ford/index.html:142
 #: app/templates/events/qteam/index.html:101
 #: app/templates/events/qteam2/index.html:109
+#: app/templates/events/vw-cup/index.html:81
 msgid "wedstrijdreglement"
 msgstr "règlement du concours"
 
@@ -424,6 +448,7 @@ msgstr "règlement du concours"
 #: app/templates/events/qteam/results.html:11
 #: app/templates/events/qteam2/results.html:11
 #: app/templates/events/suzuki/results.html:11
+#: app/templates/events/vw-cup/results.html:11
 msgid "Password:"
 msgstr "Mot de passe:"
 
@@ -431,6 +456,7 @@ msgstr "Mot de passe:"
 #: app/templates/events/qteam/results.html:12
 #: app/templates/events/qteam2/results.html:12
 #: app/templates/events/suzuki/results.html:12
+#: app/templates/events/vw-cup/results.html:12
 msgid "Password"
 msgstr "Mot de passe"
 
@@ -438,6 +464,7 @@ msgstr "Mot de passe"
 #: app/templates/events/qteam/results.html:13
 #: app/templates/events/qteam2/results.html:13
 #: app/templates/events/suzuki/results.html:13
+#: app/templates/events/vw-cup/results.html:13
 msgid "Submit"
 msgstr "Envoyer"
 
@@ -468,7 +495,7 @@ msgstr ""
 "le numéro 0794.705.855 et portant le numéro d’identification TVA BE 0794.705.855 "
 "(ci-après dénommée “l’Organisateur”) organise en Belgique un concours intitulé "
 "“Vroom vous invite à une journée d’aventure avec les nouveaux Ford Ranger et "
-"Ford Bronco!” (ci-après dénommé “le Concours”) "
+"Ford Bronco!” (ci-après dénommé “le Concours”)"
 
 #: app/templates/events/ford/rules.html:12
 msgid ""
@@ -934,6 +961,7 @@ msgstr "Merci de votre participation!"
 #: app/templates/events/ford/thank-you.html:10
 #: app/templates/events/qteam/thank-you.html:10
 #: app/templates/events/qteam2/thank-you.html:10
+#: app/templates/events/vw-cup/thank-you.html:10
 msgid "Zodra de winnaars bekend zijn nemen we contact op via mail."
 msgstr "Dès que les gagnants seront connus, nous vous contacterons par e-mail."
 
@@ -1460,6 +1488,7 @@ msgid "18 inch"
 msgstr "18 pouces"
 
 #: app/templates/events/qteam2/index.html:107
+#: app/templates/events/vw-cup/index.html:79
 msgid ""
 "Door op de onderstaande knop te klikken, bevestig\n"
 "                    je dat u kennis heeft genomen van het"
@@ -1468,6 +1497,7 @@ msgstr ""
 "dessous, vous confirmez que vous avez pris connaissance du"
 
 #: app/templates/events/qteam2/index.html:110
+#: app/templates/events/vw-cup/index.html:82
 msgid "Uw data blijft bij Vroom, en wordt niet gedeeld met partners."
 msgstr ""
 "Vos informations personnelles ne seront pas partagées avec nos partenaires."
@@ -1485,6 +1515,7 @@ msgstr ""
 "Pirelli”"
 
 #: app/templates/events/qteam2/rules.html:9
+#: app/templates/events/vw-cup/rules.html:9
 msgid "ARTIKEL 1: ALGEMEEN"
 msgstr "ARTICLE 1 : GÉNÉRALITÉS"
 
@@ -1587,7 +1618,6 @@ msgid "ARTIKEL 3: DE WEDSTRIJD "
 msgstr "ARTICLE 3 : LE CONCOURS "
 
 #: app/templates/events/qteam2/rules.html:36
-#, fuzzy
 msgid ""
 "Het aantal deelnemers is onbeperkt. De Wedstrijd is alleen geldig in België. "
 "Deze Wedstrijd begint\n"
@@ -1902,6 +1932,7 @@ msgstr ""
 "configuration du hardware et/ou software utilisé par le Participant."
 
 #: app/templates/events/qteam2/thank-you.html:9
+#: app/templates/events/vw-cup/thank-you.html:9
 msgid "Bedankt voor uw deelname!"
 msgstr "Merci de votre participation!"
 
@@ -1963,7 +1994,7 @@ msgid ""
 "                    Met tot € 6.000 korting, beperkt in de tijd!"
 msgstr ""
 "A partir de € 21.449<br> \n"
-"Avec jusqu’à € 6.000 de remise! Offre limitée."
+"Avec jusqu’à € 6.000 de remise! Offre limitée!"
 
 #: app/templates/events/suzuki/s-cross.html:35
 #: app/templates/events/suzuki/vitara.html:34
@@ -2005,6 +2036,374 @@ msgstr ""
 "Suzuki Vitara \n"
 "<br>\n"
 "Demander une offre."
+
+#: app/templates/events/vw-cup/index.html:8
+msgid "Deze wedstrijd wordt u aangeboden door Vroom in samenwerking met Car-Pass."
+msgstr "Cette compétition est offerte par Vroom en collaboration avec Car-Pass."
+
+#: app/templates/events/vw-cup/index.html:9
+msgid "Deelnemen aan een echte race, op volle snelheid? Dit is uw kans!"
+msgstr ""
+"Vous êtes un amateur de sensations fortes? Cette compétition est pour vous!"
+
+#: app/templates/events/vw-cup/index.html:10
+msgid ""
+"Bent u klaar om uw race-droom te verwezenlijken? Car-Pass, de Belgische "
+"referentie op het gebied van kwalitatieve tweedehandswagens, en Vroom slaan de "
+"handen in elkaar om u als motorsportliefhebber iets unieks te bieden. Maar "
+"liefst 8 deelnemers krijgen de unieke kans om als bijrijder deel te nemen aan de "
+"VW Fun Cup. Op zondag 8 oktober 2023 is het zover, op het legendarische circuit "
+"van Zolder."
+msgstr ""
+"Car-Pass, la référence belge en matière de voitures d’occasion de qualité, "
+"s’associe avec Vroom pour offrir quelque chose d’unique aux passionnés de sports "
+"mécaniques. Pas moins de 8 participants auront l’opportunité exceptionnelle de "
+"participer en tant que passager à la VW Fun Cup le dimanche 8 octobre 2023 sur "
+"le légendaire circuit de Zolder."
+
+#: app/templates/events/vw-cup/index.html:11
+msgid ""
+"Aan de zijde van een ervaren racepiloot zult u meerdere sensationele rondes over "
+"het circuit razen, concurrerend met andere wagens in de Biplace-categorie."
+msgstr ""
+"À côté d’un pilote expérimenté, vous effectuerez plusieurs tours du circuit à "
+"pleine vitesse, en compétition avec d’autres voitures de la catégorie Biplace."
+
+#: app/templates/events/vw-cup/index.html:12
+msgid ""
+"Wilt u uw racedroom werkelijkheid maken? Wij staan alvast aan uw zijde, klaar om "
+"te juichen!"
+msgstr "Vous souhaitez participer ? Nous croisons les doigts pour vous !"
+
+#: app/templates/events/vw-cup/index.html:13
+msgid ""
+"Grijp uw kans door voor 18 september 2023 de volgende vragen juist te "
+"beantwoorden. Zo wordt u misschien één van de acht gelukkige winnaars!"
+msgstr ""
+"Saisissez votre chance en répondant correctement aux questions suivantes d’ici "
+"le 18 septembre 2023. Vous pourriez être l’un des huit heureux gagnants !"
+
+#: app/templates/events/vw-cup/index.html:25
+msgid "Is elke verkoper wettelijk verplicht je een Car-Pass te overhandigen."
+msgstr "Tous les vendeurs sont légalement tenus de vous transmettre un Car-Pass."
+
+#: app/templates/events/vw-cup/index.html:26
+msgid ""
+"Zijn enkel autohandelaars wettelijk verplicht je een Car-Pass te overhandigen."
+msgstr ""
+"Les marchands de voitures sont les seuls vendeurs légalement tenus de vous "
+"transmettre un Car-Pass."
+
+#: app/templates/events/vw-cup/index.html:27
+msgid "Is de verkoper vrij om je een Car-Pass te overhandigen."
+msgstr "Le vendeur est libre de vous transmettre ou non un Car-Pass."
+
+#: app/templates/events/vw-cup/index.html:55
+msgid ""
+"Tip: deze juiste antwoorden zijn te vinden op de <a href=\"https://www.car-pass."
+"be/nl/over-car-pass\" target=\"_blank\">officiële Car-Pass website</a>"
+msgstr ""
+"Astuce: toutes les informations sont disponibles sur <a href=\"https://www.car-"
+"pass.be/fr/a-propos-de-car-pass\" target=\"_blank\">le site web de Car-Pass</a>"
+
+#: app/templates/events/vw-cup/rules.html:8
+msgid "Wedstrijdreglement: \"Wedstrijdreglement CAR-PASS VW Fun Cup\""
+msgstr "Règlement applicable au concours “CAR-PASS VW Fun Cup”"
+
+#: app/templates/events/vw-cup/rules.html:10
+msgid ""
+"Het bedrijf Movel BV, met hoofdzetel te 2600 Berchem (België), Posthofbrug 6-8, "
+"ingeschreven bij de\n"
+"                Kruispuntbank der Ondernemingen onder het nummer 0794.705.855 en "
+"met btw-identificatienummer BE\n"
+"                0794.705.855 (hierna de Organisator genoemd) organiseert in "
+"België een wedstrijd onder de naam \"CAR-PASS\n"
+"                VW Fun Cup\" (hierna de Wedstrijd genoemd (hierna het Evenement "
+"genoemd)."
+msgstr ""
+"La société Movel BV, dont le siège social est situé à 2600 Berchem (Belgique), "
+"Posthofbrug 6-8, enregistrée auprès de la Banque-Carrefour des Entreprises sous "
+"le numéro 0794.705.855 et portant le numéro d’identification TVA BE 0794.705.855 "
+"(ci-après dénommée “l’Organisateur”) organise en Belgique un concours intitulé "
+"“CAR-PASS VW Fun Cup” (ci-après dénommé “le Concours”) (ci-après dénommé "
+"“l’Événement”)."
+
+#: app/templates/events/vw-cup/rules.html:14
+msgid "ARTIKEL 2: VOORWAARDEN TOT DEELNAME & BEPALING VAN DE WINNAARS"
+msgstr "ARTICLE 2 : LES CONDITIONS DE PARTICIPATION & DÉTERMINATION DES GAGNANTS"
+
+#: app/templates/events/vw-cup/rules.html:15
+msgid ""
+"Deelnemers aan de wedstrijd moeten ouder dan 18 jaar . Het aantal deelnemers is "
+"onbeperkt. Elke\n"
+"                deelnemer mag slechts 1 keer deelnemen aan de wedstrijd. Movel "
+"BV en Car-Pass vzw behouden zich het\n"
+"                recht voor om, bij onregelmatigheden, deelnemers uit te sluiten. "
+"De personeelsleden (en personen die op\n"
+"                hetzelfde adres wonen) van Movel BV en CAR-PASS vzw zijn "
+"uitgesloten van deelname aan de wedstrijd.\n"
+"                Winnaars zijn de deelnemer van wie Movel BV het juiste antwoord "
+"op de gestelde wedstrijdvragen correct,\n"
+"                volledig en tijdig heeft ontvangen en van wie het antwoord op de "
+"schiftingsvraag het meest de realiteit\n"
+"                benadert, namelijk het juiste aantal deelnemers aan de "
+"wedstrijd. Voor wat betreft de schiftingsvraag\n"
+"                heeft het dichtste cijfer hoger dan het correcte antwoord "
+"voorrang op het dichtste cijfer lager dan het\n"
+"                correcte antwoord.\n"
+"                Na de wedstrijd zullen 8 winnaars worden aangeduid. Bij ex aequo "
+"wordt de winnaar bij trekking bepaald.\n"
+"                Enkel de winnaars worden per mail verwittigd op het mailadres "
+"dat zij op hun deelnemingsformulier hebben\n"
+"                vermeld. Het publiek zal geen inzage krijgen in de lijst met de "
+"winnaars.\n"
+"                De winnaars zullen kunnen deelnemen als co-piloot tijdens het "
+"Zolder Fun Festival, dat doorgaat op het\n"
+"                circuit van Zolder op 8 oktober 2023. Na ieder half uur is een "
+"wissel van de co-piloot voorzien.\n"
+"                Eventuele mechanische pech kan maken dat de pilotenwissels niet "
+"klokslag om het half uur gebeuren, of\n"
+"                dat verdere deelname aan de race uitgesloten is. De winnaars "
+"zullen in dat geval geen schadevergoeding\n"
+"                kunnen eisen van Movel BV, noch van Car-Pass NV.\n"
+"                Deelnemen aan de VW Fun Cup is op eigen risico. Movel NV en Car-"
+"Pass vzw zijn in geen geval\n"
+"                aansprakelijk in geval van lichamelijke letsels of materiële "
+"schade die voortvloeit uit de deelname aan\n"
+"                de race. Deelnemen aan de race kan enkel voor personen die "
+"minstens 18 jaar oud zijn en mits het\n"
+"                voorleggen van een medisch attest van geschiktheid voor de "
+"beoefening van de autosport. Winnaars die\n"
+"                niet op het afgesproken uur aanwezig zijn op het circuit, "
+"verliezen hun recht op deelname aan de race.\n"
+"                De verplaatsing van en naar het circuit gebeurt op eigen risico "
+"en eigen kosten van de winnaars.\n"
+"                De prijs is niet verwisselbaar en kan niet in speciën uitbetaald "
+"worden. De prijs kan niet worden\n"
+"                overgedragen. Over deze wedstrijd wordt niet gecorrespondeerd. "
+"Voor de deelnemers betekent de deelname\n"
+"                aan deze wedstrijd het instemmen met en het onvoorwaardelijk "
+"aanvaarden van de bewoordingen van het\n"
+"                Reglement en de eventuele toekomstige beslissingen die de "
+"organisatoren verplicht zijn te nemen voor het\n"
+"                goede verloop van de wedstrijd, met name bij het optreden van "
+"een geval van overmacht.\n"
+"                Tijdens de race zal een professionele fotograaf aanwezig zijn, "
+"die van elke co-piloot een foto zal\n"
+"                maken. De deelnemers aan de race geven Car-Pass het recht om "
+"deze foto op haar facebookpagina te\n"
+"                plaatsen.\n"
+"                Druk-, spel-, zet-, technische of andere dergelijke fouten "
+"kunnen niet ingeroepen worden als grond voor\n"
+"                welke verplichting dan ook vanwege Move BV en CAR-PASS vzw."
+msgstr ""
+"Le concours est ouvert à toutes les personnes âgées de plus de 18 ans, à "
+"l’exception des membres du personnel de CAR-PASS asbl et des personnes résidant "
+"à la même adresse que ces derniers. Le nombre de participants est illimité. "
+"Chaque participant ne peut participer qu’une seule et unique fois au concours. "
+"Movel BV et CAR-PASS asbl se garde le droit, en cas d’irrégularités, d’exclure "
+"certains participants. Les employés (et les personnes résidant à la même "
+"adresse) de Movel BV et CAR-PASS asbl sont exclus de la participation au "
+"concours.\n"
+"Seront désignés gagnants les participants ayant envoyé à CAR-PASS asbl et Movel "
+"BV les bonnes réponses aux questions du concours, de manière correcte et "
+"complète, dans le respect des délais impartis, et dont la réponse à la question "
+"subsidiaire se rapproche le plus de la réalité, en d’autres termes, dont "
+"l’estimation est la plus proche du nombre exact de participants au concours. "
+"S’agissant de la question subsidiaire, le nombre qui est le plus proche de la "
+"réponse exacte et qui lui est supérieur a priorité sur celui qui lui est "
+"inférieur. \n"
+"Huit (8) gagnants seront désignés à l’issue du concours. En cas d’ex aequo, le "
+"gagnant sera choisi par tirage au sort. Seuls les gagnants seront avertis par "
+"courriel à l’adresse qu’ils auront renseignée sur le formulaire de "
+"participation. La liste des gagnants ne sera pas rendue publique.\n"
+"Chaque gagnant pourra participer en tant que copilote au Franco Fun Festival, "
+"qui se tiendra à Zolder le 8 octobre. Le changement de copilote aura lieu toutes "
+"les demi-heures. Il se peut qu’en raison d’éventuels problèmes techniques, le "
+"changement de copilote ne s’effectue pas exactement toutes les demi-heures ou "
+"qu’il soit impossible de poursuivre la course. Le cas échéant, les gagnants ne "
+"pourront pas exiger une quelconque compensation de la part de CAR-PASS asbl ni "
+"de Movel BV. \n"
+"Les copliotes sont bien conscients que la participation à la course est à leurs "
+"propres risques et périls.  Ni CAR-PASS asbl ni Movel BV ne peuvent, quoi qu’il "
+"advienne, être tenu responsable d’éventuels dégâts matériels ou blessures "
+"corporelles qui résulteraient de la participation à la course. Ne seront "
+"autorisées à participer à la course que les personnes âgées de plus de 18 ans et "
+"en possession d’un certificat médical les déclarant aptes à la pratique du sport "
+"automobile. Les gagnants qui ne se présenteront pas à l’heure convenue au "
+"circuit perdront leur droit de participer à la course. \n"
+"Les gagnants assument personnellement les risques encourus lors des trajets "
+"effectués afin de se rendre jusqu’au circuit et d’en repartir, ainsi que les "
+"frais y afférents. \n"
+"Le prix ne peut être échangé, payé en espèces ou cédé. Aucune correspondance ne "
+"sera entretenue au sujet de ce concours. En participant à ce concours, les "
+"participants déclarent être d’accord avec les termes du présent Règlement et les "
+"éventuelles décisions que les organisateurs seraient amenés à prendre afin de "
+"garantir le bon déroulement du concours, notamment en cas de force majeure, et "
+"les accepter de manière inconditionnelle. \n"
+"Lors de la course un photographe professionnel sera présent, qui fera une photo "
+"de chaque copilote. Les participants autorisent Car-Pass à afficher ces photos "
+"sur sa page Facebook.\n"
+"Les fautes d’impression, d’orthographe, de typographie, erreurs techniques ou "
+"autres erreurs semblables ne peuvent être invoquées afin de justifier une "
+"quelconque obligation de la part de CAR-PASS asbl."
+
+#: app/templates/events/vw-cup/rules.html:48
+msgid "ARTIKEL 3: DE WEDSTRIJD"
+msgstr "ARTICLE 3 : LE CONCOURS"
+
+#: app/templates/events/vw-cup/rules.html:49
+msgid ""
+"Het aantal deelnemers is onbeperkt. De Wedstrijd is alleen geldig in België. "
+"Deze Wedstrijd begint\n"
+"                op 01/09/2023 en eindigt op 17/09/2023 om 23.59 uur. De "
+"sluitingsdatum voor deelnames is daarom\n"
+"                17/09/2023 om 23.59 uur. Alle deelnames die na deze datum worden "
+"geregistreerd, worden uitgesloten van\n"
+"                de Wedstrijd. Per Deelnemer wordt slechts één inzending voor de "
+"Wedstrijd geaccepteerd voor elk van de\n"
+"                volgende periodes: van 01/09/2023 tot en met 17/09/2023; Indien "
+"een Deelnemer meer dan eenmaal deelneemt\n"
+"                aan de Wedstrijd gedurende de bovengenoemde perioden, behoudt de "
+"Organisator zich het recht de Deelnemer\n"
+"                uit te sluiten van de Wedstrijd. "
+msgstr ""
+"Le nombre de Participants est illimité. Le Concours est valable uniquement en "
+"Belgique. Le présent Concours débute le 01/09/2023 et se termine le 17/09/2023 à "
+"23h59. La date limite de participation est donc fixée au 17/09/2023 à 23h59. \n"
+"\n"
+"Toutes les participations enregistrées après cette date seront exclues du "
+"Concours. \n"
+"\n"
+"Une seule participation au Concours sera acceptée par Participant pour la "
+"période du 01/09/2023 au 17/09/2023 \n"
+"\n"
+"En cas de participation à plusieurs reprises d’un Participant au Concours lors "
+"des périodes évoquées ci-dessus, l’Organisateur se réserve le droit d’exclure le "
+"Participant du Concours. "
+
+#: app/templates/events/vw-cup/rules.html:56
+msgid "ARTIKEL 4: BESCHERMING VAN DE PERSOONLIJKE GEGEVENS"
+msgstr "ARTICLE 4 : PARTICIPATION ET DÉTERMINATION DES GAGNANTS"
+
+#: app/templates/events/vw-cup/rules.html:57
+msgid ""
+"De Deelnemer erkent en aanvaardt dat hij/zij door deelname aan de Wedstrijd de "
+"Organisator toestemming geeft om zijn/haar persoonlijke gegevens die via de "
+"website en het deelnameformulier zijn verzameld te gebruiken in de context van "
+"de Wedstrijd om een goede organisatie en een goed verloop van de Wedstrijd te "
+"waarborgen. De Deelnemer heeft het recht op toegang tot en verbetering van zijn/"
+"haar persoonsgegevens. De Deelnemer kan dit recht uitoefenen door een "
+"aangetekende brief te sturen naar de maatschappelijke zetel van de Organisator, "
+"zoals genoemd in artikel 1. Voordat contact kan worden opgenomen met de winnaar, "
+"moet de deelnemer de velden naam, voornaam en e-mailadres invullen, die "
+"uitsluitend voor dit doel zullen worden gebruikt. Deze gegevens worden "
+"vernietigd 30 dagen na de datum van de officiële bekendmaking van de winnaars "
+"van de wedstrijd, te weten 17/09/2023."
+msgstr ""
+"Pour participer au Concours, le Participant doit répondre aux questions posées. "
+"L’internaute s’engage à ne pas utiliser de pseudonyme de nature à choquer, "
+"offenser, diffamer, de caractère raciste ou contraire à la législation en "
+"vigueur en Belgique. \n"
+"\n"
+"Toute indication d’identité ou d’adresse e-mail fausse, erronée, incomplète "
+"entraînera l’élimination immédiate de la participation. L’Organisateur se "
+"réserve le droit de procéder à toutes les vérifications nécessaires concernant "
+"l’identité et l’adresse électronique des participants. \n"
+"\n"
+"Un Participant sera considéré comme gagnant du Concours si il/elle: \n"
+"satisfait aux conditions de participations détaillées aux paragraphes et "
+"articles ci-dessus ; \n"
+"a répondu correctement aux questions posées au sujet du grand prix de Formule 1 "
+"de Spa Francorchamps ainsi que donné la réponse exacte ou la plus approchante à "
+"la question « Combien de personnes participeront à ce concours? » ; \n"
+"\n"
+"Si plusieurs réponses exactes ou les plus approchantes parviennent durant la "
+"même période, la réponse fournie la première sera retenue. \n"
+"\n"
+"L’officialisation des gagnants se fera au plus tard le 17/07/23. Les gagnants "
+"seront personnellement avertis par courrier électronique à cette date. "
+"l’Organisateur leur communiquera à cette occasion les modalités et procédures à "
+"respecter en vue de recevoir leur prix. \n"
+"\n"
+"Le participant est donc tenu de surveiller sa boîte mail (boîte de réception et "
+"spam) pour vérifier s’il a bien gagné le jeu-concours. L’Organisateur ne pourra "
+"être tenu responsable si le participant reçoit l’officialisation des résultats "
+"en spam. Seuls les gagnants seront avertis par e-mail qu’ils ont gagné. Dans le "
+"cas où le Participant ne respecterait pas la procédure indiquée par mail ou ne "
+"se manifesterait pas dans les temps avant l’Événement, son prix sera considéré "
+"comme perdu et restera la propriété de l’Organisateur. \n"
+"\n"
+"Tous les participants au jeu-concours ont la possibilité de demander à "
+"l’Organisateur les résultats aux questions posées à la fin du jeu-concours en "
+"envoyant un email à news@vroom.be."
+
+#: app/templates/events/vw-cup/rules.html:58
+msgid "ARTIKEL 5: AANSPRAKELIJKHEID "
+msgstr "ARTICLE 5 : LES PRIX "
+
+#: app/templates/events/vw-cup/rules.html:59
+msgid ""
+"Tenzij zijn aansprakelijkheid niet door de wet uitgesloten kan worden, kan de "
+"Organisator niet aansprakelijk gesteld worden tegenover de Deelnemers of derden "
+"voor de schade die (on)rechtstreeks veroorzaakt zou zijn als gevolg van de "
+"deelname aan de Wedstrijd of van het gebruik van de prijs. In geval van "
+"overmacht of enige andere omstandigheid die losstaat van de wil van de "
+"Organisator, behoudt de Organisator zich het recht voor de Wedstrijd te "
+"wijzigen, uit te stellen, in te korten of stop te zetten. Hij behoudt zich "
+"eveneens het recht voor de regels, de prijs en de informatie met betrekking tot "
+"de Wedstrijd te wijzigen. De Organisator kan hiervoor niet verantwoordelijk "
+"gesteld worden. De Deelnemers zullen dus bij elke deelname opnieuw kennis moeten "
+"nemen van het reglement om zich ervan te vergewissen dat dit niet gewijzigd "
+"werd. De Organisator kan ook niet aansprakelijk gesteld worden voor het "
+"uitblijven van ontvangst of de laattijdige ontvangst van de email waarin de "
+"winnaar op de hoogte gebracht wordt van zijn overwinning, noch voor het niet "
+"gebruiken van de prijs en/of de wijziging van de prijs. De deelname aan de "
+"Wedstrijd via internet impliceert de kennis en de aanvaarding van de kenmerken "
+"en beperkingen van het internet, zoals de technische prestaties, de reactietijd "
+"voor het raadplegen of doorsturen van informatie. De Organisator kan in geen "
+"geval aansprakelijk gesteld worden voor het feit dat bepaalde gegevens niet "
+"beschermd zijn tegen eventuele interceptie ervan en tegen de risico’s op "
+"besmetting met eventuele virussen die op het internet circuleren. De Organisator "
+"besteedt de grootste zorg aan de organisatie van de Wedstrijd. Toch is het "
+"mogelijk dat informatie niet volledig of verkeerd is. Eventuele "
+"onnauwkeurigheden, drukfouten, typografie, vergissingen met betrekking tot de "
+"samenstelling of andere fouten en technische problemen of andere problemen met "
+"betrekking tot de Wedstrijd kunnen niet ingeroepen worden als basis voor enige "
+"verplichting of aansprakelijkheid uit hoofde van de Organisator. De Organisator "
+"kan ook niet aansprakelijk gesteld worden voor technische problemen die de "
+"deelname aan de Wedstrijd onmogelijk maken of voor technische problemen die het "
+"goede verloop van de Wedstrijd zouden verhinderen. Het is de "
+"verantwoordelijkheid van elke Deelnemer om zich ervan te vergewissen dat de "
+"technische middelen waarmee hij aan de Wedstrijd deelneemt correct functioneren. "
+"De Organisator kan niet aansprakelijk gesteld worden voor eventuele "
+"incompatibiliteit tussen de technologieën die gebruikt worden voor de Wedstrijd "
+"en de configuratie van de hardware en/of software die gebruikt wordt door de "
+"Deelnemer."
+msgstr ""
+"Les prix du Concours sont les suivants : 3x1 billets Silver pour le grand prix "
+"de Belgique 2023, et 4x1 casquettes officielles Pirelli F1 Podium. \n"
+"\n"
+"Les prix remportés ne pourront en aucun cas être échangés contre leur contre-"
+"valeur en espèces. L’attribution de ces prix ne pourra en aucun cas faire "
+"l’objet de contestations, pour quelque raison que ce soit, sauf faute grave ou "
+"intentionnelle dans le chef de l’Organisateur. \n"
+"\n"
+"Un Participant ne peut gagner qu’un lot (= 1 gagnant et 1 accompagnant) par "
+"période évoquée à l’article 3 . \n"
+"\n"
+"L’Organisateur se réserve le droit d’accorder un prix alternatif d’une valeur "
+"similaire si le prix décrit ci-dessus n’était pas (ou plus) disponible ou ne "
+"peut pas (ou plus) être attribué pour des raisons indépendantes de la volonté de "
+"l’Organisateur. \n"
+"\n"
+"L’Organisateur ne peut être tenu responsable pour des retards ou pertes "
+"occasionnés lors de l’acheminement du prix, ou pour l’envoi du prix à une "
+"adresse e-mail inexacte du fait de la négligence du gagnant. \n"
+"\n"
+"L’Organisateur ne peut être tenu responsable pour tout incident/accident pouvant "
+"survenir dans l’utilisation du prix. Toutes les marques ou noms de produits "
+"cités sont des marques déposées de leurs propriétaires respectifs."
 
 #~ msgid "Wedstrijdreglement"
 #~ msgstr "Règlement du concours"
@@ -2100,3 +2499,6 @@ msgstr ""
 #~ "A partir de € 19.999 \n"
 #~ "<br>\n"
 #~ "Avec jusqu’à € 6.000 de remise! Offre limitée!"
+
+#~ msgid "QTeam"
+#~ msgstr "QTeam"

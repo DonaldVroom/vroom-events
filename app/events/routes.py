@@ -6,6 +6,7 @@ from app.events.qteam import routes
 from app.events.suzuki import routes
 from app.events.ford import routes
 from app.events.qteam2 import routes
+from app.events.vwcup import routes
 
 babel = Babel()
 

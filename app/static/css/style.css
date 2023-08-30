@@ -34,7 +34,7 @@ section {
 .grid-qteam {
     display: grid;
     width: 100%;
-    grid-template-rows: 350px 1fr;
+    /* grid-template-rows: 350px 1fr; */
 }
 
 .header-qteam {
