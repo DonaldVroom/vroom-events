@@ -46,7 +46,7 @@ def vw_cup_results():
         if password == 'VWCupVroom2023':
             events = VwCupEvent.query.all()
             data = '<table>'
-            data += '<tr><th>ID</th><th>Q1</th><th>Q2</th><th>Q3</th><th>Q4</th><th>How Many People</th><th>Email</th><th>Phone</th><th>First Name</th><th>Last Name</th><th>Created</th><th>Locale</th></tr>'
+            data += '<tr><th>ID</th><th>Q1</th><th>Q2</th><th>How Many People</th><th>Email</th><th>Phone</th><th>First Name</th><th>Last Name</th><th>Created</th><th>Locale</th></tr>'
             for event in events:
                 created_date = datetime.strftime(event.created, '%d-%m-%Y')
                 data += f'<tr><td>{event.id}</td><td>{event.q1}</td><td>{event.q2}</td><td>{event.how_many_people}</td><td>{event.email}</td><td>{event.phone}</td><td>{event.first_name}</td><td>{event.last_name}</td><td>{created_date}</td><td>{event.locale}</td></tr>'
