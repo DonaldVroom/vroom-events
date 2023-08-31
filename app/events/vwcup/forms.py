@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, IntegerField, SubmitField
+from wtforms import StringField, IntegerField, SubmitField, DateField
 from wtforms.validators import DataRequired, Email
 from flask_babel import _, lazy_gettext as _l
 
@@ -14,4 +14,6 @@ class VwCupForm(FlaskForm):
     first_name = StringField(_l('Voornaam'), validators=[DataRequired()])
     last_name = StringField(_l('Familienaam'), validators=[DataRequired()])
     phone = StringField(_l('Telefoon'), validators=[DataRequired()])
+    postal_code = StringField(_l('Postcode'), validators=[DataRequired()])
+    dob = DateField(_l('Geboortedatum'), validators=[DataRequired()])
     submit = SubmitField(_l('Indienen'))

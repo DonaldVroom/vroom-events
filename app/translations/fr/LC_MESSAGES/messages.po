@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-08-30 18:38+0100\n"
-"PO-Revision-Date: 2023-08-30 18:38+0100\n"
+"POT-Creation-Date: 2023-08-31 09:19+0100\n"
+"PO-Revision-Date: 2023-08-31 09:20+0100\n"
 "Last-Translator: \n"
 "Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
@@ -64,6 +64,7 @@ msgstr "Combien de personnes participeront à ce concours?"
 #: app/events/qteam2/forms.py:15 app/events/suzuki/forms.py:9
 #: app/events/vwcup/forms.py:13 app/templates/events/suzuki/s-cross.html:26
 #: app/templates/events/suzuki/vitara.html:25
+#: app/templates/events/vw-cup/index.html:59
 msgid "Email"
 msgstr "Email"
 
@@ -72,6 +73,7 @@ msgstr "Email"
 #: app/events/suzuki/forms.py:11 app/events/vwcup/forms.py:14
 #: app/templates/events/suzuki/s-cross.html:28
 #: app/templates/events/suzuki/vitara.html:27
+#: app/templates/events/vw-cup/index.html:70
 msgid "Voornaam"
 msgstr "Prénom"
 
@@ -79,22 +81,23 @@ msgstr "Prénom"
 #: app/events/qteam2/forms.py:17 app/events/suzuki/forms.py:12
 #: app/events/vwcup/forms.py:15 app/templates/events/suzuki/s-cross.html:29
 #: app/templates/events/suzuki/vitara.html:28
+#: app/templates/events/vw-cup/index.html:75
 msgid "Familienaam"
 msgstr "Nom de famille"
 
 #: app/events/ford/forms.py:20 app/events/qteam2/forms.py:18
 #: app/events/vwcup/forms.py:16 app/templates/events/ford/index.html:134
 #: app/templates/events/qteam2/index.html:91
-#: app/templates/events/vw-cup/index.html:63
+#: app/templates/events/vw-cup/index.html:64
 msgid "Telefoon"
 msgstr "Téléphone"
 
 #: app/events/ford/forms.py:21 app/events/qteam/forms.py:17
 #: app/events/qteam2/forms.py:19 app/events/suzuki/forms.py:15
-#: app/events/vwcup/forms.py:17 app/templates/events/ford/index.html:144
+#: app/events/vwcup/forms.py:19 app/templates/events/ford/index.html:144
 #: app/templates/events/qteam/index.html:103
 #: app/templates/events/qteam2/index.html:112
-#: app/templates/events/vw-cup/index.html:84
+#: app/templates/events/vw-cup/index.html:96
 msgid "Indienen"
 msgstr "Envoyer"
 
@@ -177,8 +180,10 @@ msgstr ""
 msgid "auto"
 msgstr "voiture"
 
-#: app/events/suzuki/forms.py:13 app/templates/events/suzuki/s-cross.html:32
+#: app/events/suzuki/forms.py:13 app/events/vwcup/forms.py:17
+#: app/templates/events/suzuki/s-cross.html:32
 #: app/templates/events/suzuki/vitara.html:31
+#: app/templates/events/vw-cup/index.html:81
 msgid "Postcode"
 msgstr "Code postal"
 
@@ -212,6 +217,10 @@ msgid ""
 msgstr ""
 "Le Car-Pass contient bien plus de données que l’historique kilométrique. Quelle "
 "information ne se trouve pas sur le Car-Pass ?"
+
+#: app/events/vwcup/forms.py:18 app/templates/events/vw-cup/index.html:86
+msgid "Geboortedatum"
+msgstr "Date de naissance"
 
 #: app/events/vwcup/routes.py:28
 msgid "VW Cup"
@@ -410,21 +419,18 @@ msgstr "10"
 #: app/templates/events/ford/index.html:116
 #: app/templates/events/qteam/index.html:87
 #: app/templates/events/qteam2/index.html:97
-#: app/templates/events/vw-cup/index.html:69
 msgid "Je voornaam"
 msgstr "Votre prénom"
 
 #: app/templates/events/ford/index.html:121
 #: app/templates/events/qteam/index.html:94
 #: app/templates/events/qteam2/index.html:102
-#: app/templates/events/vw-cup/index.html:74
 msgid "Je familienaam"
 msgstr "Votre nom de famille"
 
 #: app/templates/events/ford/index.html:129
 #: app/templates/events/qteam/index.html:80
 #: app/templates/events/qteam2/index.html:86
-#: app/templates/events/vw-cup/index.html:58
 msgid "Je email"
 msgstr "Votre adresse e-mail"
 
@@ -440,7 +446,7 @@ msgstr ""
 #: app/templates/events/ford/index.html:142
 #: app/templates/events/qteam/index.html:101
 #: app/templates/events/qteam2/index.html:109
-#: app/templates/events/vw-cup/index.html:81
+#: app/templates/events/vw-cup/index.html:93
 msgid "wedstrijdreglement"
 msgstr "règlement du concours"
 
@@ -1488,7 +1494,7 @@ msgid "18 inch"
 msgstr "18 pouces"
 
 #: app/templates/events/qteam2/index.html:107
-#: app/templates/events/vw-cup/index.html:79
+#: app/templates/events/vw-cup/index.html:91
 msgid ""
 "Door op de onderstaande knop te klikken, bevestig\n"
 "                    je dat u kennis heeft genomen van het"
@@ -1497,7 +1503,6 @@ msgstr ""
 "dessous, vous confirmez que vous avez pris connaissance du"
 
 #: app/templates/events/qteam2/index.html:110
-#: app/templates/events/vw-cup/index.html:82
 msgid "Uw data blijft bij Vroom, en wordt niet gedeeld met partners."
 msgstr ""
 "Vos informations personnelles ne seront pas partagées avec nos partenaires."
@@ -2076,7 +2081,7 @@ msgid ""
 "te juichen!"
 msgstr "Vous souhaitez participer ? Nous croisons les doigts pour vous !"
 
-#: app/templates/events/vw-cup/index.html:13
+#: app/templates/events/vw-cup/index.html:14
 msgid ""
 "Grijp uw kans door voor 18 september 2023 de volgende vragen juist te "
 "beantwoorden. Zo wordt u misschien één van de acht gelukkige winnaars!"
@@ -2118,6 +2123,18 @@ msgid ""
 msgstr ""
 "Astuce: toutes les informations sont disponibles sur <a href=\"https://www.car-"
 "pass.be/fr/a-propos-de-car-pass\" target=\"_blank\">le site web de Car-Pass</a>"
+
+#: app/templates/events/vw-cup/index.html:57
+msgid "U hoeft alleen nog uw persoonlijke gegevens achter te laten:"
+msgstr "Vous n’avez plus qu’à laisser vos informations personnelles:"
+
+#: app/templates/events/vw-cup/index.html:94
+msgid ""
+"Uw gegevens blijven bij Vroom. Alleen indien u wint, worden uw gegevens gedeeld "
+"met Car-Pass vzw, die u dan een uitnodiging zal sturen."
+msgstr ""
+"Vos données restent chez Vroom. Seulement si vous gagnez, vos données seront "
+"partagées avec Car-Pass asbl, qui vous enverra ensuite une invitation."
 
 #: app/templates/events/vw-cup/rules.html:8
 msgid "Wedstrijdreglement: \"Wedstrijdreglement CAR-PASS VW Fun Cup\""
@@ -2300,7 +2317,6 @@ msgid "ARTIKEL 4: BESCHERMING VAN DE PERSOONLIJKE GEGEVENS"
 msgstr "ARTICLE 4 : PARTICIPATION ET DÉTERMINATION DES GAGNANTS"
 
 #: app/templates/events/vw-cup/rules.html:57
-#, fuzzy
 msgid ""
 "De Deelnemer erkent en aanvaardt dat hij/zij door deelname aan de Wedstrijd de "
 "Organisator\n"
@@ -2332,7 +2348,7 @@ msgstr ""
 "Avant de pouvoir contacter le gagnant, le participant devra remplir les champs "
 "nom, prénom et adresse e-mail, données qui seront utilisées uniquement à cette "
 "fin. Ces données seront détruites 30 jours après la date d’officialisation des "
-"gagnants du Concours fixée le 17/07/23. "
+"gagnants du Concours fixée le 17/07/23."
 
 #: app/templates/events/vw-cup/rules.html:66
 msgid "ARTIKEL 5: AANSPRAKELIJKHEID "

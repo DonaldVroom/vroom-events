@@ -10,8 +10,8 @@
             <p>{{ _('Bent u klaar om uw race-droom te verwezenlijken? Car-Pass, de Belgische referentie op het gebied van kwalitatieve tweedehandswagens, en Vroom slaan de handen in elkaar om u als motorsportliefhebber iets unieks te bieden. Maar liefst 8 deelnemers krijgen de unieke kans om als bijrijder deel te nemen aan de VW Fun Cup. Op zondag 8 oktober 2023 is het zover, op het legendarische circuit van Zolder.') }}</p>
             <p>{{ _("Aan de zijde van een ervaren racepiloot zult u meerdere sensationele rondes over het circuit razen, concurrerend met andere wagens in de Biplace-categorie.") }}</p>
             <p>{{ _("Wilt u uw racedroom werkelijkheid maken? Wij staan alvast aan uw zijde, klaar om te juichen!") }} </p>
-            <p>{{ _("Grijp uw kans door voor 18 september 2023 de volgende vragen juist te beantwoorden. Zo wordt u misschien één van de acht gelukkige winnaars!") }} </p>
             <hr>
+            <p>{{ _("Grijp uw kans door voor 18 september 2023 de volgende vragen juist te beantwoorden. Zo wordt u misschien één van de acht gelukkige winnaars!") }} </p>
             <div class="error-text" style="display: none; color: red;">
                 {{ _('Gelieve 1 van de antwoorden aan te duiden.') }}
             </div>
@@ -54,8 +54,9 @@
                 </div>
                 <p>{{ _('Tip: deze juiste antwoorden zijn te vinden op de <a href="https://www.car-pass.be/nl/over-car-pass" target="_blank">officiële Car-Pass website</a>') }}</p>
                 <hr>
+                <p>{{ _('U hoeft alleen nog uw persoonlijke gegevens achter te laten:') }}</p>
                 <div class="form-block">
-                    {{ form.email(placeholder=_('Je email'), type="email") }}
+                    {{ form.email(placeholder=_('Email'), type="email") }}
                     {% for error in form.email.errors %}
                     <span class="error-text">{{ error }}</span>
                     {% endfor %}
@@ -66,20 +67,31 @@
                     {% endfor %}
                 </div>
                 <div class="form-block">
-                    {{ form.first_name(placeholder=_('Je voornaam')) }}
+                    {{ form.first_name(placeholder=_('Voornaam')) }}
                     {% for error in form.first_name.errors %}
                     <span class="error-text">{{ error }}</span>
                     {% endfor %}
 
-                    {{ form.last_name(placeholder=_('Je familienaam')) }}
+                    {{ form.last_name(placeholder=_('Familienaam')) }}
                     {% for error in form.last_name.errors %}
+                    <span class="error-text">{{ error }}</span>
+                    {% endfor %}
+                </div>
+                <div class="form-block">
+                    {{ form.postal_code(placeholder=_('Postcode')) }}
+                    {% for error in form.postal_code.errors %}
+                    <span class="error-text">{{ error }}</span>
+                    {% endfor %}
+
+                    {{ form.dob(placeholder=_('Geboortedatum')) }}
+                    {% for error in form.dob.errors %}
                     <span class="error-text">{{ error }}</span>
                     {% endfor %}
                 </div>
                 <p>{{ _('Door op de onderstaande knop te klikken, bevestig
                     je dat u kennis heeft genomen van het') }} <a href="{{ url_for('events.vw_cup_rules') }}"
                         target="_blank">{{ _('wedstrijdreglement') }}</a>.</p>
-                <p>{{ _('Uw data blijft bij Vroom, en wordt niet gedeeld met partners.') }}</p>
+                <p>{{ _('Uw gegevens blijven bij Vroom. Alleen indien u wint, worden uw gegevens gedeeld met Car-Pass vzw, die u dan een uitnodiging zal sturen.') }}</p>
                 <button id="submit" name="submit" type="submit">
                     {{ _('Indienen') }}
                 </button>

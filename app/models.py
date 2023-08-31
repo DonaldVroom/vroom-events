@@ -86,6 +86,8 @@ class VwCupEvent(db.Model):
     phone = db.Column(db.String())
     created = db.Column(db.DateTime, index=True, default=datetime.utcnow)
     locale = db.Column(db.String(10))
+    postal_code = db.Column(db.String(10))
+    dob = db.Column(db.DateTime)
 
     def __repr__(self):
         return f"<vwcupevent {self.id}>"

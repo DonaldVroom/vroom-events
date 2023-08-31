@@ -19,6 +19,7 @@ button, li {
 input[type=text],
 input[type=email],
 input[type=number],
+input[type=date],
 select {
     font-size: 16px;
     line-height: 22px;
@@ -69,6 +70,7 @@ input[type=text],
 input[type=email],
 input[type=number],
 input[type=password],
+input[type=date],
 select {
     background: none;
     border: 1px solid #000000;
@@ -78,7 +80,7 @@ select {
     height: 51px;
 }
 
-input[type=text], input[type=email] {
+input[type=text], input[type=email], input[type=date] {
     width: 50%;
 }
 
@@ -187,7 +189,8 @@ th, td{
 
     input[type=text],
     input[type=email],
-    input[type=number] {
+    input[type=number],
+    input[type=date] {
         width: 96%;
     }
 }
