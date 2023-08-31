@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2023-08-31 09:19+0100\n"
-"PO-Revision-Date: 2023-08-31 09:20+0100\n"
+"POT-Creation-Date: 2023-08-31 09:25+0100\n"
+"PO-Revision-Date: 2023-08-31 09:27+0100\n"
 "Last-Translator: \n"
 "Language-Team: fr <LL@li.org>\n"
 "Language: fr\n"
@@ -1838,7 +1838,7 @@ msgid "ARTIKEL 7: AANSPRAKELIJKHEID"
 msgstr "ARTICLE 7 : RESPONSABILITÉ"
 
 #: app/templates/events/qteam2/rules.html:91
-#: app/templates/events/vw-cup/rules.html:67
+#: app/templates/events/vw-cup/rules.html:64
 msgid ""
 "Tenzij zijn aansprakelijkheid niet door de wet uitgesloten kan worden, kan de "
 "Organisator niet\n"
@@ -2143,26 +2143,25 @@ msgstr "Règlement applicable au concours “CAR-PASS VW Fun Cup”"
 #: app/templates/events/vw-cup/rules.html:10
 msgid ""
 "Het bedrijf Movel BV, met hoofdzetel te 2600 Berchem (België), Posthofbrug 6-8, "
-"ingeschreven bij de\n"
-"                Kruispuntbank der Ondernemingen onder het nummer 0794.705.855 en "
-"met btw-identificatienummer BE\n"
-"                0794.705.855 (hierna de Organisator genoemd) organiseert in "
-"België een wedstrijd onder de naam \"CAR-PASS\n"
-"                VW Fun Cup\" (hierna de Wedstrijd genoemd (hierna het Evenement "
-"genoemd)."
+"ingeschreven bij de Kruispuntbank der Ondernemingen onder het nummer "
+"0794.705.855 en met btw-identificatienummer BE 0794.705.855 organiseert in "
+"samenwerking met Car-Pass v.z.w, Woluwedal 46 b2 1200 Brussel (hierna de "
+"Organisator genoemd), in België een wedstrijd onder de naam “CAR-PASS VW Fun "
+"Cup” (hierna de Wedstrijd genoemd (hierna het Evenement genoemd)."
 msgstr ""
 "La société Movel BV, dont le siège social est situé à 2600 Berchem (Belgique), "
 "Posthofbrug 6-8, enregistrée auprès de la Banque-Carrefour des Entreprises sous "
 "le numéro 0794.705.855 et portant le numéro d’identification TVA BE 0794.705.855 "
-"(ci-après dénommée “l’Organisateur”) organise en Belgique un concours intitulé "
-"“CAR-PASS VW Fun Cup” (ci-après dénommé “le Concours”) (ci-après dénommé "
-"“l’Événement”)."
+"organise en collaboration avec Car-Pass asbl, Woluwedal 46 b2, 1200 Bruxelles "
+"(ci-après dénommée “l’Organisateur”), en Belgique, un concours intitulé “CAR-"
+"PASS VW Fun Cup” (ci-après dénommé le Concours), dans le cadre de l’événement "
+"(ci-après dénommé l’Événement)."
 
-#: app/templates/events/vw-cup/rules.html:14
+#: app/templates/events/vw-cup/rules.html:11
 msgid "ARTIKEL 2: VOORWAARDEN TOT DEELNAME & BEPALING VAN DE WINNAARS"
 msgstr "ARTICLE 2 : LES CONDITIONS DE PARTICIPATION & DÉTERMINATION DES GAGNANTS"
 
-#: app/templates/events/vw-cup/rules.html:15
+#: app/templates/events/vw-cup/rules.html:12
 msgid ""
 "Deelnemers aan de wedstrijd moeten ouder dan 18 jaar . Het aantal deelnemers is "
 "onbeperkt. Elke\n"
@@ -2278,11 +2277,11 @@ msgstr ""
 "autres erreurs semblables ne peuvent être invoquées afin de justifier une "
 "quelconque obligation de la part de CAR-PASS asbl."
 
-#: app/templates/events/vw-cup/rules.html:48
+#: app/templates/events/vw-cup/rules.html:45
 msgid "ARTIKEL 3: DE WEDSTRIJD"
 msgstr "ARTICLE 3 : LE CONCOURS"
 
-#: app/templates/events/vw-cup/rules.html:49
+#: app/templates/events/vw-cup/rules.html:46
 msgid ""
 "Het aantal deelnemers is onbeperkt. De Wedstrijd is alleen geldig in België. "
 "Deze Wedstrijd begint\n"
@@ -2312,11 +2311,11 @@ msgstr ""
 "des périodes évoquées ci-dessus, l’Organisateur se réserve le droit d’exclure le "
 "Participant du Concours. "
 
-#: app/templates/events/vw-cup/rules.html:56
+#: app/templates/events/vw-cup/rules.html:53
 msgid "ARTIKEL 4: BESCHERMING VAN DE PERSOONLIJKE GEGEVENS"
 msgstr "ARTICLE 4 : PARTICIPATION ET DÉTERMINATION DES GAGNANTS"
 
-#: app/templates/events/vw-cup/rules.html:57
+#: app/templates/events/vw-cup/rules.html:54
 msgid ""
 "De Deelnemer erkent en aanvaardt dat hij/zij door deelname aan de Wedstrijd de "
 "Organisator\n"
@@ -2348,9 +2347,9 @@ msgstr ""
 "Avant de pouvoir contacter le gagnant, le participant devra remplir les champs "
 "nom, prénom et adresse e-mail, données qui seront utilisées uniquement à cette "
 "fin. Ces données seront détruites 30 jours après la date d’officialisation des "
-"gagnants du Concours fixée le 17/07/23."
+"gagnants du Concours fixée le 17/09/23."
 
-#: app/templates/events/vw-cup/rules.html:66
+#: app/templates/events/vw-cup/rules.html:63
 msgid "ARTIKEL 5: AANSPRAKELIJKHEID "
 msgstr "ARTICLE 5 : LES PRIX "
 
