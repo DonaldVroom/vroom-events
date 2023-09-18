@@ -6,30 +6,30 @@ from app.events.forms import VwCupForm
 from app.models import VwCupEvent
 from app import db
 
-@bp.route('/vw-cup/', methods=['GET', 'POST'])
-def vw_cup_main():
-    form = VwCupForm()
-    if request.method == 'POST':
-        try:
-            if form.validate_on_submit():
-                locale = str(get_locale())
-                entry = VwCupEvent()
-                form.populate_obj(entry)
-                entry.created = datetime.utcnow()
-                entry.locale = locale
-                db.session.add(entry)
-                db.session.commit()
-                return redirect(url_for('events.vw_cup_success'))
-        except Exception as e:
-            db.session.rollback()
-            print(e)
-            return redirect(url_for('events.vw_cup_main'))
-    elif request.method == 'GET': 
-        return render_template('events/vw-cup/index.html', title=(_('VW Cup')), form=form)
-
-# @bp.route('/vw-cup/', methods=['GET'])
+# @bp.route('/vw-cup/', methods=['GET', 'POST'])
 # def vw_cup_main():
-#     return render_template('events/vw-cup/ended.html', title=(_('Ended')))
+#     form = VwCupForm()
+#     if request.method == 'POST':
+#         try:
+#             if form.validate_on_submit():
+#                 locale = str(get_locale())
+#                 entry = VwCupEvent()
+#                 form.populate_obj(entry)
+#                 entry.created = datetime.utcnow()
+#                 entry.locale = locale
+#                 db.session.add(entry)
+#                 db.session.commit()
+#                 return redirect(url_for('events.vw_cup_success'))
+#         except Exception as e:
+#             db.session.rollback()
+#             print(e)
+#             return redirect(url_for('events.vw_cup_main'))
+#     elif request.method == 'GET': 
+#         return render_template('events/vw-cup/index.html', title=(_('VW Cup')), form=form)
+
+@bp.route('/vw-cup/', methods=['GET'])
+def vw_cup_main():
+    return render_template('events/vw-cup/ended.html', title=(_('Ended')))
 
 @bp.route('/vw-cup/success', methods=['GET'])
 def vw_cup_success():
